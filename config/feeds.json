@@ -1,48 +1,74 @@
 {
-  "_hinweis": "ALLE URLs sind ungeprueft und muessen validiert werden. Nach dem ersten Lauf zeigt die Quellenliste im Frontend, welche liefern. Rote Quellen hier korrigieren oder entfernen. 'filter': true = nur Beitraege behalten, die mindestens ein Stichwort aus 'keywords' enthalten (fuer breite Feeds). 'filter': false = alles behalten (fuer reine Fachquellen).",
+  "_stand": "Abschnitt 'feeds' enthaelt nur Adressen, die per echtem Abruf geprueft wurden oder im Lauf vom 30.07.2026 geliefert haben. Die frueheren Adressen waren geraten und zu 13 von 15 falsch.",
 
-  "keywords": [
-    "telematik", "telematikinfrastruktur", " ti ", "ti-", "gematik",
-    "epa", "elektronische patientenakte", "patientenakte",
+  "_filter_erklaerung": "Der Stichwortabgleich ist zweistufig, weil einfaches Teilstring-Matching Fehltreffer produziert: ein heise-Artikel ueber eine Windows-Luecke, der das BSI erwaehnt, ist kein TI-Thema. Ein STARKER Begriff genuegt allein. SCHWACHE Begriffe brauchen mindestens zwei Treffer. Beide werden auf Wortgrenzen geprueft, 'ti' matcht also nicht mehr innerhalb von 'Authentifizierung'.",
+
+  "keywords_stark": [
+    "telematikinfrastruktur", "telematik", "gematik",
     "e-rezept", "erezept", "cardlink",
-    "konnektor", "ti-gateway", "smc-b", "hba", "egk", "heilberufsausweis",
-    "kim ", "ti-messenger", "earztbrief", "eau",
-    "gesundheitsid", "digitale identitaet",
-    "digitalgesetz", "digig", "gdng", "ehds",
-    "diga", "dipa", "telemedizin", "videosprechstunde",
-    "krankenkasse", "kassenaerztliche", "praxisverwaltungssystem", "pvs",
-    "krankenhausinformationssystem", "kis ", "gesundheitsdaten",
-    "digitalisierung im gesundheitswesen", "ehealth", "e-health",
-    "forschungsdatenzentrum", "bfarm", "bsi"
+    "epa", "elektronische patientenakte", "patientenakte",
+    "konnektor", "konnektortausch", "ti-gateway", "ti 2.0",
+    "smc-b", "ehba", "egk", "elektronische gesundheitskarte", "heilberufsausweis", "praxisausweis",
+    "gesundheitsid", "kim", "ti-messenger", "earztbrief", "e-arztbrief", "eau",
+    "gedig", "digitalgesetz", "digig", "gdng", "gdag",
+    "ti-pauschale", "ehds", "forschungsdatenzentrum",
+    "diga", "dipa", "verzeichnisdienst",
+    "digitalisierung im gesundheitswesen", "gesundheits-it", "healthcare-it",
+    "ehealth", "e-health", "kassenaerztliche bundesvereinigung", "kbv",
+    "praxisverwaltungssystem", "krankenhausinformationssystem"
+  ],
+
+  "keywords_schwach": [
+    "gesundheitswesen", "gesundheitsdaten", "krankenkasse", "krankenkassen",
+    "arztpraxis", "arztpraxen", "praxis", "klinik", "krankenhaus", "apotheke",
+    "versicherte", "patienten", "bsi", "datenschutz", "dsgvo", "nis2",
+    "telemedizin", "videosprechstunde", "pflege",
+    "bundesgesundheitsministerium", "bfarm", "digital", "digitalisierung",
+    "interoperabilitaet", "fhir", "zulassung", "schnittstelle"
   ],
 
   "feeds": [
-    { "name": "gematik Newsroom",            "url": "https://www.gematik.de/rss",                              "filter": false },
-    { "name": "BMG Pressemitteilungen",      "url": "https://www.bundesgesundheitsministerium.de/rss/pressemitteilungen.xml", "filter": true },
-    { "name": "KBV Nachrichten",             "url": "https://www.kbv.de/rss/kbv_nachrichten.xml",              "filter": true },
-    { "name": "aerzteblatt Politik",         "url": "https://www.aerzteblatt.de/rss/nachrichten.asp",          "filter": true },
-    { "name": "aerztezeitung eHealth",       "url": "https://www.aerztezeitung.de/rss/politik-gesellschaft.rss","filter": true },
-    { "name": "heise Newsticker",            "url": "https://www.heise.de/rss/heise-atom.xml",                 "filter": true },
-    { "name": "E-HEALTH-COM",                "url": "https://e-health-com.de/feed/",                           "filter": false },
-    { "name": "Healthcare Digital / kma",    "url": "https://www.kma-online.de/rss/aktuelle-nachrichten.xml",  "filter": true },
-    { "name": "aerzteblatt DAE",             "url": "https://www.aerzteblatt.de/rss/aktuell.asp",              "filter": true },
-    { "name": "Apotheke adhoc",              "url": "https://www.apotheke-adhoc.de/feed/",                     "filter": true },
-    { "name": "Deutsche Apotheker Zeitung",  "url": "https://www.deutsche-apotheker-zeitung.de/rss",           "filter": true },
-    { "name": "BSI Pressemitteilungen",      "url": "https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed.xml", "filter": true },
-    { "name": "GKV-Spitzenverband",          "url": "https://www.gkv-spitzenverband.de/service/rss/rss_presse.xml", "filter": true },
-    { "name": "bvitg",                       "url": "https://www.bvitg.de/feed/",                              "filter": false },
-    { "name": "Bitkom Gesundheit",           "url": "https://www.bitkom.org/rss.xml",                          "filter": true }
+    { "name": "gematik Newsroom",      "url": "https://www.gematik.de/newsroom/rss.feed",        "filter": false,
+      "_geprueft": "30.07.2026 per Abruf - liefert application/rss+xml. Wichtigste Primaerquelle." },
+
+    { "name": "Deutsches Aerzteblatt", "url": "https://www.aerzteblatt.de/rss/news.asp",         "filter": true,
+      "_geprueft": "30.07.2026 per Abruf - liefert application/rss+xml. Breite Quelle, daher gefiltert." },
+
+    { "name": "bvitg",                 "url": "https://www.bvitg.de/feed/",                      "filter": false,
+      "_geprueft": "Lauf 30.07.2026 - 60 Beitraege. Branchenverband Gesundheits-IT, sehr treffsicher." },
+
+    { "name": "heise Newsticker",      "url": "https://www.heise.de/rss/heise-atom.xml",         "filter": true,
+      "_geprueft": "Lauf 30.07.2026 - lieferte 4 Beitraege, alle Fehltreffer. Mit dem zweistufigen Filter sollte sich das bereinigen." },
+
+    { "name": "Bitkom",                "url": "https://www.bitkom.org/rss.xml",                  "filter": true,
+      "_geprueft": "Lauf 30.07.2026 - Feed erreichbar, aber 0 Treffer. Bleibt vorerst drin; liefert er nach zwei Wochen weiter nichts, entfernen." }
   ],
 
-  "_social_hinweis": "Offene Social-Netzwerke gehoeren zum Zielbild und sind aktiv. Erwartung realistisch halten: bei TI-Themen ist das Volumen klein und die Endpunkte blocken unauthentifizierte Zugriffe zeitweise. Der erste Trockenlauf zeigt, was ankommt. Liefert eine Quelle dauerhaft nichts, hier auf false setzen statt sie stumm mitlaufen zu lassen.",
+  "_kandidaten": "NICHT geprueft. Zum Testen einzeln nach oben in 'feeds' verschieben und einen Trockenlauf starten. Fehlerhafte wieder herausnehmen. Nicht alle auf einmal - sonst weisst du nicht, welche gewirkt hat.",
+  "kandidaten": [
+    { "name": "Aerzte Zeitung",                   "url": "https://www.aerztezeitung.de/rss/aerztezeitung.rss", "filter": true },
+    { "name": "E-HEALTH-COM",                     "url": "https://e-health-com.de/rss.xml",                    "filter": false },
+    { "name": "kma Online",                       "url": "https://www.kma-online.de/rss",                      "filter": true },
+    { "name": "BMG Pressemitteilungen",           "url": "https://www.bundesgesundheitsministerium.de/service/rss.html", "filter": true },
+    { "name": "KBV",                              "url": "https://www.kbv.de/rss/",                            "filter": true },
+    { "name": "GKV-Spitzenverband",               "url": "https://www.gkv-spitzenverband.de/rss/",             "filter": true },
+    { "name": "BSI Presse",                       "url": "https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Presse.xml", "filter": true },
+    { "name": "Pharmazeutische Zeitung",          "url": "https://www.pharmazeutische-zeitung.de/rss/",        "filter": true },
+    { "name": "ABDA Pressemitteilungen",          "url": "https://www.abda.de/rss/pressemitteilungen.xml",     "filter": true },
+    { "name": "Deutsche Krankenhausgesellschaft", "url": "https://www.dkgev.de/rss.xml",                       "filter": true }
+  ],
+
+  "_social_hinweis": "Bluesky liefert HTTP 403 - die oeffentliche Suche verlangt inzwischen eine Anmeldung. Deshalb abgeschaltet. Mastodon funktioniert und liefert brauchbare TI-Inhalte, allerdings ueberwiegend von Konten, die Fachpresse spiegeln. Die Entdopplung ueber den verlinkten Originalartikel faengt das jetzt ab.",
   "social": {
     "bluesky": {
-      "aktiv": true,
-      "queries": ["Telematikinfrastruktur", "gematik", "E-Rezept", "elektronische Patientenakte", "TI-Gateway", "Konnektor Praxis"]
+      "aktiv": false,
+      "_grund": "HTTP 403 im Lauf vom 30.07.2026 bei allen sechs Suchen. Die oeffentliche Such-API ist nicht mehr ohne Anmeldung nutzbar. Reaktivierung waere nur mit App-Passwort und Token moeglich - lohnt beim geringen TI-Volumen nicht.",
+      "queries": ["Telematikinfrastruktur", "gematik", "E-Rezept", "elektronische Patientenakte"]
     },
     "mastodon": {
       "aktiv": true,
       "instance": "https://mastodon.social",
+      "_hinweis": "Jede Suche war im Lauf vom 30.07.2026 bei genau 40 Treffern - das ist das Limit, es gibt also mehr. Die Tags eHealth und Digitalisierung sind breit und bringen viel Rauschen; wenn die Themenverteilung kippt, zuerst diese zwei entfernen.",
       "tags": ["Telematikinfrastruktur", "gematik", "ERezept", "ePA", "eHealth", "Digitalisierung"]
     }
   }
