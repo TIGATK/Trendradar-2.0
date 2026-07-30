@@ -1,0 +1,116 @@
+{
+  "_hinweis": "Feste Taxonomie mit stabilen IDs. IDs NIE aendern - daran haengt die Historie im Snapshot.",
+  "_abgleich": "Die ersten sieben Themen entsprechen exakt den Kategorien der Webflow-Collection TI-News. Das Feld cmsKategorie enthaelt den Optionsnamen aus Webflow, damit Radar und Redaktion dieselbe Sprache sprechen. Themen mit cmsKategorie null existieren nur im Radar - wenn eines davon dauerhaft Volumen hat, lohnt es sich, es auch in Webflow als Kategorie anzulegen.",
+
+  "topics": [
+    {
+      "id": "epa",
+      "name": "ePA",
+      "cmsKategorie": "ePA",
+      "color": "#181A7A",
+      "aktiv": true,
+      "desc": "Elektronische Patientenakte: Rollout, Opt-out, Befuellung, Berechtigungen, Nutzung in Praxis und Klinik.",
+      "hints": "ePA, elektronische Patientenakte, Opt-out, Widerspruch, Aktenbefuellung, MIO, Medikationsliste, Berechtigungen"
+    },
+    {
+      "id": "erezept",
+      "name": "E-Rezept",
+      "cmsKategorie": "E-Rezept",
+      "color": "#1C9AD6",
+      "aktiv": true,
+      "desc": "Elektronisches Rezept: Einloesewege, CardLink, E-Rezept-App, Verordnung von BtM, Hilfsmitteln, Heilmitteln.",
+      "hints": "E-Rezept, eRezept, CardLink, Einloesung, Apotheke, Verordnung, Fachdienst E-Rezept"
+    },
+    {
+      "id": "gateway",
+      "name": "TI-Gateway",
+      "cmsKategorie": "TI-Gateway",
+      "color": "#6E4BD6",
+      "aktiv": true,
+      "desc": "TI-Gateway, Konnektor-Ablosung, Hochruestung, Laufzeitverlaengerung, Migrationsfristen, Kartenterminals.",
+      "hints": "Konnektor, TI-Gateway, Highspeed-Konnektor, Laufzeitverlaengerung, Rezertifizierung, Konnektortausch, Kartenterminal"
+    },
+    {
+      "id": "ti20",
+      "name": "TI 2.0",
+      "cmsKategorie": "TI 2.0",
+      "color": "#00A3A1",
+      "aktiv": true,
+      "desc": "Architekturwandel: Zero Trust, TI-Foederation, Ablosung der zentralen VPN-Architektur.",
+      "hints": "TI 2.0, Zero Trust, Foederation, Architekturstufe, Zugangsdienst, VPN-Ablosung"
+    },
+    {
+      "id": "kim",
+      "name": "KIM & TI-Messenger",
+      "cmsKategorie": "KIM",
+      "color": "#E07B00",
+      "aktiv": true,
+      "desc": "Sichere Kommunikation: KIM, TI-Messenger, eArztbrief, eAU, Verzeichnisdienst.",
+      "hints": "KIM, TI-Messenger, TIM, eArztbrief, eAU, VZD, Verzeichnisdienst, Kommunikationsdienst"
+    },
+    {
+      "id": "gematik",
+      "name": "gematik & Zulassung",
+      "cmsKategorie": "gematik",
+      "color": "#3F6FA8",
+      "aktiv": true,
+      "desc": "Zulassungs- und Bestaetigungsverfahren, Spezifikationsreleases, Fristen, gematik als Digitalagentur.",
+      "hints": "gematik, Zulassung, Bestaetigungsverfahren, Spezifikation, Release, Digitalagentur Gesundheit"
+    },
+    {
+      "id": "regulatorik",
+      "name": "Regulatorik",
+      "cmsKategorie": "Regulatorik",
+      "color": "#7A6A00",
+      "aktiv": true,
+      "desc": "Digitalgesetze, Verordnungen, GeDIG, TI-Pauschale, Finanzierung, politische Weichenstellungen.",
+      "hints": "GeDIG, Digitalgesetz, DigiG, GDNG, Verordnung, TI-Pauschale, Refinanzierung, Referentenentwurf, Bundesgesundheitsministerium"
+    },
+
+    {
+      "id": "identitaet",
+      "name": "GesundheitsID & Karten",
+      "cmsKategorie": null,
+      "color": "#C2185B",
+      "aktiv": true,
+      "desc": "Digitale Identitaeten: GesundheitsID, SMC-B, eHBA, eGK, Authentifizierung.",
+      "hints": "GesundheitsID, digitale Identitaet, SMC-B, eHBA, HBA, eGK, Heilberufsausweis, Praxisausweis, IDP"
+    },
+    {
+      "id": "sicherheit",
+      "name": "IT-Sicherheit & Datenschutz",
+      "cmsKategorie": null,
+      "color": "#B3261E",
+      "aktiv": true,
+      "desc": "Sicherheitsvorfaelle, Schwachstellen, BSI-Vorgaben, NIS2, Angriffe auf Gesundheitseinrichtungen.",
+      "hints": "Sicherheitsluecke, Schwachstelle, BSI, NIS2, Datenschutz, DSGVO, Ransomware, Angriff, Datenleck, ISO 27001"
+    },
+    {
+      "id": "daten-ki",
+      "name": "Gesundheitsdaten & KI",
+      "cmsKategorie": null,
+      "color": "#2E7D32",
+      "aktiv": true,
+      "desc": "Forschungsdatenzentrum, Datennutzung, EHDS, KI-Anwendungen in Versorgung und Verwaltung.",
+      "hints": "Forschungsdatenzentrum, Datennutzung, EHDS, Gesundheitsdatenraum, Sekundaernutzung, KI"
+    },
+    {
+      "id": "versorgung",
+      "name": "Digitale Versorgung",
+      "cmsKategorie": null,
+      "color": "#8E5A2B",
+      "aktiv": true,
+      "desc": "DiGA, DiPA, Telemedizin, Videosprechstunde, TI in der Pflege.",
+      "hints": "DiGA, DiPA, Telemedizin, Videosprechstunde, Fernbehandlung, Pflege, BfArM-Verzeichnis"
+    },
+    {
+      "id": "sonstiges",
+      "name": "Sonstiges",
+      "cmsKategorie": null,
+      "color": "#6B7280",
+      "aktiv": true,
+      "desc": "Sammelposten. Regelmaessig sichten - wiederkehrende Muster hier sind Kandidaten fuer ein eigenes Thema.",
+      "hints": ""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "_hinweis": "ALLE URLs sind ungeprueft und muessen validiert werden. Nach dem ersten Lauf zeigt die Quellenliste im Frontend, welche liefern. Rote Quellen hier korrigieren oder entfernen. 'filter': true = nur Beitraege behalten, die mindestens ein Stichwort aus 'keywords' enthalten (fuer breite Feeds). 'filter': false = alles behalten (fuer reine Fachquellen).",
+
+  "keywords": [
+    "telematik", "telematikinfrastruktur", " ti ", "ti-", "gematik",
+    "epa", "elektronische patientenakte", "patientenakte",
+    "e-rezept", "erezept", "cardlink",
+    "konnektor", "ti-gateway", "smc-b", "hba", "egk", "heilberufsausweis",
+    "kim ", "ti-messenger", "earztbrief", "eau",
+    "gesundheitsid", "digitale identitaet",
+    "digitalgesetz", "digig", "gdng", "ehds",
+    "diga", "dipa", "telemedizin", "videosprechstunde",
+    "krankenkasse", "kassenaerztliche", "praxisverwaltungssystem", "pvs",
+    "krankenhausinformationssystem", "kis ", "gesundheitsdaten",
+    "digitalisierung im gesundheitswesen", "ehealth", "e-health",
+    "forschungsdatenzentrum", "bfarm", "bsi"
+  ],
+
+  "feeds": [
+    { "name": "gematik Newsroom",            "url": "https://www.gematik.de/rss",                              "filter": false },
+    { "name": "BMG Pressemitteilungen",      "url": "https://www.bundesgesundheitsministerium.de/rss/pressemitteilungen.xml", "filter": true },
+    { "name": "KBV Nachrichten",             "url": "https://www.kbv.de/rss/kbv_nachrichten.xml",              "filter": true },
+    { "name": "aerzteblatt Politik",         "url": "https://www.aerzteblatt.de/rss/nachrichten.asp",          "filter": true },
+    { "name": "aerztezeitung eHealth",       "url": "https://www.aerztezeitung.de/rss/politik-gesellschaft.rss","filter": true },
+    { "name": "heise Newsticker",            "url": "https://www.heise.de/rss/heise-atom.xml",                 "filter": true },
+    { "name": "E-HEALTH-COM",                "url": "https://e-health-com.de/feed/",                           "filter": false },
+    { "name": "Healthcare Digital / kma",    "url": "https://www.kma-online.de/rss/aktuelle-nachrichten.xml",  "filter": true },
+    { "name": "aerzteblatt DAE",             "url": "https://www.aerzteblatt.de/rss/aktuell.asp",              "filter": true },
+    { "name": "Apotheke adhoc",              "url": "https://www.apotheke-adhoc.de/feed/",                     "filter": true },
+    { "name": "Deutsche Apotheker Zeitung",  "url": "https://www.deutsche-apotheker-zeitung.de/rss",           "filter": true },
+    { "name": "BSI Pressemitteilungen",      "url": "https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed.xml", "filter": true },
+    { "name": "GKV-Spitzenverband",          "url": "https://www.gkv-spitzenverband.de/service/rss/rss_presse.xml", "filter": true },
+    { "name": "bvitg",                       "url": "https://www.bvitg.de/feed/",                              "filter": false },
+    { "name": "Bitkom Gesundheit",           "url": "https://www.bitkom.org/rss.xml",                          "filter": true }
+  ],
+
+  "_social_hinweis": "Offene Social-Netzwerke gehoeren zum Zielbild und sind aktiv. Erwartung realistisch halten: bei TI-Themen ist das Volumen klein und die Endpunkte blocken unauthentifizierte Zugriffe zeitweise. Der erste Trockenlauf zeigt, was ankommt. Liefert eine Quelle dauerhaft nichts, hier auf false setzen statt sie stumm mitlaufen zu lassen.",
+  "social": {
+    "bluesky": {
+      "aktiv": true,
+      "queries": ["Telematikinfrastruktur", "gematik", "E-Rezept", "elektronische Patientenakte", "TI-Gateway", "Konnektor Praxis"]
+    },
+    "mastodon": {
+      "aktiv": true,
+      "instance": "https://mastodon.social",
+      "tags": ["Telematikinfrastruktur", "gematik", "ERezept", "ePA", "eHealth", "Digitalisierung"]
+    }
+  }
+}

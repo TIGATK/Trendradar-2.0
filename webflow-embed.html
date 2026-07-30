@@ -1,0 +1,42 @@
+<!--
+  Trend-Radar in Webflow einbetten
+  ================================
+  In ein Code-Embed-Element auf der Radar-Seite einfügen.
+  Vorher die beiden URLs unten anpassen.
+
+  Warum iframe und nicht direkt eingebettet:
+  Das Radar bringt eigene globale Styles mit (Schriftgrößen, Farben,
+  box-sizing). Direkt in die Seite gepastet würden die mit dem Webflow-CSS
+  kollidieren — in beide Richtungen. Der iframe kapselt das sauber, und es
+  bleibt bei einer einzigen Codebasis statt zwei Varianten, die auseinanderlaufen.
+
+  Zeichenzahl: unter 2.000. Webflow erlaubt 50.000 pro Embed, also reichlich Luft.
+-->
+
+<div id="trend-radar-frame-wrap" style="width:100%">
+  <iframe
+    id="trend-radar-frame"
+    src="https://TELEKONNEKT.github.io/trend-radar/"
+    title="Trend-Radar Telematikinfrastruktur"
+    loading="lazy"
+    style="width:100%;height:1400px;border:0;display:block;background:transparent"
+    referrerpolicy="no-referrer">
+  </iframe>
+</div>
+
+<script>
+(function () {
+  var frame = document.getElementById('trend-radar-frame');
+  if (!frame) return;
+
+  // Das Radar meldet seine Höhe, sobald es gerendert hat.
+  window.addEventListener('message', function (ev) {
+    // Nur Nachrichten von der erwarteten Herkunft annehmen.
+    if (ev.origin !== new URL(frame.src).origin) return;
+    var h = ev.data && ev.data.trendRadarHeight;
+    if (typeof h === 'number' && h > 200 && h < 20000) {
+      frame.style.height = h + 'px';
+    }
+  });
+})();
+</script>

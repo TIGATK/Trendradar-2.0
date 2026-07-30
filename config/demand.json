@@ -1,0 +1,61 @@
+{
+  "_hinweis": "Zweites Signal neben der Branchenaktivitaet: oeffentliches Interesse an einem Thema. Bewusst anbieterneutral - gemessen wird das Thema selbst, nicht wer dazu rankt. Die beiden Signale werden getrennt gefuehrt und nie zu einer Zahl addiert, weil sie unterschiedliche Fragen beantworten.",
+  "wikipedia": {
+    "aktiv": true,
+    "_zweck": "Taegliche Artikelabrufe als Naeherung fuer oeffentliches Interesse. Voellig offene API der Wikimedia Foundation: keine Anmeldung, keine Kosten, kein Scraping.",
+    "_pflege": "Artikelnamen exakt wie in der URL, Unterstriche statt Leerzeichen. Nicht existierende Artikel liefern 404 und tauchen in der Quellenliste als Fehler auf - dann Schreibweise pruefen. Themen ohne passenden Artikel bleiben leer; das ist in Ordnung, sie haben dann nur das Aktivitaetssignal.",
+    "projekt": "de.wikipedia"
+  },
+  "themen": {
+    "epa": {
+      "wikipedia": [
+        "Elektronische_Patientenakte"
+      ]
+    },
+    "erezept": {
+      "wikipedia": [
+        "Elektronisches_Rezept"
+      ]
+    },
+    "gateway": {
+      "wikipedia": []
+    },
+    "ti20": {
+      "wikipedia": []
+    },
+    "kim": {
+      "wikipedia": []
+    },
+    "gematik": {
+      "wikipedia": [
+        "Gematik"
+      ]
+    },
+    "regulatorik": {
+      "wikipedia": []
+    },
+    "identitaet": {
+      "wikipedia": [
+        "Elektronische_Gesundheitskarte",
+        "Elektronischer_Heilberufsausweis"
+      ]
+    },
+    "sicherheit": {
+      "wikipedia": []
+    },
+    "daten-ki": {
+      "wikipedia": []
+    },
+    "versorgung": {
+      "wikipedia": [
+        "Telemedizin",
+        "Digitale_Gesundheitsanwendung"
+      ]
+    },
+    "sonstiges": {
+      "wikipedia": [
+        "Telematikinfrastruktur"
+      ]
+    }
+  }
+}

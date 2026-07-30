@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Trend-Radar Telematikinfrastruktur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#181A7A;
+    --navy-2:#0E1050;
+    --sky:#1C9AD6;
+    --paper:#F4F6FB;
+    --card:#FFFFFF;
+    --ink:#14162E;
+    --ink-2:#5A6080;
+    --ink-3:#8D93AE;
+    --line:#DEE3F0;
+    --ok:#1E7A45;
+    --warn:#B45309;
+    --err:#B3261E;
+    --future:#EEF1F9;
+    --r:10px;
+    --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+    --disp:"Bricolage Grotesque",var(--sans);
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:15px;line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--navy)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px 72px}
+
+  /* ---------- Kopf ---------- */
+  .top{background:var(--navy);color:#fff;padding:26px 0 22px;margin-bottom:26px}
+  .top .wrap{padding-bottom:0}
+  .eyebrow{
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:#9BB6E8;margin:0 0 6px
+  }
+  h1{
+    font-family:var(--disp);font-weight:800;font-size:clamp(26px,4.4vw,40px);
+    line-height:1.04;letter-spacing:-.02em;margin:0 0 10px
+  }
+  h1 em{font-style:normal;color:var(--sky)}
+  .lede{max-width:60ch;color:#C6D0EA;font-size:15px;margin:0}
+  .meta{
+    display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;
+    font-family:var(--mono);font-size:12px;color:#9BB6E8
+  }
+  .meta b{color:#fff;font-weight:500}
+
+  .banner{
+    border-radius:var(--r);padding:12px 14px;margin:0 0 20px;font-size:14px;
+    border:1px solid;display:flex;gap:10px;align-items:flex-start
+  }
+  .banner.warn{background:#FEF6E7;border-color:#F0D9A8;color:#7A4E06}
+  .banner.err{background:#FDECEA;border-color:#F3C6C1;color:#8A1C16}
+  .banner.info{background:#E8F4FC;border-color:#B9DFF5;color:#0D5C86}
+
+  /* ---------- Kennzahlen ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:13px 15px}
+  .kpi .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+  .kpi .v{font-family:var(--disp);font-weight:700;font-size:27px;line-height:1.15;margin-top:3px;letter-spacing:-.01em}
+  .kpi .s{font-size:12.5px;color:var(--ink-2)}
+
+  /* ---------- Karten ---------- */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:22px}
+  .card > h2{
+    font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 14px;font-weight:500
+  }
+
+  /* ---------- Signalumschaltung ---------- */
+  .switch{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:14px}
+  .switch button{
+    font:inherit;font-size:13px;padding:7px 15px;border:0;background:#fff;color:var(--ink-2);cursor:pointer;
+    font-family:var(--mono);letter-spacing:.02em
+  }
+  .switch button + button{border-left:1px solid var(--line)}
+  .switch button[aria-pressed="true"]{background:var(--navy);color:#fff}
+  .switch button:focus-visible{outline:2px solid var(--sky);outline-offset:-2px}
+  .switchnote{font-size:12.5px;color:var(--ink-2);margin:0 0 14px;max-width:70ch}
+
+  /* ---------- Chips ---------- */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .chip{
+    display:flex;align-items:center;gap:8px;cursor:pointer;
+    border:1px solid var(--line);background:#fff;border-radius:999px;
+    padding:6px 13px 6px 10px;font:inherit;font-size:13.5px;color:var(--ink);
+    transition:border-color .12s,background .12s,opacity .12s
+  }
+  .chip:hover{border-color:var(--ink-3)}
+  .chip:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  .chip[aria-pressed="false"]{opacity:.42}
+  .chip .dot{width:9px;height:9px;border-radius:50%;flex:none}
+  .chip .tr{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+  .chip .tr.up{color:var(--ok)}
+  .chip .tr.down{color:var(--err)}
+
+  /* ---------- Chart ---------- */
+  .chartbox{position:relative;width:100%}
+  svg.chart{display:block;width:100%;height:auto;overflow:visible}
+  .axis{font-family:var(--mono);font-size:10px;fill:var(--ink-3)}
+  .gridline{stroke:var(--line);stroke-width:1}
+  .todayline{stroke:var(--navy);stroke-width:1.5;stroke-dasharray:none}
+  .flagline{stroke:var(--ink-3);stroke-width:1;stroke-dasharray:2 3}
+  .series{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+  .series.dim{opacity:.12}
+  .rm{cursor:default}
+  .rm text{font-family:var(--mono);font-size:10px;fill:var(--ink-2)}
+  .legendnote{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:10px}
+
+  .tip{
+    position:absolute;pointer-events:none;opacity:0;transition:opacity .1s;
+    background:var(--navy-2);color:#fff;border-radius:8px;padding:9px 11px;
+    font-size:12.5px;line-height:1.45;min-width:150px;max-width:260px;z-index:5;
+    box-shadow:0 6px 20px rgba(14,16,80,.22)
+  }
+  .tip .d{font-family:var(--mono);font-size:10.5px;color:#9BB6E8;margin-bottom:5px}
+  .tip .row{display:flex;justify-content:space-between;gap:12px}
+  .tip .row b{font-weight:500}
+
+  /* ---------- Themenliste ---------- */
+  .topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+  .topic{border:1px solid var(--line);border-radius:var(--r);padding:15px;background:#fff}
+  .topic h3{font-family:var(--disp);font-weight:600;font-size:18px;margin:0;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .topic h3 .dot{width:11px;height:11px;border-radius:3px;flex:none}
+  .topic .nums{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);margin:8px 0 10px;display:flex;gap:14px;flex-wrap:wrap}
+  .topic .note{font-size:13.5px;color:var(--ink);margin:0 0 12px}
+  .topic .note.empty{color:var(--ink-3);font-style:italic}
+  .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin:12px 0 5px}
+  .tags{display:flex;flex-wrap:wrap;gap:5px}
+  .tag{background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:2px 7px;font-size:12px}
+  .heads{list-style:none;margin:0;padding:0}
+  .heads li{padding:7px 0;border-top:1px solid var(--line);font-size:13.5px;line-height:1.4}
+  .heads li:first-child{border-top:none}
+  .heads .d{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-right:7px}
+  .heads .s{font-size:11.5px;color:var(--ink-3);display:block;margin-top:2px}
+  .heads a{text-decoration:none}
+  .heads a:hover{text-decoration:underline}
+  details.more{margin-top:8px}
+  details.more summary{
+    font-family:var(--mono);font-size:11px;color:var(--sky);cursor:pointer;
+    list-style:none;padding:4px 0
+  }
+  details.more summary::-webkit-details-marker{display:none}
+
+  /* ---------- Quellen ---------- */
+  table.src{width:100%;border-collapse:collapse;font-size:13.5px}
+  table.src th{
+    text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--ink-3);font-weight:500;
+    padding:0 10px 8px 0;border-bottom:1px solid var(--line)
+  }
+  table.src td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  table.src td.n{font-family:var(--mono);text-align:right;color:var(--ink-2)}
+  .pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11.5px}
+  .pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+  .pill.ok{color:var(--ok)} .pill.err{color:var(--err)}
+  .errtxt{color:var(--ink-3);font-size:12px}
+
+  footer{color:var(--ink-3);font-size:12.5px;font-family:var(--mono);padding-top:8px}
+
+  @media (max-width:640px){
+    .card{padding:14px}
+    .topics{grid-template-columns:1fr}
+    table.src td.u{display:none}
+    table.src th.u{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">Telekonnekt · Branchenbeobachtung</p>
+    <h1>Trend-Radar <em>Telematikinfrastruktur</em></h1>
+    <p class="lede">Erwähnungen je Thema in Fachpresse und Pressestellen, fortgeschrieben über die Zeit. Rechts der Heute-Linie stehen bekannte Termine.</p>
+    <div class="meta" id="meta"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="banners"></div>
+  <div class="kpis" id="kpis"></div>
+
+  <section class="card">
+    <h2>Verlauf</h2>
+    <div class="switch" id="switch" role="group" aria-label="Signal auswählen"></div>
+    <p class="switchnote" id="switchnote"></p>
+    <div class="chips" id="chips"></div>
+    <div class="chartbox" id="chartbox">
+      <svg class="chart" id="chart" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Verlauf der Erwähnungen je Thema"></svg>
+      <div class="tip" id="tip"></div>
+    </div>
+    <p class="legendnote" id="legendnote"></p>
+  </section>
+
+  <section class="card">
+    <h2>Themen</h2>
+    <div class="topics" id="topics"></div>
+  </section>
+
+  <section class="card">
+    <h2>Quellen</h2>
+    <table class="src">
+      <thead><tr><th>Status</th><th>Quelle</th><th class="u">Adresse</th><th style="text-align:right">Beiträge</th></tr></thead>
+      <tbody id="srcbody"></tbody>
+    </table>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  };
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function el(name, attrs, text) {
+    var n = document.createElementNS(SVGNS, name);
+    for (var k in attrs) if (attrs[k] != null) n.setAttribute(k, attrs[k]);
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function banner(kind, html) {
+    var d = document.createElement('div');
+    d.className = 'banner ' + kind;
+    d.innerHTML = html;
+    $('banners').appendChild(d);
+  }
+
+  /* ---------- Datum ---------- */
+  var MON = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+  function parseKey(k) { var p = String(k).split('-'); return new Date(Date.UTC(+p[0], +p[1]-1, +p[2])); }
+  function keyOf(d) { return d.toISOString().slice(0,10); }
+  function shortDate(k) { var d = parseKey(k); return d.getUTCDate() + '. ' + MON[d.getUTCMonth()]; }
+  function daysBetween(a, b) { return Math.round((parseKey(b) - parseKey(a)) / 86400000); }
+
+  /* ---------- Zustand ---------- */
+  var data = null, active = {}, FUTURE_DAYS = 60, signal = 'aktivitaet';
+
+  // Die Signale liegen getrennt im Snapshot und werden nie vermischt:
+  // Branchenaktivität misst, worüber geschrieben wird, öffentliches Interesse,
+  // wonach gesucht wird. Zwei Fragen, zwei Kurven. Welche Signale es gibt,
+  // steht in den Daten - der Umschalter baut sich daraus.
+  function sigMeta(id) {
+    var list = (data.signale || []);
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
+    return { id: id, name: id, desc: '', einheit: '' };
+  }
+  function sigOf(t) { return (t.signals || {})[signal] || {}; }
+  function serOf(t)    { return sigOf(t).series || []; }
+  function smoothOf(t) { return sigOf(t).smooth || serOf(t); }
+  function last7Of(t)  { return sigOf(t).last7 || 0; }
+  function prev7Of(t)  { return sigOf(t).prev7 || 0; }
+  function momOf(t)    { return sigOf(t).momentum; }
+  function activeSignals() {
+    return (data.signale || []).filter(function (x) { return x.aktiv; });
+  }
+  function visibleTopics() {
+    var list = (data.topics || []).filter(function (t) { return sigOf(t).hat; });
+    list.sort(function (a, b) { return last7Of(b) - last7Of(a); });
+    return list;
+  }
+
+  /* ---------- Laden ---------- */
+  // Wird das Radar von einer anderen Domain eingebettet (z. B. Webflow),
+  // kann die Datenquelle per window.RADAR_DATA_URL oder ?data= gesetzt werden.
+  var DATA_URL = (function () {
+    var q = new URLSearchParams(location.search).get('data');
+    return q || window.RADAR_DATA_URL || 'data/snapshots.json';
+  })();
+
+  fetch(DATA_URL + (DATA_URL.indexOf('?') < 0 ? '?' : '&') + 'v=' + Date.now(), { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (j) { data = j; render(); })
+    .catch(function (e) {
+      banner('err', '<div><b>Daten konnten nicht geladen werden.</b><br>' + esc(e.message) +
+        ' — prüfe, ob <code>data/snapshots.json</code> mit ausgeliefert wurde.</div>');
+    });
+
+  /* ---------- Rendern ---------- */
+  function render() {
+    var sigs = activeSignals();
+    if (sigs.length && !sigs.some(function (x) { return x.id === signal; })) signal = sigs[0].id;
+    bindSwitch();
+    renderSignal();
+    renderMeta();
+    renderBanners();
+    renderSources();
+    reportHeight();
+    $('foot').textContent =
+      'Stand ' + fmtStamp(data.generated) + ' · ' + (data.days || 0) + '-Tage-Fenster · ' +
+      (data.stats ? data.stats.beitraege + ' Beiträge' : '') + ' · Erzeugt von scripts/collect.mjs';
+  }
+
+  /** Hoehe an ein einbettendes Fenster melden (Webflow-iframe). */
+  function reportHeight() {
+    if (window.parent === window) return;
+    var send = function () {
+      var h = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+      );
+      window.parent.postMessage({ trendRadarHeight: h }, '*');
+    };
+    send();
+    setTimeout(send, 300);
+    if (window.ResizeObserver) new ResizeObserver(send).observe(document.body);
+    window.addEventListener('resize', send);
+  }
+
+  /** Alles neu zeichnen, was vom gewählten Signal abhängt. */
+  function renderSignal() {
+    var topics = visibleTopics();
+    topics.forEach(function (t, i) { if (active[t.id] === undefined) active[t.id] = i < 6; });
+
+    $('switchnote').textContent = sigMeta(signal).desc;
+
+    renderKpis(topics);
+    renderChips(topics);
+    drawChart(topics);
+    renderTopics(topics);
+  }
+
+  function bindSwitch() {
+    var box = $('switch');
+    var sigs = activeSignals();
+    box.innerHTML = '';
+    if (sigs.length < 2) { box.style.display = 'none'; return; }
+
+    sigs.forEach(function (sg) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = sg.name;
+      b.setAttribute('aria-pressed', sg.id === signal ? 'true' : 'false');
+      b.addEventListener('click', function () {
+        if (signal === sg.id) return;
+        signal = sg.id;
+        Array.prototype.forEach.call(box.querySelectorAll('button'), function (x, i) {
+          x.setAttribute('aria-pressed', sigs[i].id === signal ? 'true' : 'false');
+        });
+        active = {};
+        renderSignal();
+      });
+      box.appendChild(b);
+    });
+  }
+
+  function fmtStamp(iso) {
+    if (!iso) return 'unbekannt';
+    var d = new Date(iso);
+    if (isNaN(d)) return 'unbekannt';
+    return d.toLocaleString('de-DE', { day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit' }) + ' Uhr';
+  }
+
+  function renderMeta() {
+    var s = data.stats || {};
+    $('meta').innerHTML =
+      '<span>Stand <b>' + esc(fmtStamp(data.generated)) + '</b></span>' +
+      '<span>Fenster <b>' + esc(data.startDate || '?') + ' – ' + esc(data.endDate || '?') + '</b></span>' +
+      '<span>Quellen <b>' + (s.quellenOk || 0) + ' aktiv</b>' + (s.quellenFehler ? ', ' + s.quellenFehler + ' mit Fehler' : '') + '</span>';
+  }
+
+  function renderBanners() {
+    if (!data.live) {
+      banner('info', '<div><b>Beispieldaten.</b> Der Sammellauf war noch nicht erfolgreich. Bis dahin zeigt das Radar erfundene Werte.</div>');
+    }
+    var age = data.generated ? (Date.now() - new Date(data.generated).getTime()) / 3600000 : 1e9;
+    if (data.live && age > 48) {
+      banner('warn', '<div><b>Daten sind ' + Math.round(age / 24) + ' Tage alt.</b> Der tägliche Lauf ist vermutlich fehlgeschlagen. Prüfe den Actions-Reiter im Repository.</div>');
+    }
+    var fehler = (data.sources || []).filter(function (s) { return s.status !== 'ok'; }).length;
+    var ok = (data.sources || []).length - fehler;
+    if (data.live && fehler > ok) {
+      banner('warn', '<div><b>Mehr Quellen liefern nicht als liefern (' + fehler + ' von ' + (fehler + ok) + ').</b> Die Zahlen bilden nur einen Ausschnitt ab. Fehlerhafte Feeds stehen unten in der Quellenliste.</div>');
+    }
+    var ungeprueft = (data.roadmap || []).filter(function (r) { return !r.geprueft; }).length;
+    if (ungeprueft) {
+      banner('info', '<div><b>' + ungeprueft + ' Termin' + (ungeprueft > 1 ? 'e' : '') + ' in der Roadmap ' + (ungeprueft > 1 ? 'sind' : 'ist') + ' nicht verifiziert.</b> Gegen die Primärquelle prüfen und in <code>config/roadmap.json</code> das Feld <code>geprueft</code> setzen.</div>');
+    }
+  }
+
+  function renderKpis(topics) {
+    var totalLast7 = topics.reduce(function (a, t) { return a + last7Of(t); }, 0);
+    var totalPrev7 = topics.reduce(function (a, t) { return a + prev7Of(t); }, 0);
+    var delta = totalPrev7 ? Math.round((totalLast7 / totalPrev7 - 1) * 100) : null;
+    var floor = signal === 'aktivitaet' ? 3 : 20;
+    var riser = topics.slice().filter(function (t) { return momOf(t) != null && last7Of(t) >= floor; })
+                      .sort(function (a, b) { return momOf(b) - momOf(a); })[0];
+    var next = (data.roadmap || []).filter(function (r) { return r.datum >= (data.today || keyOf(new Date())); })[0];
+
+    var cards = [
+      { k: sigMeta(signal).einheit + ' 7 Tage', v: totalLast7.toLocaleString('de-DE'),
+        s: delta == null ? 'keine Vorwoche' : (delta >= 0 ? '+' : '') + delta + ' % zur Vorwoche' },
+      { k: 'Themen mit Signal', v: topics.length, s: 'von ' + (data.topics || []).length + ' in der Taxonomie' },
+      { k: 'Stärkster Anstieg', v: riser ? '×' + momOf(riser) : '—', s: riser ? riser.name : 'zu wenig Material' },
+      { k: 'Nächster Termin', v: next ? shortDate(next.datum) : '—', s: next ? next.text : 'Roadmap ist leer' }
+    ];
+    $('kpis').innerHTML = cards.map(function (c) {
+      return '<div class="kpi"><div class="k">' + esc(c.k) + '</div><div class="v">' + esc(c.v) +
+             '</div><div class="s">' + esc(c.s) + '</div></div>';
+    }).join('');
+  }
+
+  function trendLabel(t) {
+    var m = momOf(t);
+    if (m == null) return { txt: 'neu', cls: 'up' };
+    if (m === 0) return { txt: '—', cls: '' };
+    var pct = Math.round((m - 1) * 100);
+    if (pct > 5) return { txt: '▲ ' + pct + ' %', cls: 'up' };
+    if (pct < -5) return { txt: '▼ ' + Math.abs(pct) + ' %', cls: 'down' };
+    return { txt: '= stabil', cls: '' };
+  }
+
+  function renderChips(topics) {
+    var box = $('chips');
+    box.innerHTML = '';
+    topics.forEach(function (t) {
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.type = 'button';
+      b.setAttribute('aria-pressed', active[t.id] ? 'true' : 'false');
+      var tr = trendLabel(t);
+      b.innerHTML = '<span class="dot" style="background:' + esc(t.color) + '"></span>' +
+                    esc(t.name) + ' <span class="tr ' + tr.cls + '">' + tr.txt + '</span>';
+      b.addEventListener('click', function () {
+        active[t.id] = !active[t.id];
+        b.setAttribute('aria-pressed', active[t.id] ? 'true' : 'false');
+        drawChart(topics);
+      });
+      box.appendChild(b);
+    });
+  }
+
+  /* ---------- Chart ---------- */
+  function drawChart(topics) {
+    var svg = $('chart');
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+    var W = 1000, H = 400, m = { t: 22, r: 16, b: 34, l: 40 };
+    var today = data.today || data.endDate || keyOf(new Date());
+    var past = data.days || 90;
+
+    var roadmap = (data.roadmap || []).filter(function (r) {
+      var d = daysBetween(today, r.datum);
+      return d >= 0 && d <= FUTURE_DAYS;
+    });
+    var future = roadmap.length ? Math.min(FUTURE_DAYS, Math.max.apply(null, roadmap.map(function (r) {
+      return daysBetween(today, r.datum);
+    })) + 6) : 0;
+
+    var totalDays = past + future;
+    var x = function (i) { return m.l + (i / (totalDays - 1)) * (W - m.l - m.r); };
+    var xToday = x(past - 1);
+
+    var shown = topics.filter(function (t) { return active[t.id]; });
+    var maxV = 1;
+    shown.forEach(function (t) {
+      smoothOf(t).forEach(function (v) { if (v > maxV) maxV = v; });
+    });
+    maxV = Math.ceil(maxV * 1.15) || 1;
+    var y = function (v) { return H - m.b - (v / maxV) * (H - m.t - m.b); };
+
+    /* Zukunftszone */
+    if (future > 0) {
+      svg.appendChild(el('rect', { x: xToday, y: m.t - 10, width: W - m.r - xToday,
+        height: H - m.b - m.t + 10, fill: 'var(--future)' }));
+    }
+
+    /* Gitter */
+    var steps = Math.min(5, maxV);
+    for (var g = 0; g <= steps; g++) {
+      var v = Math.round((maxV / steps) * g);
+      svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), class: 'gridline' }));
+      svg.appendChild(el('text', { x: m.l - 8, y: y(v) + 3.5, 'text-anchor': 'end', class: 'axis' },
+        v >= 1000 ? Math.round(v / 1000) + 'k' : String(v)));
+    }
+
+    /* X-Beschriftung */
+    var ticks = 6;
+    for (var i = 0; i < ticks; i++) {
+      var idx = Math.round((i / (ticks - 1)) * (past - 1));
+      var key = keyOf(new Date(parseKey(today).getTime() - (past - 1 - idx) * 86400000));
+      svg.appendChild(el('text', { x: x(idx), y: H - m.b + 16, 'text-anchor': i === 0 ? 'start' : (i === ticks - 1 ? 'end' : 'middle'), class: 'axis' }, shortDate(key)));
+    }
+
+    /* Linien */
+    shown.forEach(function (t) {
+      var s = smoothOf(t);
+      if (!s.length) return;
+      var d = s.map(function (v, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1); }).join(' ');
+      svg.appendChild(el('path', { d: d, class: 'series', stroke: t.color, 'data-id': t.id }));
+      var last = s.length - 1;
+      svg.appendChild(el('circle', { cx: x(last), cy: y(s[last]), r: 3.4, fill: t.color }));
+    });
+
+    /* Heute-Linie */
+    svg.appendChild(el('line', { x1: xToday, x2: xToday, y1: m.t - 10, y2: H - m.b, class: 'todayline' }));
+    svg.appendChild(el('text', { x: xToday, y: m.t - 14, 'text-anchor': future > 0 ? 'end' : 'middle',
+      class: 'axis', fill: 'var(--navy)' }, 'heute'));
+
+    /* Roadmap-Marker */
+    roadmap.forEach(function (r, k) {
+      var xi = x(past - 1 + daysBetween(today, r.datum));
+      var yTop = m.t + 6 + (k % 4) * 20;
+      var g2 = el('g', { class: 'rm' });
+      g2.appendChild(el('line', { x1: xi, x2: xi, y1: yTop, y2: H - m.b, class: 'flagline' }));
+      g2.appendChild(el('circle', { cx: xi, cy: yTop, r: 3.2,
+        fill: topicColor(r.topic) || 'var(--ink-3)' }));
+      var label = shortDate(r.datum) + '  ' + r.text;
+      var anchor = xi > W - 260 ? 'end' : 'start';
+      g2.appendChild(el('text', { x: xi + (anchor === 'end' ? -7 : 7), y: yTop + 3.5, 'text-anchor': anchor },
+        label.length > 46 ? label.slice(0, 45) + '…' : label));
+      svg.appendChild(g2);
+    });
+
+    /* Hover */
+    var hover = el('line', { x1: 0, x2: 0, y1: m.t - 10, y2: H - m.b, stroke: 'var(--ink-3)', 'stroke-width': 1, opacity: 0 });
+    svg.appendChild(hover);
+    var rect = el('rect', { x: m.l, y: m.t - 10, width: W - m.l - m.r, height: H - m.b - m.t + 10, fill: 'transparent' });
+    svg.appendChild(rect);
+
+    var tip = $('tip'), box = $('chartbox');
+    rect.addEventListener('mousemove', function (ev) {
+      var pt = svg.getBoundingClientRect();
+      var rel = (ev.clientX - pt.left) / pt.width * W;
+      var i = Math.round((rel - m.l) / (W - m.l - m.r) * (totalDays - 1));
+      if (i < 0 || i > past - 1) { hover.setAttribute('opacity', 0); tip.style.opacity = 0; return; }
+      hover.setAttribute('x1', x(i)); hover.setAttribute('x2', x(i)); hover.setAttribute('opacity', .5);
+
+      var key = keyOf(new Date(parseKey(today).getTime() - (past - 1 - i) * 86400000));
+      var rows = shown.map(function (t) {
+        var raw = serOf(t)[i] || 0;
+        var sm = smoothOf(t)[i] || 0;
+        return { t: t, raw: raw, sm: sm };
+      }).sort(function (a, b) { return b.sm - a.sm; }).slice(0, 6);
+
+      tip.innerHTML = '<div class="d">' + esc(shortDate(key)) + '</div>' +
+        rows.map(function (r) {
+          return '<div class="row"><span style="color:' + esc(r.t.color) + '">■</span>' +
+                 '<span style="flex:1">' + esc(r.t.name) + '</span><b>' +
+                 r.raw.toLocaleString('de-DE') + '</b></div>';
+        }).join('');
+      var bx = box.getBoundingClientRect();
+      var px = (x(i) / W) * bx.width;
+      tip.style.left = Math.min(Math.max(px + 14, 0), bx.width - 250) + 'px';
+      tip.style.top = '10px';
+      tip.style.opacity = 1;
+    });
+    rect.addEventListener('mouseleave', function () { hover.setAttribute('opacity', 0); tip.style.opacity = 0; });
+
+    $('legendnote').textContent =
+      'Linien zeigen den gleitenden 7-Tage-Mittelwert; im Tooltip stehen die Tageswerte. ' +
+      (future > 0 ? 'Grau hinterlegt: bekannte Termine aus config/roadmap.json.' : 'Keine Termine im Vorausschau-Fenster.');
+  }
+
+  function topicColor(id) {
+    var t = (data.topics || []).filter(function (x) { return x.id === id; })[0];
+    return t ? t.color : null;
+  }
+
+  /* ---------- Themen ---------- */
+  function renderTopics(topics) {
+    $('topics').innerHTML = topics.map(function (t) {
+      var tr = trendLabel(t);
+      var heads = (t.heads || []);
+      var first = heads.slice(0, 4), rest = heads.slice(4, 14);
+      var li = function (h) {
+        return '<li><span class="d">' + esc(h.d) + '</span>' +
+          (h.u ? '<a href="' + esc(h.u) + '" target="_blank" rel="noopener">' + esc(h.t) + '</a>' : esc(h.t)) +
+          '<span class="s">' + esc(h.s) + '</span></li>';
+      };
+      return '<article class="topic">' +
+        '<h3><span class="dot" style="background:' + esc(t.color) + '"></span>' + esc(t.name) + '</h3>' +
+        '<div class="nums">' +
+          activeSignals().map(function (sg) {
+            var v = ((t.signals || {})[sg.id] || {});
+            if (!v.hat) return '';
+            return '<span>' + esc(sg.name) + ' 7T: <b>' +
+                   (v.last7 || 0).toLocaleString('de-DE') + '</b></span>';
+          }).join('') +
+          '<span class="' + tr.cls + '">' + tr.txt + '</span>' +
+        '</div>' +
+        '<p class="note' + (t.note ? '' : ' empty') + '">' + esc(t.note || t.desc) + '</p>' +
+        (t.orgs && t.orgs.length ? '<div class="lbl">Akteure</div><div class="tags">' +
+          t.orgs.map(function (o) { return '<span class="tag">' + esc(o) + '</span>'; }).join('') + '</div>' : '') +
+        (t.people && t.people.length ? '<div class="lbl">Personen</div><div class="tags">' +
+          t.people.map(function (p) { return '<span class="tag">' + esc(p) + '</span>'; }).join('') + '</div>' : '') +
+        (heads.length ? '<div class="lbl">Schlagzeilen</div><ul class="heads">' + first.map(li).join('') + '</ul>' +
+          (rest.length ? '<details class="more"><summary>+ ' + rest.length + ' weitere</summary><ul class="heads">' +
+            rest.map(li).join('') + '</ul></details>' : '') : '') +
+        '</article>';
+    }).join('');
+  }
+
+  /* ---------- Quellen ---------- */
+  function renderSources() {
+    $('srcbody').innerHTML = (data.sources || []).map(function (s) {
+      var ok = s.status === 'ok';
+      return '<tr>' +
+        '<td><span class="pill ' + (ok ? 'ok' : 'err') + '">' + (ok ? 'liefert' : 'Fehler') + '</span></td>' +
+        '<td>' + esc(s.name) + (s.error ? '<br><span class="errtxt">' + esc(s.error) + '</span>' : '') + '</td>' +
+        '<td class="u"><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
+          esc(String(s.url).replace(/^https?:\/\//, '').slice(0, 46)) + '</a></td>' +
+        '<td class="n">' + (s.items || 0) + '</td></tr>';
+    }).join('');
+  }
+})();
+</script>
+</body>
+</html>

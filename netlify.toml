@@ -1,0 +1,19 @@
+[build]
+  publish = "public"
+  command = "echo 'Kein Build noetig - statische Dateien'"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Datendatei nie cachen, damit neue Snapshots sofort sichtbar sind.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

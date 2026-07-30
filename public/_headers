@@ -1,0 +1,13 @@
+# Cloudflare Pages liest diese Datei. Sie muss im Ausgabeverzeichnis liegen,
+# also in public/ - nicht im Wurzelverzeichnis des Repositories.
+
+/*
+  X-Robots-Tag: noindex, nofollow
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+
+# Die Datendatei nie cachen, sonst zeigt das Radar nach einem Deploy
+# noch stundenlang die alten Zahlen.
+/data/*
+  Cache-Control: no-cache, must-revalidate

@@ -1,0 +1,23 @@
+{
+  "_hinweis": "Das ist der Vorausschau-Teil des Radars und der einzige Teil, der von Hand gepflegt wird. Hier kommen bekannte Termine rein: gematik-Releases, gesetzliche Stichtage, Zulassungsfristen, Migrationsfristen, Messen. Das Frontend zeichnet sie rechts der Heute-Linie in die Zeitachse.",
+  "_pflege": "Einmal im Monat durchgehen. 'geprueft' auf das Datum setzen, an dem der Eintrag zuletzt gegen die Primaerquelle verifiziert wurde. Eintraege mit 'geprueft': null zeigt das Frontend mit Warnhinweis an.",
+  "_felder": {
+    "datum": "YYYY-MM-DD. Bei unklarem Tag den Monatsersten nehmen und 'genauigkeit' auf 'monat' setzen.",
+    "topic": "ID aus topics.json",
+    "text": "Kurz, max. 70 Zeichen - wird direkt in die Zeitachse geschrieben",
+    "quelle": "URL der Primaerquelle",
+    "geprueft": "YYYY-MM-DD oder null",
+    "genauigkeit": "tag | monat | quartal"
+  },
+
+  "eintraege": [
+    {
+      "datum": "2026-09-01",
+      "topic": "zulassung",
+      "text": "BEISPIELEINTRAG - durch echten Termin ersetzen",
+      "quelle": "https://www.gematik.de/",
+      "geprueft": null,
+      "genauigkeit": "monat"
+    }
+  ]
+}
