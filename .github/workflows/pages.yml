@@ -1,11 +1,28 @@
-# Optional: Hosting ueber GitHub Pages statt Netlify.
-# Aktivieren unter Settings -> Pages -> Source: GitHub Actions.
+# Veroeffentlicht den Inhalt von public/ ueber GitHub Pages.
+# Aktivieren: Settings -> Pages -> Source: GitHub Actions.
 name: GitHub Pages veroeffentlichen
 
 on:
+  # WICHTIG: workflow_run statt push.
+  #
+  # Der taegliche Sammellauf committet den Snapshot mit dem Standard-Token
+  # GITHUB_TOKEN. Solche Commits loesen bewusst KEINE push-Ereignisse aus -
+  # GitHub verhindert damit Endlosschleifen. Ein push-Trigger wuerde hier also
+  # nie greifen, und die Website bliebe stehen, obwohl das Repo aktuell ist.
+  #
+  # workflow_run haengt sich stattdessen an das Ende des Sammellaufs und ist
+  # von dieser Einschraenkung nicht betroffen.
+  workflow_run:
+    workflows: ["Trend-Radar sammeln"]
+    types: [completed]
+
+  # Zusaetzlich bei Aenderungen von Hand, etwa am Frontend.
   push:
     branches: [main]
-    paths: ['public/**', '.github/workflows/pages.yml']
+    paths:
+      - 'public/**'
+      - '.github/workflows/pages.yml'
+
   workflow_dispatch:
 
 permissions:
@@ -19,15 +36,34 @@ concurrency:
 
 jobs:
   deploy:
+    # Nach einem gescheiterten Sammellauf nicht deployen - dann liegt der alte,
+    # korrekte Snapshot noch da und muss nicht neu ausgeliefert werden.
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Den Stand holen, den der Sammellauf gerade committet hat.
+          ref: main
+
       - uses: actions/configure-pages@v5
+
+      - name: Snapshot auf Plausibilitaet pruefen
+        run: |
+          node -e "
+            const s = require('./public/data/snapshots.json');
+            if (!s.topics || !s.topics.length) { console.error('Snapshot hat keine Themen'); process.exit(1); }
+            console.log('Snapshot ok - Stand', s.generated, '| live:', s.live, '| Themen:', s.topics.length);
+          "
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
+
       - id: deployment
         uses: actions/deploy-pages@v4
