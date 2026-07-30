@@ -4,17 +4,20 @@
     "aktiv": true,
     "_zweck": "Taegliche Artikelabrufe als Naeherung fuer oeffentliches Interesse. Voellig offene API der Wikimedia Foundation: keine Anmeldung, keine Kosten, kein Scraping.",
     "_pflege": "Artikelnamen exakt wie in der URL, Unterstriche statt Leerzeichen. Nicht existierende Artikel liefern 404 und tauchen in der Quellenliste als Fehler auf - dann Schreibweise pruefen. Themen ohne passenden Artikel bleiben leer; das ist in Ordnung, sie haben dann nur das Aktivitaetssignal.",
-    "projekt": "de.wikipedia"
+    "projekt": "de.wikipedia",
+    "_wichtig": "Weiterleitungen zaehlen fast keine Abrufe. Der Lauf vom 30.07.2026 meldete fuer 'Elektronische_Patientenakte' nur 122 Abrufe in 77 Tagen - das war eine Weiterleitung. Der echte Artikel heisst 'Elektronische_Patientenakte_(Deutschland)'. Faustregel: Wer weniger als 89 Tage Daten oder auffaellig niedrige Zahlen meldet, ist verdaechtig. Bei Unsicherheit mehrere Schreibweisen eintragen - die Quellenliste zeigt je Artikel die Abrufe, dann die schwachen entfernen."
   },
   "themen": {
     "epa": {
       "wikipedia": [
-        "Elektronische_Patientenakte"
+        "Elektronische_Patientenakte_(Deutschland)",
+        "Elektronische_Gesundheitsakte"
       ]
     },
     "erezept": {
       "wikipedia": [
-        "Elektronisches_Rezept"
+        "Elektronisches_Rezept",
+        "E-Rezept"
       ]
     },
     "gateway": {
@@ -44,7 +47,9 @@
       "wikipedia": []
     },
     "daten-ki": {
-      "wikipedia": []
+      "wikipedia": [
+        "Europäischer_Gesundheitsdatenraum"
+      ]
     },
     "versorgung": {
       "wikipedia": [
