@@ -274,6 +274,23 @@ function buildMatcher(cfg) {
   };
 }
 
+/**
+ * Text fuer den Stichwortabgleich vorbereiten.
+ *
+ * Hashtags muessen raus, sonst ist der Abgleich ein Zirkelschluss: Wer nach
+ * #ePA sucht und dann prueft, ob "epa" im Text steht, bekommt immer ein Ja -
+ * der Hashtag steht ja im Beitrag. Gepruefte Aussage soll aber der Inhalt sein,
+ * nicht das Suchkriterium.
+ *
+ * Der Titel bleibt unveraendert, nur der Abgleich sieht die gekuerzte Fassung.
+ */
+function textZumAbgleich(text) {
+  return String(text || '')
+    .replace(/#[\p{L}\p{N}_]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 /** Externe Links aus Social-HTML ziehen, vor dem Entfernen der Tags. */
 function extractLinks(html) {
   const out = [];
@@ -373,7 +390,7 @@ async function collectBluesky(cfg, todayKey, match) {
         // Social laeuft durch denselben Stichwortabgleich wie breite RSS-Quellen.
         // Ein Hashtag wie #Digitalisierung sagt nichts darueber, ob es um
         // Gesundheitswesen oder um Schulen geht.
-        const treffer = cfg.filter === false ? 'ungefiltert' : match(text);
+        const treffer = cfg.filter === false ? 'ungefiltert' : match(textZumAbgleich(text));
         if (!treffer) continue;
         genommen++;
         items.push({
@@ -428,7 +445,7 @@ async function collectMastodon(cfg, todayKey, match) {
         const links = extractLinks(s.content).concat(
           (s.card && s.card.url) ? [s.card.url] : []
         );
-        const treffer = cfg.filter === false ? 'ungefiltert' : match(text);
+        const treffer = cfg.filter === false ? 'ungefiltert' : match(textZumAbgleich(text));
         if (!treffer) continue;
         genommen++;
         items.push({
