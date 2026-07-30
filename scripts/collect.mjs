@@ -287,8 +287,7 @@ function extractLinks(html) {
   return out;
 }
 
-async function collectRss(feedsCfg, todayKey) {
-  const match = buildMatcher(feedsCfg);
+async function collectRss(feedsCfg, todayKey, match) {
   const sources = [];
   const items = [];
 
@@ -355,7 +354,7 @@ async function collectRss(feedsCfg, todayKey) {
   return { sources, items };
 }
 
-async function collectBluesky(cfg, todayKey) {
+async function collectBluesky(cfg, todayKey, match) {
   const sources = [];
   const items = [];
   for (const q of cfg.queries || []) {
@@ -365,12 +364,20 @@ async function collectBluesky(cfg, todayKey) {
     try {
       const json = JSON.parse(await fetchText(url));
       const posts = json.posts || [];
+      let genommen = 0;
       for (const p of posts) {
         const text = String(p.record?.text || '').replace(/\s+/g, ' ').trim();
         if (!text) continue;
         const d = resolveDay(p.record?.createdAt, todayKey);
         const ref = p.record?.embed?.external?.uri || null;
+        // Social laeuft durch denselben Stichwortabgleich wie breite RSS-Quellen.
+        // Ein Hashtag wie #Digitalisierung sagt nichts darueber, ob es um
+        // Gesundheitswesen oder um Schulen geht.
+        const treffer = cfg.filter === false ? 'ungefiltert' : match(text);
+        if (!treffer) continue;
+        genommen++;
         items.push({
+          match: treffer,
           title: text.slice(0, 200),
           desc: '',
           refUrl: ref,
@@ -386,7 +393,8 @@ async function collectBluesky(cfg, todayKey) {
         url,
         type: 'Social',
         status: 'ok',
-        items: posts.length,
+        items: genommen,
+        roh: posts.length,
       });
     } catch (e) {
       sources.push({
@@ -402,13 +410,14 @@ async function collectBluesky(cfg, todayKey) {
   return { sources, items };
 }
 
-async function collectMastodon(cfg, todayKey) {
+async function collectMastodon(cfg, todayKey, match) {
   const sources = [];
   const items = [];
   for (const t of cfg.tags || []) {
     const url = `${cfg.instance}/api/v1/timelines/tag/${encodeURIComponent(t)}?limit=40`;
     try {
       const arr = JSON.parse(await fetchText(url));
+      let genommen = 0;
       for (const s of arr) {
         const text = stripTags(s.content);
         if (!text) continue;
@@ -419,7 +428,11 @@ async function collectMastodon(cfg, todayKey) {
         const links = extractLinks(s.content).concat(
           (s.card && s.card.url) ? [s.card.url] : []
         );
+        const treffer = cfg.filter === false ? 'ungefiltert' : match(text);
+        if (!treffer) continue;
+        genommen++;
         items.push({
+          match: treffer,
           title: text.slice(0, 200),
           desc: '',
           refUrl: links[0] || null,
@@ -435,7 +448,8 @@ async function collectMastodon(cfg, todayKey) {
         url,
         type: 'Social',
         status: 'ok',
-        items: arr.length,
+        items: genommen,
+        roh: arr.length,
       });
     } catch (e) {
       sources.push({
@@ -722,17 +736,18 @@ async function main() {
   const sources = [];
   const raw = [];
 
-  const rss = await collectRss(feedsCfg, todayKey);
+  const match = buildMatcher(feedsCfg);
+  const rss = await collectRss(feedsCfg, todayKey, match);
   sources.push(...rss.sources);
   raw.push(...rss.items);
 
   if (feedsCfg.social?.bluesky?.aktiv) {
-    const b = await collectBluesky(feedsCfg.social.bluesky, todayKey);
+    const b = await collectBluesky(feedsCfg.social.bluesky, todayKey, match);
     sources.push(...b.sources);
     raw.push(...b.items);
   }
   if (feedsCfg.social?.mastodon?.aktiv) {
-    const m = await collectMastodon(feedsCfg.social.mastodon, todayKey);
+    const m = await collectMastodon(feedsCfg.social.mastodon, todayKey, match);
     sources.push(...m.sources);
     raw.push(...m.items);
   }
@@ -764,8 +779,9 @@ async function main() {
   if (DRY_RUN) {
     console.log('\n=== DRY RUN - Quellenstatus ===');
     for (const s of sources) {
+      const quote = s.roh != null && s.roh !== s.items ? ` (von ${s.roh} roh)` : '';
       console.log(
-        `${s.status === 'ok' ? 'OK  ' : 'FEHL'} ${String(s.items).padStart(3)}  ${s.name}` +
+        `${s.status === 'ok' ? 'OK  ' : 'FEHL'} ${String(s.items).padStart(4)}  ${s.name}${quote}` +
           (s.error ? `  -> ${s.error}` : '')
       );
     }
