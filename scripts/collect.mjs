@@ -243,8 +243,52 @@ function resolveDay(raw, todayKey) {
 
 /* ----------------------------------------------------------------- Quellen */
 
+/**
+ * Zweistufiger Stichwortabgleich.
+ *
+ * Naives Teilstring-Matching produziert Fehltreffer: "bsi" steckt in
+ * beliebigen Woertern, und ein heise-Artikel ueber eine Windows-Luecke, der
+ * das BSI erwaehnt, hat mit der TI nichts zu tun.
+ *
+ * Deshalb: starke Begriffe sind allein aussagekraeftig, schwache brauchen
+ * einen zweiten Treffer. Beide werden auf Wortgrenzen geprueft.
+ */
+function buildMatcher(cfg) {
+  const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // \b funktioniert bei Begriffen mit Bindestrich am Rand nicht zuverlaessig,
+  // deshalb eigene Grenzen: Anfang/Ende oder ein Zeichen, das kein Buchstabe ist.
+  const rx = (t) => new RegExp('(^|[^a-z0-9\u00e4\u00f6\u00fc\u00df])' + esc(t) + '($|[^a-z0-9\u00e4\u00f6\u00fc\u00df])', 'i');
+
+  const stark = (cfg.keywords_stark || []).map((k) => ({ k, re: rx(k.toLowerCase()) }));
+  const schwach = (cfg.keywords_schwach || []).map((k) => ({ k, re: rx(k.toLowerCase()) }));
+
+  return function match(text) {
+    const t = ' ' + String(text || '').toLowerCase() + ' ';
+    for (const e of stark) if (e.re.test(t)) return e.k;
+    const hits = [];
+    for (const e of schwach) {
+      if (e.re.test(t)) hits.push(e.k);
+      if (hits.length >= 2) return hits.join('+');
+    }
+    return null;
+  };
+}
+
+/** Externe Links aus Social-HTML ziehen, vor dem Entfernen der Tags. */
+function extractLinks(html) {
+  const out = [];
+  for (const m of String(html || '').matchAll(/href=["']([^"']+)["']/gi)) {
+    const u = decodeEntities(m[1]);
+    // Hashtags und Profilverweise sind keine Quellen
+    if (/\/tags\/|\/@|mailto:/i.test(u)) continue;
+    if (!/^https?:/i.test(u)) continue;
+    out.push(u);
+  }
+  return out;
+}
+
 async function collectRss(feedsCfg, todayKey) {
-  const kw = (feedsCfg.keywords || []).map((k) => k.toLowerCase());
+  const match = buildMatcher(feedsCfg);
   const sources = [];
   const items = [];
 
@@ -285,10 +329,9 @@ async function collectRss(feedsCfg, todayKey) {
     }
 
     if (f.filter) {
-      got = got.filter((it) => {
-        const hay = (it.title + ' ' + it.desc).toLowerCase();
-        return kw.some((k) => hay.includes(k));
-      });
+      got = got
+        .map((it) => ({ ...it, match: match(it.title + ' ' + it.desc) }))
+        .filter((it) => it.match);
     }
 
     got = got
@@ -326,9 +369,11 @@ async function collectBluesky(cfg, todayKey) {
         const text = String(p.record?.text || '').replace(/\s+/g, ' ').trim();
         if (!text) continue;
         const d = resolveDay(p.record?.createdAt, todayKey);
+        const ref = p.record?.embed?.external?.uri || null;
         items.push({
           title: text.slice(0, 200),
           desc: '',
+          refUrl: ref,
           url: `https://bsky.app/profile/${p.author?.did}/post/${String(p.uri).split('/').pop()}`,
           day: d.key,
           dateOk: d.ok,
@@ -368,9 +413,16 @@ async function collectMastodon(cfg, todayKey) {
         const text = stripTags(s.content);
         if (!text) continue;
         const d = resolveDay(s.created_at, todayKey);
+        // Der verlinkte Artikel ist die eigentliche Quelle. Zwei Beitraege mit
+        // demselben Link sind derselbe Vorgang - haeufig dieselbe Meldung auf
+        // Deutsch und Englisch von einem Spiegel-Konto.
+        const links = extractLinks(s.content).concat(
+          (s.card && s.card.url) ? [s.card.url] : []
+        );
         items.push({
           title: text.slice(0, 200),
           desc: '',
+          refUrl: links[0] || null,
           url: s.url || s.uri,
           day: d.key,
           dateOk: d.ok,
@@ -691,16 +743,18 @@ async function main() {
   /* --- Entdoppeln --- */
   const seen = new Set();
   const items = [];
+  let dubletten = 0;
   for (const it of raw) {
     if (it.day < cutoff) continue;
-    const kU = 'u:' + normUrl(it.url);
-    const kT = 't:' + normTitle(it.title);
-    if (seen.has(kU) || seen.has(kT)) continue;
-    seen.add(kU);
-    seen.add(kT);
+    const keys = ['u:' + normUrl(it.url), 't:' + normTitle(it.title)];
+    // Verlinkter Originalartikel: faengt dieselbe Meldung in zwei Sprachen
+    // und Social-Beitraege, die einen bereits erfassten RSS-Artikel teilen.
+    if (it.refUrl) keys.push('r:' + normUrl(it.refUrl));
+    if (keys.some((k) => seen.has(k))) { dubletten++; continue; }
+    for (const k of keys) seen.add(k);
     items.push(it);
   }
-  log(`nach Entdopplung und Zeitfilter: ${items.length} Beitraege`);
+  log(`nach Entdopplung und Zeitfilter: ${items.length} Beitraege (${dubletten} Dubletten entfernt)`);
 
   /* --- Nachfragesignal --- */
   const demandRecalcFrom = addDays(todayKey, -(DEMAND_RECALC_DAYS - 1));
@@ -716,7 +770,17 @@ async function main() {
       );
     }
     console.log('\n=== Beispielbeitraege ===');
-    for (const it of items.slice(0, 25)) console.log(`${it.day}  [${it.source}]  ${it.title}`);
+    for (const it of items.slice(0, 30)) {
+      const grund = it.match ? ` {${it.match}}` : '';
+      console.log(`${it.day}  [${it.source}]${grund}  ${it.title.slice(0, 110)}`);
+    }
+    // Verteilung je Quelle - zeigt sofort, ob eine Quelle den Rest erdrueckt.
+    console.log('\n=== Beitraege je Quelle ===');
+    const perSource = {};
+    for (const it of items) perSource[it.source] = (perSource[it.source] || 0) + 1;
+    for (const [k, v] of Object.entries(perSource).sort((a, b) => b[1] - a[1])) {
+      console.log(`${String(v).padStart(4)}  ${k}`);
+    }
     const zeig = (titel, map) => {
       console.log(`\n=== ${titel} ===`);
       if (!map.size) return console.log('(keine Daten)');
