@@ -126,7 +126,7 @@
     "mastodon": {
       "aktiv": true,
       "instance": "https://mastodon.social",
-      "_hinweis": "Alle Tags bleiben drin - der Stichwortabgleich entscheidet jetzt, was durchkommt. Vorher lief Social ungefiltert und machte 83 Prozent aller Beitraege, allein #Digitalisierung 38. Die Quellenliste zeigt jetzt \"behalten (von X roh)\", daran siehst du je Tag die Trefferquote. Tags mit dauerhaft niedriger Quote koennen raus.",
+      "_hinweis": "Alle Tags bleiben drin, der Stichwortabgleich entscheidet. Wichtig: Hashtags werden vor dem Abgleich aus dem Text entfernt. Sonst waere die Pruefung ein Zirkelschluss - wer nach #ePA sucht und dann auf \"epa\" prueft, bekommt immer ein Ja. Die Quellenliste zeigt \"behalten (von X roh)\"; daran siehst du je Tag die echte Trefferquote. Bleibt ein Tag ueber Wochen unter etwa 20 Prozent, kann er raus.",
       "tags": [
         "Telematikinfrastruktur",
         "gematik",
