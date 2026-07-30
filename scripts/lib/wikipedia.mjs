@@ -65,9 +65,19 @@ export async function collectWikipedia({ projekt, themen, startDate, endDate }) 
     for (const artikel of cfg.wikipedia || []) jobs.push({ id, artikel });
   }
 
-  const results = await Promise.allSettled(
-    jobs.map((j) => fetchPageviews({ projekt, artikel: j.artikel, startDate, endDate }))
-  );
+  // Ein Anlauf reicht nicht immer: der Endpunkt liefert gelegentlich 404,
+  // obwohl der Artikel existiert. Deshalb ein zweiter Versuch mit Abstand,
+  // bevor eine Quelle als fehlerhaft gemeldet wird.
+  const einmalWiederholen = async (j) => {
+    try {
+      return await fetchPageviews({ projekt, artikel: j.artikel, startDate, endDate });
+    } catch (e) {
+      await new Promise((r) => setTimeout(r, 1500));
+      return await fetchPageviews({ projekt, artikel: j.artikel, startDate, endDate });
+    }
+  };
+
+  const results = await Promise.allSettled(jobs.map(einmalWiederholen));
 
   const counts = new Map();
   const sources = [];
