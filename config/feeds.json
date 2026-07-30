@@ -132,10 +132,10 @@
         "gematik",
         "ERezept",
         "ePA",
-        "eHealth",
-        "Digitalisierung"
+        "eHealth"
       ],
-      "filter": true
+      "filter": true,
+      "_trefferquoten": "Lauf 30.07.2026 nach der Hashtag-Korrektur: Telematikinfrastruktur 65%, gematik 58%, ePA 55%, ERezept 53%, eHealth 33%, Digitalisierung 0%. Digitalisierung deshalb entfernt. eHealth bleibt vorerst, liefert aber nur 13 von 40 - nach zwei Wochen neu bewerten."
     }
   },
   "kandidaten_uebersichtsseiten": [
