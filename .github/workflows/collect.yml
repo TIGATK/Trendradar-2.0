@@ -1,0 +1,77 @@
+name: Trend-Radar sammeln
+
+on:
+  schedule:
+    # 04:00 UTC = 06:00 MESZ / 05:00 MEZ
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Nur testen: Quellen pruefen, nichts schreiben, kein API-Aufruf'
+        type: boolean
+        default: false
+      days:
+        description: 'Fensterbreite in Tagen'
+        default: '90'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trend-radar
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sammeln und klassifizieren
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WIKIMEDIA_UA: ${{ vars.WIKIMEDIA_UA }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-sonnet-5' }}
+          CLAUDE_MODEL_FAST: ${{ vars.CLAUDE_MODEL_FAST || 'claude-haiku-4-5-20251001' }}
+          DAYS: ${{ inputs.days || '90' }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: node scripts/collect.mjs 2>&1 | tee lauf.log
+
+      - name: Bericht in die Zusammenfassung schreiben
+        if: always()
+        run: |
+          {
+            echo '## Lauf vom '"$(date -u '+%d.%m.%Y %H:%M UTC')"
+            echo '```'
+            tail -n 80 lauf.log 2>/dev/null || echo 'Keine Ausgabe'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Snapshot committen
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if git diff --quiet -- public/data/snapshots.json; then
+            echo 'Keine Aenderung am Snapshot - kein Commit.'
+            exit 0
+          fi
+          git config user.name  'trend-radar-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add public/data/snapshots.json
+          git commit -m "Snapshot $(date -u '+%Y-%m-%d')"
+          git push
+
+      # Normalerweise ueberfluessig: Cloudflare Pages und Netlify reagieren beide
+      # selbst auf den Push. Nur als Rueckfallebene, falls der Webhook klemmt.
+      # Cloudflare: Pages-Projekt -> Settings -> Builds -> Deploy hooks
+      # Netlify:    Site settings -> Build & deploy -> Build hooks
+      # URL als Secret DEPLOY_HOOK hinterlegen, dann greift dieser Schritt.
+      - name: Deploy anstossen
+        if: ${{ inputs.dry_run != true && env.HOOK != '' }}
+        env:
+          HOOK: ${{ secrets.DEPLOY_HOOK }}
+        run: curl -fsS -X POST -d '{}' "$HOOK" && echo 'Deploy angestossen'
