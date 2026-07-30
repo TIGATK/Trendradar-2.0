@@ -286,9 +286,23 @@ function buildMatcher(cfg) {
  */
 function textZumAbgleich(text) {
   return String(text || '')
-    .replace(/#[\p{L}\p{N}_]+/gu, ' ')
+    // Mastodon setzt Hashtags als "#<span>Wort</span>". Nach dem Entfernen der
+    // Tags steht da "# Wort" MIT Leerzeichen - deshalb muss das Leerzeichen
+    // hier mit abgedeckt werden, sonst bleibt das Stichwort stehen.
+    .replace(/#\s*[\p{L}\p{N}_]+/gu, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/**
+ * Hashtag-Verweise aus Social-HTML entfernen, bevor die Tags fallen.
+ * Zuverlaessiger als Textmuster, weil Mastodon sie eindeutig auszeichnet.
+ */
+function entferneHashtagLinks(html) {
+  return String(html || '').replace(
+    /<a\b[^>]*href=["'][^"']*\/tags\/[^"']*["'][^>]*>[\s\S]*?<\/a>/gi,
+    ' '
+  );
 }
 
 /** Externe Links aus Social-HTML ziehen, vor dem Entfernen der Tags. */
@@ -445,7 +459,10 @@ async function collectMastodon(cfg, todayKey, match) {
         const links = extractLinks(s.content).concat(
           (s.card && s.card.url) ? [s.card.url] : []
         );
-        const treffer = cfg.filter === false ? 'ungefiltert' : match(textZumAbgleich(text));
+        // Erst die Hashtag-Verweise aus dem HTML werfen, dann Text bilden.
+        // Der Titel behaelt die Hashtags, nur der Abgleich sieht sie nicht.
+        const pruefText = textZumAbgleich(stripTags(entferneHashtagLinks(s.content)));
+        const treffer = cfg.filter === false ? 'ungefiltert' : match(pruefText);
         if (!treffer) continue;
         genommen++;
         items.push({
