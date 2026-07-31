@@ -17,48 +17,31 @@
     }
   ],
   "live": true,
-  "generated": "2026-07-31T08:33:03.250Z",
+  "generated": "2026-07-31T11:49:51.125Z",
   "today": "2026-07-31",
   "startDate": "2026-05-03",
   "endDate": "2026-07-31",
   "days": 90,
   "stats": {
-    "beitraege": 55,
-    "quellenOk": 9,
-    "quellenFehler": 10,
-    "laufzeitSek": 34
+    "beitraege": 64,
+    "quellenOk": 10,
+    "quellenFehler": 9,
+    "laufzeitSek": 35
   },
   "sources": [
-    {
-      "name": "bvitg",
-      "url": "https://www.bvitg.de/feed/",
-      "type": "RSS",
-      "status": "fehler",
-      "items": 0,
-      "error": "Antwort enthielt keine lesbaren Eintraege"
-    },
-    {
-      "name": "Wikipedia: Elektronischer Heilberufsausweis",
-      "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
-      "type": "Nachfrage",
-      "status": "fehler",
-      "items": 0,
-      "error": "Artikel nicht gefunden - Schreibweise pruefen"
-    },
-    {
-      "name": "Wikipedia: Gematik",
-      "url": "https://de.wikipedia.org/wiki/Gematik",
-      "type": "Nachfrage",
-      "status": "fehler",
-      "items": 0,
-      "error": "Artikel nicht gefunden - Schreibweise pruefen"
-    },
     {
       "name": "Bitkom",
       "url": "https://www.bitkom.org/rss.xml",
       "type": "RSS",
       "status": "ok",
       "items": 0
+    },
+    {
+      "name": "bvitg",
+      "url": "https://www.bvitg.de/feed/",
+      "type": "RSS",
+      "status": "ok",
+      "items": 60
     },
     {
       "name": "Deutsches Aerzteblatt",
@@ -143,6 +126,13 @@
       "items": 1574
     },
     {
+      "name": "Wikipedia: Elektronischer Heilberufsausweis",
+      "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
+      "type": "Nachfrage",
+      "status": "ok",
+      "items": 354
+    },
+    {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
@@ -155,6 +145,13 @@
       "type": "Nachfrage",
       "status": "ok",
       "items": 175
+    },
+    {
+      "name": "Wikipedia: Gematik",
+      "url": "https://de.wikipedia.org/wiki/Gematik",
+      "type": "Nachfrage",
+      "status": "ok",
+      "items": 4214
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
@@ -189,7 +186,8 @@
             "2026-07-19": 1,
             "2026-07-17": 1,
             "2026-07-15": 1,
-            "2026-07-14": 1
+            "2026-07-14": 1,
+            "2026-07-31": 1
           },
           "series": [
             0,
@@ -281,7 +279,7 @@
             0,
             0,
             0,
-            0
+            1
           ],
           "smooth": [
             0,
@@ -373,12 +371,12 @@
             0.14,
             0.14,
             0.14,
-            0
+            0.14
           ],
-          "total": 10,
-          "last7": 0,
+          "total": 11,
+          "last7": 1,
           "prev7": 2,
-          "momentum": 0,
+          "momentum": 0.5,
           "hat": true
         },
         "interesse": {
@@ -672,6 +670,13 @@
       ],
       "heads": [
         {
+          "t": "# Pflegeprofis aus Bayern, Baden-Württemberg, Berlin und Sachsen-Anhalt werden zum Stand der Digitalisierung in Pflegeeinrichtungen und Pflegediensten befragt. Es geht um \"Praxiser",
+          "s": "Mastodon: #ePA",
+          "d": "31.07.",
+          "u": "https://mastodon.social/@Pfleger_aus_A/117013533604579721",
+          "iso": "2026-07-31"
+        },
+        {
           "t": "Carsten # Linnemann ist nun also # Gesundheitsminister . Der Mann, der die Erstellung von # Listen über # psychischKranke anstrebt. Btw. (hint hint): Heute ist ein guter Tag, um de",
           "s": "Mastodon: #ePA",
           "d": "24.07.",
@@ -742,8 +747,8 @@
           "iso": "2026-05-06"
         }
       ],
-      "note": "Nutzer kritisieren in mehreren Beiträgen unzureichende Softwarereife der ePA-Optionen sowie Datenschutz- und Interessenskonflikte im Zusammenhang mit Pharmaindustrie. Daneben berichtet die gematik über neue ePA-Funktionen, einen aktualisierten TI-Score für Praxen und den TI-Atlas 2026.",
-      "share": 0
+      "note": "Die gematik veröffentlichte Updates zum TI-Score und TI-Atlas zur Umsetzung der ePA in Praxen und Pflegeeinrichtungen, während in sozialen Medien Kritik an Datenschutz und einer möglichen Pflicht zur ePA-Nutzung geäußert wurde. Nutzer thematisierten zudem fehlende Startfunktionen der Software und den Datenzugriff der Pharmaindustrie.",
+      "share": 0.1
     },
     {
       "id": "erezept",
@@ -1274,7 +1279,7 @@
           "iso": "2026-05-05"
         }
       ],
-      "note": "Berichtet wird über praktische Anwendungen und Erfahrungen mit dem E-Rezept, etwa ein 3D-gedrucktes Ausgabeterminal und Anleitungen zum Einlösen ohne App. Nutzer bemängeln zudem lückenhafte Apothekenanbindung und Probleme bei Android-Apps, während die E-Rezept-App eine verbesserte Apothekensuche erhielt.",
+      "note": "Berichtet wurde über die Einlösung von E-Rezepten ohne App sowie über ein 3D-gedrucktes Uni-Projekt, das E-Rezepte über die TI verarbeitet. Nutzer diskutierten zudem App-Alternativen und bemängelten Lücken bei der Anbindung von Apotheken.",
       "share": 0
     },
     {
@@ -1684,7 +1689,7 @@
           "iso": "2026-05-11"
         }
       ],
-      "note": "Die kartenlose Institutionsidentität HSM-B geht im Umfeld des TI-Gateways in den nächsten Praxistest.",
+      "note": "Die kartenlose Institutionsidentität HSM-B wird nun im TI-Gateway-Umfeld in einem weiteren Praxistest erprobt.",
       "share": 0
     },
     {
@@ -2133,7 +2138,7 @@
           "iso": "2026-06-01"
         }
       ],
-      "note": "Die Gesellschafter der gematik haben einen Umbau der Gesundheitsdateninfrastruktur mit mehr Befugnissen für die gematik beschlossen. Der Branchenverband bvitg warnt vor diesem Zentralisierungskurs und sieht die TI-Stabilität sowie den Wettbewerb in der Gesundheits-IT gefährdet.",
+      "note": "Die Gesellschafter der gematik beschlossen einen Umbau der Gesundheitsdateninfrastruktur mit mehr Befugnissen für die gematik zur Stabilisierung von E-Rezept und anderen Diensten. Der Verband bvitg kritisierte den damit verbundenen Zentralisierungskurs als Gefahr für TI-Stabilität und Wettbewerb.",
       "share": 0
     },
     {
@@ -2551,7 +2556,7 @@
           "iso": "2026-07-13"
         }
       ],
-      "note": "Ein neuer Leitfaden erklärt den Einsatz von KIM in Pflegeeinrichtungen und empfiehlt frühzeitige Abstimmung mit dem IT-Dienstleister zur Integration in Dokumentationssysteme.",
+      "note": "Ein neuer Leitfaden erläutert die Einführung von KIM in Pflegeeinrichtungen und empfiehlt eine frühzeitige Abstimmung mit IT-Dienstleistern.",
       "share": 0
     },
     {
@@ -2849,7 +2854,9 @@
             "2026-07-25": 33,
             "2026-07-26": 20,
             "2026-07-27": 72,
-            "2026-07-28": 63
+            "2026-07-28": 63,
+            "2026-07-29": 51,
+            "2026-07-30": 32
           },
           "series": [
             20,
@@ -2939,8 +2946,8 @@
             20,
             72,
             63,
-            0,
-            0,
+            51,
+            32,
             0
           ],
           "smooth": [
@@ -3031,14 +3038,14 @@
             59.86,
             54.57,
             53.43,
-            43,
-            34.14,
-            26.86
+            50.29,
+            46,
+            38.71
           ],
-          "total": 4131,
-          "last7": 188,
+          "total": 4214,
+          "last7": 271,
           "prev7": 713,
-          "momentum": 0.26,
+          "momentum": 0.38,
           "hat": true
         }
       },
@@ -3104,7 +3111,7 @@
           "iso": "2026-05-27"
         }
       ],
-      "note": "Die gematik hat einen Umbau der Gesundheitsdateninfrastruktur mit erweiterten Befugnissen beschlossen und dazu einen Podcast sowie ein Impulspapier zur digitalen Transformation veröffentlicht. Zudem wird für das TI-Forum 2026 und den IOP-Summit geworben.",
+      "note": "Die gematik-Gesellschafter beschlossen einen Umbau der Gesundheitsdateninfrastruktur mit erweiterten Befugnissen für die gematik. Daneben kündigte die gematik Veranstaltungen wie das TI-Forum 2026 und den IOP-Summit an und startete einen eigenen Podcast.",
       "share": 0
     },
     {
@@ -3120,9 +3127,9 @@
             "2026-07-08": 1,
             "2026-06-26": 1,
             "2026-06-18": 1,
-            "2026-07-30": 1,
             "2026-07-16": 1,
-            "2026-06-23": 1
+            "2026-06-23": 1,
+            "2026-07-30": 1
           },
           "series": [
             0,
@@ -3508,9 +3515,10 @@
         }
       },
       "orgs": [
-        "KBV",
         "bvitg",
-        "gematik"
+        "gematik",
+        "Kassenärztliche Bundesvereinigung",
+        "KBV"
       ],
       "people": [],
       "heads": [
@@ -3526,6 +3534,13 @@
           "s": "Mastodon: #Telematikinfrastruktur",
           "d": "16.07.",
           "u": "https://social.heise.de/@heiseonline/116928683914319619",
+          "iso": "2026-07-16"
+        },
+        {
+          "t": "GeDIG law divides: Praise and sharp criticism for more health data use The GeDIG law generates mixed reactions: Doctors warn of loss of trust, the digital industry demands more rig",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "16.07.",
+          "u": "https://social.heise.de/@heiseonlineenglish/116928856939369272",
           "iso": "2026-07-16"
         },
         {
@@ -3564,7 +3579,7 @@
           "iso": "2026-06-18"
         }
       ],
-      "note": "Das GeDIG-Gesetz zur Gesundheitsdatennutzung sorgt für geteilte Reaktionen: Ärzte warnen vor Vertrauensverlust, die Digitalwirtschaft fordert mehr Rigorosität. Zusätzlich ist das GKV-Beitragssatzstabilisierungsgesetz in Kraft getreten und der bvitg hat Vorschläge zum Bürokratieabbau bei Ministerin Warken eingebracht.",
+      "note": "Das GKV-Beitragssatzstabilisierungsgesetz trat in Kraft und bringt Änderungen für Praxen mit sich. Das GeDIG-Gesetz zur Gesundheitsdatennutzung stieß auf geteilte Reaktionen zwischen Ärzteschaft und Digitalwirtschaft, während der bvitg Vorschläge zum Bürokratieabbau vorlegte.",
       "share": 0.1
     },
     {
@@ -3859,7 +3874,7 @@
             "2026-07-26": 23,
             "2026-07-27": 41,
             "2026-07-28": 27,
-            "2026-07-29": 43,
+            "2026-07-29": 45,
             "2026-07-30": 48
           },
           "series": [
@@ -3950,7 +3965,7 @@
             23,
             41,
             27,
-            43,
+            45,
             48,
             0
           ],
@@ -4042,14 +4057,14 @@
             32.57,
             31.43,
             31.29,
-            33,
-            34.43,
-            30
+            33.29,
+            34.71,
+            30.29
           ],
-          "total": 3823,
-          "last7": 210,
+          "total": 3825,
+          "last7": 212,
           "prev7": 262,
-          "momentum": 0.8,
+          "momentum": 0.81,
           "hat": true
         }
       },
@@ -4080,7 +4095,7 @@
           "iso": "2026-05-13"
         }
       ],
-      "note": "Das Bayerische Landessozialgericht hat entschieden, dass Krankenkassen die eGK bei Beitragsschulden nicht einziehen dürfen. Parallel wird zum Austausch der Heilberufsausweise aufgerufen und beim eGBR wurden 100.000 Anträge erreicht.",
+      "note": "Das Bayerische Landessozialgericht untersagte Krankenkassen den Einzug der eGK bei Beitragsschulden. Zudem endete die Frist zum Tausch der Heilberufsausweise, und das eGBR-Verfahren erreichte die Marke von 100.000 Anträgen.",
       "share": 0
     },
     {
@@ -4505,7 +4520,7 @@
           "iso": "2026-07-10"
         }
       ],
-      "note": "Das BSI hat mit einer IT-Notfallkarte neue Materialien zur Unterstützung von Arztpraxen bei der IT-Sicherheitsrichtlinie veröffentlicht, was in sozialen Medien kritisch diskutiert wird. Zusätzlich wird ein Sicherheitsvorfall thematisiert, bei dem der CCC Zugriff auf geschützte Daten erlangen konnte.",
+      "note": "Das BSI veröffentlichte Materialien wie die IT-Notfallkarte zur Unterstützung von Arztpraxen bei der Umsetzung der IT-Sicherheitsrichtlinie. In sozialen Medien wurde die Sicherheit der ePA nach einem CCC-Zugriffstest kritisch diskutiert.",
       "share": 0
     },
     {
@@ -5015,7 +5030,7 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Das GeDIG-Gesetz zur Nutzung von Gesundheitsdaten wird kontrovers diskutiert: Ärzte befürchten Vertrauensverlust, während die Digitalwirtschaft striktere Regelungen fordert. Kritiker sehen darin einen Angriff auf Patientenrechte.",
+      "note": "Das GeDIG-Gesetz zur Nutzung von Gesundheitsdaten führte zu geteilten Reaktionen: Ärzte warnten vor Vertrauensverlust, die Digitalwirtschaft forderte klarere Regelungen.",
       "share": 0
     },
     {
@@ -5535,7 +5550,7 @@
           "iso": "2026-05-26"
         }
       ],
-      "note": "Vertreter der Ärztekammer Baden-Württemberg und der eHealth-Stabsstelle diskutieren den Austausch zur weiteren Digitalisierung. Ein Podcast von heise online hinterfragt zudem, ob DiGA eine Innovation auf Kosten der Krankenkassen darstellen.",
+      "note": "Ärztekammer Baden-Württemberg und eHealth-Verantwortliche tauschten sich über die gemeinsame Weiterentwicklung der Digitalisierung aus. Ein Podcast beleuchtete zudem die Kosten von DiGA für Krankenkassen als Diskussionspunkt.",
       "share": 0
     },
     {
@@ -5568,11 +5583,10 @@
             "2026-06-09": 1,
             "2026-06-19": 1,
             "2026-06-07": 1,
-            "2026-07-31": 1,
-            "2026-07-30": 2,
-            "2026-07-29": 2,
             "2026-07-02": 1,
-            "2026-05-26": 1
+            "2026-05-26": 1,
+            "2026-07-30": 2,
+            "2026-07-29": 2
           },
           "series": [
             0,
@@ -5664,7 +5678,7 @@
             2,
             2,
             2,
-            1
+            0
           ],
           "smooth": [
             0,
@@ -5756,12 +5770,12 @@
             1.14,
             1.29,
             1.29,
-            1.29
+            1.14
           ],
-          "total": 31,
-          "last7": 9,
+          "total": 30,
+          "last7": 8,
           "prev7": 4,
-          "momentum": 2.25,
+          "momentum": 2,
           "hat": true
         },
         "interesse": {
@@ -6048,11 +6062,12 @@
         }
       },
       "orgs": [
-        "SeHT",
-        "Ärztekammer BW",
-        "Mia Healthcare",
+        "EPA",
         "bvitg",
-        "gematik"
+        "gematik",
+        "Mia Healthcare",
+        "SeHT",
+        "Ärztekammer BW"
       ],
       "people": [
         "Armin Flohr",
@@ -6271,7 +6286,7 @@
         }
       ],
       "note": "",
-      "share": 0.9
+      "share": 0.8
     }
   ],
   "roadmap": [
