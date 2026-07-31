@@ -17,18 +17,42 @@
     }
   ],
   "live": true,
-  "generated": "2026-07-30T08:56:01.350Z",
-  "today": "2026-07-30",
-  "startDate": "2026-05-02",
-  "endDate": "2026-07-30",
+  "generated": "2026-07-31T08:33:03.250Z",
+  "today": "2026-07-31",
+  "startDate": "2026-05-03",
+  "endDate": "2026-07-31",
   "days": 90,
   "stats": {
-    "beitraege": 64,
-    "quellenOk": 10,
-    "quellenFehler": 9,
-    "laufzeitSek": 43
+    "beitraege": 55,
+    "quellenOk": 9,
+    "quellenFehler": 10,
+    "laufzeitSek": 34
   },
   "sources": [
+    {
+      "name": "bvitg",
+      "url": "https://www.bvitg.de/feed/",
+      "type": "RSS",
+      "status": "fehler",
+      "items": 0,
+      "error": "Antwort enthielt keine lesbaren Eintraege"
+    },
+    {
+      "name": "Wikipedia: Elektronischer Heilberufsausweis",
+      "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
+      "type": "Nachfrage",
+      "status": "fehler",
+      "items": 0,
+      "error": "Artikel nicht gefunden - Schreibweise pruefen"
+    },
+    {
+      "name": "Wikipedia: Gematik",
+      "url": "https://de.wikipedia.org/wiki/Gematik",
+      "type": "Nachfrage",
+      "status": "fehler",
+      "items": 0,
+      "error": "Artikel nicht gefunden - Schreibweise pruefen"
+    },
     {
       "name": "Bitkom",
       "url": "https://www.bitkom.org/rss.xml",
@@ -37,18 +61,11 @@
       "items": 0
     },
     {
-      "name": "bvitg",
-      "url": "https://www.bvitg.de/feed/",
-      "type": "RSS",
-      "status": "ok",
-      "items": 60
-    },
-    {
       "name": "Deutsches Aerzteblatt",
       "url": "https://rss.aerzteblatt.de/rss/news.asp",
       "type": "RSS",
       "status": "ok",
-      "items": 0
+      "items": 1
     },
     {
       "name": "gematik Newsroom",
@@ -77,7 +94,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 22,
+      "items": 21,
       "roh": 40
     },
     {
@@ -109,35 +126,28 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 663
+      "items": 668
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3445
+      "items": 3471
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1567
-    },
-    {
-      "name": "Wikipedia: Elektronischer Heilberufsausweis",
-      "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
-      "type": "Nachfrage",
-      "status": "ok",
-      "items": 358
+      "items": 1574
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 487
+      "items": 491
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
@@ -147,25 +157,18 @@
       "items": 175
     },
     {
-      "name": "Wikipedia: Gematik",
-      "url": "https://de.wikipedia.org/wiki/Gematik",
-      "type": "Nachfrage",
-      "status": "ok",
-      "items": 4200
-    },
-    {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1212
+      "items": 1211
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1041
+      "items": 1040
     }
   ],
   "topics": [
@@ -189,7 +192,6 @@
             "2026-07-14": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -278,20 +280,20 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
             0,
             0,
             0,
-            0,
+            0.5,
             0.4,
             0.33,
             0.29,
             0.29,
             0.29,
             0.29,
-            0.29,
             0,
             0,
             0.14,
@@ -370,17 +372,17 @@
             0.14,
             0.14,
             0.14,
-            0.14
+            0.14,
+            0
           ],
           "total": 10,
-          "last7": 1,
+          "last7": 0,
           "prev7": 2,
-          "momentum": 0.5,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 5,
             "2026-05-03": 10,
             "2026-05-04": 23,
             "2026-05-05": 29,
@@ -468,10 +470,10 @@
             "2026-07-26": 13,
             "2026-07-27": 15,
             "2026-07-28": 16,
-            "2026-07-29": 15
+            "2026-07-29": 15,
+            "2026-07-30": 12
           },
           "series": [
-            5,
             10,
             23,
             29,
@@ -560,16 +562,16 @@
             15,
             16,
             15,
+            12,
             0
           ],
           "smooth": [
-            5,
-            7.5,
-            12.67,
-            16.75,
-            17.6,
-            17.67,
-            18.14,
+            10,
+            16.5,
+            20.67,
+            20.75,
+            20.2,
+            20.33,
             19.14,
             19.29,
             18,
@@ -652,12 +654,13 @@
             12.43,
             13.29,
             14,
-            12
+            13.71,
+            11.71
           ],
-          "total": 1567,
-          "last7": 84,
-          "prev7": 83,
-          "momentum": 1.01,
+          "total": 1574,
+          "last7": 82,
+          "prev7": 84,
+          "momentum": 0.98,
           "hat": true
         }
       },
@@ -739,8 +742,8 @@
           "iso": "2026-05-06"
         }
       ],
-      "note": "",
-      "share": 0.111
+      "note": "Nutzer kritisieren in mehreren Beiträgen unzureichende Softwarereife der ePA-Optionen sowie Datenschutz- und Interessenskonflikte im Zusammenhang mit Pharmaindustrie. Daneben berichtet die gematik über neue ePA-Funktionen, einen aktualisierten TI-Score für Praxen und den TI-Atlas 2026.",
+      "share": 0
     },
     {
       "id": "erezept",
@@ -760,7 +763,6 @@
           "series": [
             0,
             0,
-            0,
             1,
             1,
             0,
@@ -821,6 +823,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -852,14 +855,13 @@
           "smooth": [
             0,
             0,
-            0,
-            0.25,
+            0.33,
+            0.5,
             0.4,
             0.33,
             0.29,
             0.29,
             0.29,
-            0.29,
             0.14,
             0,
             0,
@@ -919,6 +921,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -949,7 +952,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 3,
             "2026-05-03": 9,
             "2026-05-04": 6,
             "2026-05-05": 7,
@@ -1037,10 +1039,10 @@
             "2026-07-26": 2,
             "2026-07-27": 7,
             "2026-07-28": 6,
-            "2026-07-29": 3
+            "2026-07-29": 3,
+            "2026-07-30": 7
           },
           "series": [
-            3,
             9,
             6,
             7,
@@ -1129,16 +1131,16 @@
             7,
             6,
             3,
+            7,
             0
           ],
           "smooth": [
-            3,
-            6,
-            6,
-            6.25,
+            9,
+            7.5,
+            7.33,
+            10,
             8.6,
-            7.67,
-            7.86,
+            8.67,
             8,
             7.14,
             7,
@@ -1221,12 +1223,13 @@
             2.71,
             3.29,
             3.29,
-            3.29
+            4.29,
+            4
           ],
-          "total": 487,
-          "last7": 23,
-          "prev7": 19,
-          "momentum": 1.21,
+          "total": 491,
+          "last7": 28,
+          "prev7": 16,
+          "momentum": 1.75,
           "hat": true
         }
       },
@@ -1271,7 +1274,7 @@
           "iso": "2026-05-05"
         }
       ],
-      "note": "",
+      "note": "Berichtet wird über praktische Anwendungen und Erfahrungen mit dem E-Rezept, etwa ein 3D-gedrucktes Ausgabeterminal und Anleitungen zum Einlösen ohne App. Nutzer bemängeln zudem lückenhafte Apothekenanbindung und Probleme bei Android-Apps, während die E-Rezept-App eine verbesserte Apothekensuche erhielt.",
       "share": 0
     },
     {
@@ -1286,7 +1289,6 @@
             "2026-05-11": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1375,6 +1377,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -1386,14 +1389,14 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
             0,
             0,
             0,
@@ -1681,7 +1684,7 @@
           "iso": "2026-05-11"
         }
       ],
-      "note": "",
+      "note": "Die kartenlose Institutionsidentität HSM-B geht im Umfeld des TI-Gateways in den nächsten Praxistest.",
       "share": 0
     },
     {
@@ -1699,7 +1702,6 @@
             "2026-06-01": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1788,10 +1790,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1850,6 +1852,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2130,7 +2133,7 @@
           "iso": "2026-06-01"
         }
       ],
-      "note": "",
+      "note": "Die Gesellschafter der gematik haben einen Umbau der Gesundheitsdateninfrastruktur mit mehr Befugnissen für die gematik beschlossen. Der Branchenverband bvitg warnt vor diesem Zentralisierungskurs und sieht die TI-Stabilität sowie den Wettbewerb in der Gesundheits-IT gefährdet.",
       "share": 0
     },
     {
@@ -2217,7 +2220,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2230,6 +2232,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2309,7 +2312,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2327,12 +2329,13 @@
             0.14,
             0.14,
             0.14,
-            0.14
+            0.14,
+            0
           ],
           "total": 2,
-          "last7": 1,
-          "prev7": 0,
-          "momentum": null,
+          "last7": 0,
+          "prev7": 1,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
@@ -2548,8 +2551,8 @@
           "iso": "2026-07-13"
         }
       ],
-      "note": "",
-      "share": 0.111
+      "note": "Ein neuer Leitfaden erklärt den Einsatz von KIM in Pflegeeinrichtungen und empfiehlt frühzeitige Abstimmung mit dem IT-Dienstleister zur Integration in Dokumentationssysteme.",
+      "share": 0
     },
     {
       "id": "gematik",
@@ -2559,7 +2562,15 @@
       "desc": "Zulassungs- und Bestaetigungsverfahren, Spezifikationsreleases, Fristen, gematik als Digitalagentur.",
       "signals": {
         "aktivitaet": {
-          "counts": {},
+          "counts": {
+            "2026-06-29": 1,
+            "2026-06-23": 1,
+            "2026-06-12": 1,
+            "2026-05-28": 1,
+            "2026-05-27": 1,
+            "2026-06-19": 2,
+            "2026-06-20": 1
+          },
           "series": [
             0,
             0,
@@ -2585,6 +2596,8 @@
             0,
             0,
             0,
+            1,
+            1,
             0,
             0,
             0,
@@ -2599,26 +2612,24 @@
             0,
             0,
             0,
+            1,
             0,
             0,
             0,
             0,
             0,
             0,
+            2,
+            1,
+            0,
+            0,
+            1,
             0,
             0,
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
+            1,
             0,
             0,
             0,
@@ -2677,6 +2688,14 @@
             0,
             0,
             0,
+            0.14,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
+            0.14,
             0,
             0,
             0,
@@ -2685,38 +2704,30 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.29,
+            0.43,
+            0.43,
+            0.43,
+            0.57,
+            0.57,
+            0.57,
+            0.29,
+            0.14,
+            0.14,
+            0.29,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
             0,
             0,
             0,
@@ -2744,15 +2755,14 @@
             0,
             0
           ],
-          "total": 0,
+          "total": 8,
           "last7": 0,
           "prev7": 0,
           "momentum": 0,
-          "hat": false
+          "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 18,
             "2026-05-03": 20,
             "2026-05-04": 43,
             "2026-05-05": 48,
@@ -2839,11 +2849,9 @@
             "2026-07-25": 33,
             "2026-07-26": 20,
             "2026-07-27": 72,
-            "2026-07-28": 63,
-            "2026-07-29": 51
+            "2026-07-28": 63
           },
           "series": [
-            18,
             20,
             43,
             48,
@@ -2931,17 +2939,17 @@
             20,
             72,
             63,
-            51,
+            0,
+            0,
             0
           ],
           "smooth": [
-            18,
-            19,
-            27,
-            32.25,
-            37.6,
-            40.5,
-            41.14,
+            20,
+            31.5,
+            37,
+            42.5,
+            45,
+            45,
             40.86,
             40.71,
             41.43,
@@ -3023,20 +3031,80 @@
             59.86,
             54.57,
             53.43,
-            50.29,
-            41.43
+            43,
+            34.14,
+            26.86
           ],
-          "total": 4200,
-          "last7": 290,
-          "prev7": 729,
-          "momentum": 0.4,
+          "total": 4131,
+          "last7": 188,
+          "prev7": 713,
+          "momentum": 0.26,
           "hat": true
         }
       },
-      "orgs": [],
+      "orgs": [
+        "gematik"
+      ],
       "people": [],
-      "heads": [],
-      "note": "",
+      "heads": [
+        {
+          "t": "Neues Impulspapier gibt Handlungsempfehlungen für prozessübergreifende digitale Transformation",
+          "s": "gematik Newsroom",
+          "d": "29.06.",
+          "u": "https://www.gematik.de/newsroom/news-detail/neues-impulspapier-gibt-handlungsempfehlungen-fuer-prozessuebergreifende-digitale-transformation",
+          "iso": "2026-06-29"
+        },
+        {
+          "t": "IOP-Summit bietet Impulse, Workshops und Austausch Anmeldung jetzt möglich",
+          "s": "gematik Newsroom",
+          "d": "23.06.",
+          "u": "https://www.gematik.de/newsroom/news-detail/iop-summit-bietet-impulse-workshops-und-austausch-anmeldung-jetzt-moeglich",
+          "iso": "2026-06-23"
+        },
+        {
+          "t": "# Gematik : Gesellschafter beschließen Umbau der Gesundheitsdateninfrastruktur | heise online https://www. heise.de/news/Gematik-Gesellsc hafter-beschliessen-Umbau-der-Gesundheitsd",
+          "s": "Mastodon: #gematik",
+          "d": "20.06.",
+          "u": "https://social.tchncs.de/@simsus/116782884010807051",
+          "iso": "2026-06-20"
+        },
+        {
+          "t": "Gematik: Shareholders decide on restructuring of health data infrastructure Gematik is to improve the stability of e-prescriptions and the like with more powers. Health insurance c",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "19.06.",
+          "u": "https://social.heise.de/@heiseonlineenglish/116778337594604524",
+          "iso": "2026-06-19"
+        },
+        {
+          "t": "Gematik: Gesellschafter beschließen Umbau der Gesundheitsdateninfrastruktur Die Gematik soll mit mehr Befugnissen die Stabilität von E-Rezept und Co. verbessern. Krankenkassen und ",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "19.06.",
+          "u": "https://social.heise.de/@heiseonline/116777256256942356",
+          "iso": "2026-06-19"
+        },
+        {
+          "t": "TI-Forum 2026: Gemeinsam Vertrauen schaffen für die Weiterentwicklung der TI",
+          "s": "gematik Newsroom",
+          "d": "12.06.",
+          "u": "https://www.gematik.de/newsroom/news-detail/ti-forum-2026-gemeinsam-vertrauen-schaffen-fuer-die-weiterentwicklung-der-ti",
+          "iso": "2026-06-12"
+        },
+        {
+          "t": "3 Fragen an Steffi Neumann, Head of KIG",
+          "s": "gematik Newsroom",
+          "d": "28.05.",
+          "u": "https://www.gematik.de/newsroom/news-detail/3-fragen-an-steffi-neumann",
+          "iso": "2026-05-28"
+        },
+        {
+          "t": "gematik launcht Podcast „Gesund vernetzt“",
+          "s": "gematik Newsroom",
+          "d": "27.05.",
+          "u": "https://www.gematik.de/newsroom/news-detail/gematik-launcht-podcast-gesund-vernetzt",
+          "iso": "2026-05-27"
+        }
+      ],
+      "note": "Die gematik hat einen Umbau der Gesundheitsdateninfrastruktur mit erweiterten Befugnissen beschlossen und dazu einen Podcast sowie ein Impulspapier zur digitalen Transformation veröffentlicht. Zudem wird für das TI-Forum 2026 und den IOP-Summit geworben.",
       "share": 0
     },
     {
@@ -3051,7 +3119,10 @@
             "2026-06-29": 1,
             "2026-07-08": 1,
             "2026-06-26": 1,
-            "2026-06-18": 1
+            "2026-06-18": 1,
+            "2026-07-30": 1,
+            "2026-07-16": 1,
+            "2026-06-23": 1
           },
           "series": [
             0,
@@ -3100,6 +3171,25 @@
             0,
             0,
             0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             1,
             0,
@@ -3112,37 +3202,18 @@
             1,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0
           ],
           "smooth": [
@@ -3192,22 +3263,21 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0,
             0.14,
             0.14,
             0.14,
             0.29,
             0.29,
+            0.14,
             0.29,
             0.29,
+            0.29,
+            0.43,
+            0.29,
+            0.29,
+            0.29,
             0.14,
             0.14,
             0.14,
@@ -3221,6 +3291,13 @@
             0.14,
             0.14,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
             0,
             0,
             0,
@@ -3228,19 +3305,13 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            0.14,
+            0.14
           ],
-          "total": 4,
-          "last7": 0,
+          "total": 7,
+          "last7": 1,
           "prev7": 0,
-          "momentum": 0,
+          "momentum": null,
           "hat": true
         },
         "interesse": {
@@ -3437,11 +3508,26 @@
         }
       },
       "orgs": [
+        "KBV",
         "bvitg",
         "gematik"
       ],
       "people": [],
       "heads": [
+        {
+          "t": "GKV-Beitragssatzstabilisierungsgesetz in Kraft: Was sich für Praxen ändert",
+          "s": "Deutsches Aerzteblatt",
+          "d": "30.07.",
+          "u": "https://www.aerzteblatt.de/news/gkv-beitragssatzstabilisierungsgesetz-in-kraft-was-sich-fur-praxen-andert-27c81fe4-7d8b-411c-888a-0ee5aa0269ef",
+          "iso": "2026-07-30"
+        },
+        {
+          "t": "GeDIG-Gesetz spaltet: Lob und scharfe Kritik für mehr Gesundheitsdatennutzung Das GeDIG-Gesetz erzeugt gemischte Reaktionen: Ärzte warnen vor Vertrauensverlust, die Digitalwirtscha",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "16.07.",
+          "u": "https://social.heise.de/@heiseonline/116928683914319619",
+          "iso": "2026-07-16"
+        },
         {
           "t": "bvitg bringt konkrete Vorschläge zum Bürokratierückbau im Gesundheitswesen in Spitzengespräch mit Bundesgesundheitsministerin Warken ein",
           "s": "bvitg",
@@ -3464,6 +3550,13 @@
           "iso": "2026-06-26"
         },
         {
+          "t": "Gesetz für Daten und digitale Innovation im Gesundheitswesen“ (#GeDIG) – ein neuer Angriff auf die Rechte von Patient* innen # Telematikinfrastruktur # PatientendatenInGerfahr http",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "23.06.",
+          "u": "https://mastodon.online/@Dat3nschutz/116798304193229966",
+          "iso": "2026-06-23"
+        },
+        {
           "t": "Aktuelle Pressemitteilung: Digitalisierungsbündnis fordert Nachschärfung der Pflegereform",
           "s": "bvitg",
           "d": "18.06.",
@@ -3471,8 +3564,8 @@
           "iso": "2026-06-18"
         }
       ],
-      "note": "",
-      "share": 0
+      "note": "Das GeDIG-Gesetz zur Gesundheitsdatennutzung sorgt für geteilte Reaktionen: Ärzte warnen vor Vertrauensverlust, die Digitalwirtschaft fordert mehr Rigorosität. Zusätzlich ist das GKV-Beitragssatzstabilisierungsgesetz in Kraft getreten und der bvitg hat Vorschläge zum Bürokratieabbau bei Ministerin Warken eingebracht.",
+      "share": 0.1
     },
     {
       "id": "identitaet",
@@ -3498,7 +3591,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3537,6 +3629,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3590,7 +3683,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3635,6 +3727,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3679,7 +3772,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 26,
             "2026-05-03": 14,
             "2026-05-04": 62,
             "2026-05-05": 41,
@@ -3767,10 +3859,10 @@
             "2026-07-26": 23,
             "2026-07-27": 41,
             "2026-07-28": 27,
-            "2026-07-29": 45
+            "2026-07-29": 43,
+            "2026-07-30": 48
           },
           "series": [
-            26,
             14,
             62,
             41,
@@ -3858,17 +3950,17 @@
             23,
             41,
             27,
-            45,
+            43,
+            48,
             0
           ],
           "smooth": [
-            26,
-            20,
-            34,
-            35.75,
-            36,
+            14,
             38,
-            38.14,
+            39,
+            38.5,
+            40.4,
+            40.17,
             37.14,
             38.43,
             38.57,
@@ -3950,13 +4042,14 @@
             32.57,
             31.43,
             31.29,
-            33.29,
-            27.86
+            33,
+            34.43,
+            30
           ],
-          "total": 3803,
-          "last7": 195,
-          "prev7": 261,
-          "momentum": 0.75,
+          "total": 3823,
+          "last7": 210,
+          "prev7": 262,
+          "momentum": 0.8,
           "hat": true
         }
       },
@@ -3987,7 +4080,7 @@
           "iso": "2026-05-13"
         }
       ],
-      "note": "",
+      "note": "Das Bayerische Landessozialgericht hat entschieden, dass Krankenkassen die eGK bei Beitragsschulden nicht einziehen dürfen. Parallel wird zum Austausch der Heilberufsausweise aufgerufen und beim eGBR wurden 100.000 Anträge erreicht.",
       "share": 0
     },
     {
@@ -4003,7 +4096,6 @@
             "2026-07-10": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4092,6 +4184,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4163,18 +4256,18 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.43,
+            0.43,
+            0.43,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.43,
-            0.43,
-            0.43,
-            0.29,
-            0.29,
-            0.29,
-            0.29,
             0,
             0,
             0,
@@ -4412,7 +4505,7 @@
           "iso": "2026-07-10"
         }
       ],
-      "note": "",
+      "note": "Das BSI hat mit einer IT-Notfallkarte neue Materialien zur Unterstützung von Arztpraxen bei der IT-Sicherheitsrichtlinie veröffentlicht, was in sozialen Medien kritisch diskutiert wird. Zusätzlich wird ein Sicherheitsvorfall thematisiert, bei dem der CCC Zugriff auf geschützte Daten erlangen konnte.",
       "share": 0
     },
     {
@@ -4428,7 +4521,6 @@
             "2026-06-23": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4517,6 +4609,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4571,7 +4664,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4602,6 +4694,7 @@
             0.29,
             0.29,
             0.29,
+            0,
             0,
             0,
             0,
@@ -4619,7 +4712,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 2,
             "2026-05-03": 0,
             "2026-05-04": 4,
             "2026-05-05": 3,
@@ -4704,10 +4796,10 @@
             "2026-07-26": 1,
             "2026-07-27": 1,
             "2026-07-28": 1,
-            "2026-07-29": 1
+            "2026-07-29": 1,
+            "2026-07-30": 2
           },
           "series": [
-            2,
             0,
             4,
             3,
@@ -4796,16 +4888,16 @@
             1,
             1,
             1,
+            2,
             0
           ],
           "smooth": [
+            0,
             2,
-            1,
-            2,
-            2.25,
+            2.33,
+            3.25,
+            3.4,
             3,
-            3.17,
-            2.86,
             2.57,
             2.57,
             2.43,
@@ -4888,12 +4980,13 @@
             0.86,
             1,
             0.71,
-            0.71
+            1,
+            1
           ],
           "total": 175,
-          "last7": 5,
-          "prev7": 6,
-          "momentum": 0.83,
+          "last7": 7,
+          "prev7": 5,
+          "momentum": 1.4,
           "hat": true
         }
       },
@@ -4922,7 +5015,7 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "",
+      "note": "Das GeDIG-Gesetz zur Nutzung von Gesundheitsdaten wird kontrovers diskutiert: Ärzte befürchten Vertrauensverlust, während die Digitalwirtschaft striktere Regelungen fordert. Kritiker sehen darin einen Angriff auf Patientenrechte.",
       "share": 0
     },
     {
@@ -4962,7 +5055,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5001,6 +5093,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5054,7 +5147,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5099,6 +5191,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -5130,7 +5223,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 13,
             "2026-05-03": 11,
             "2026-05-04": 27,
             "2026-05-05": 19,
@@ -5218,10 +5310,10 @@
             "2026-07-26": 11,
             "2026-07-27": 25,
             "2026-07-28": 18,
-            "2026-07-29": 35
+            "2026-07-29": 35,
+            "2026-07-30": 17
           },
           "series": [
-            13,
             11,
             27,
             19,
@@ -5310,16 +5402,16 @@
             25,
             18,
             35,
+            17,
             0
           ],
           "smooth": [
-            13,
-            12,
-            17,
-            17.5,
-            16.8,
-            16.67,
-            16,
+            11,
+            19,
+            19,
+            17.75,
+            17.4,
+            16.5,
             15.57,
             17,
             16.14,
@@ -5402,12 +5494,13 @@
             18.43,
             18.29,
             20.43,
+            19.43,
             17
           ],
-          "total": 1704,
+          "total": 1708,
           "last7": 119,
-          "prev7": 138,
-          "momentum": 0.86,
+          "prev7": 134,
+          "momentum": 0.89,
           "hat": true
         }
       },
@@ -5442,7 +5535,7 @@
           "iso": "2026-05-26"
         }
       ],
-      "note": "",
+      "note": "Vertreter der Ärztekammer Baden-Württemberg und der eHealth-Stabsstelle diskutieren den Austausch zur weiteren Digitalisierung. Ein Podcast von heise online hinterfragt zudem, ob DiGA eine Innovation auf Kosten der Krankenkassen darstellen.",
       "share": 0
     },
     {
@@ -5464,7 +5557,6 @@
             "2026-05-15": 1,
             "2026-05-06": 1,
             "2026-05-19": 1,
-            "2026-07-29": 2,
             "2026-07-28": 2,
             "2026-07-27": 1,
             "2026-07-26": 1,
@@ -5473,13 +5565,19 @@
             "2026-07-22": 1,
             "2026-07-17": 2,
             "2026-07-15": 1,
-            "2026-06-09": 1
+            "2026-06-09": 1,
+            "2026-06-19": 1,
+            "2026-06-07": 1,
+            "2026-07-31": 1,
+            "2026-07-30": 2,
+            "2026-07-29": 2,
+            "2026-07-02": 1,
+            "2026-05-26": 1
           },
           "series": [
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5500,11 +5598,9 @@
             0,
             0,
             0,
-            0,
             1,
             1,
-            0,
-            0,
+            1,
             0,
             0,
             0,
@@ -5516,6 +5612,8 @@
             0,
             1,
             0,
+            1,
+            0,
             0,
             1,
             0,
@@ -5524,7 +5622,7 @@
             0,
             1,
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -5537,7 +5635,7 @@
             0,
             0,
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -5565,20 +5663,20 @@
             1,
             2,
             2,
-            0
+            2,
+            1
           ],
           "smooth": [
             0,
             0,
             0,
-            0,
+            0.25,
             0.2,
             0.17,
             0.14,
             0.14,
             0.14,
             0.14,
-            0.14,
             0,
             0,
             0.14,
@@ -5592,34 +5690,26 @@
             0.29,
             0.29,
             0.29,
-            0.14,
-            0.14,
             0.29,
             0.29,
-            0.29,
-            0.29,
-            0.29,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
             0.29,
             0.14,
             0,
             0,
             0,
-            0,
-            0,
-            0.14,
             0.14,
             0.14,
             0.29,
             0.29,
             0.29,
+            0.43,
+            0.43,
             0.29,
-            0.14,
-            0.29,
-            0.29,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
             0.29,
             0.14,
             0.29,
@@ -5627,15 +5717,23 @@
             0.29,
             0.29,
             0.29,
+            0.29,
+            0.43,
+            0.29,
+            0.43,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
             0.14,
             0.14,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
             0,
             0,
             0,
@@ -5657,17 +5755,17 @@
             0.86,
             1.14,
             1.29,
-            1
+            1.29,
+            1.29
           ],
-          "total": 24,
-          "last7": 7,
-          "prev7": 5,
-          "momentum": 1.4,
+          "total": 31,
+          "last7": 9,
+          "prev7": 4,
+          "momentum": 2.25,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-02": 10,
             "2026-05-03": 11,
             "2026-05-04": 25,
             "2026-05-05": 18,
@@ -5755,10 +5853,10 @@
             "2026-07-26": 2,
             "2026-07-27": 17,
             "2026-07-28": 11,
-            "2026-07-29": 8
+            "2026-07-29": 8,
+            "2026-07-30": 9
           },
           "series": [
-            10,
             11,
             25,
             18,
@@ -5847,16 +5945,16 @@
             17,
             11,
             8,
+            9,
             0
           ],
           "smooth": [
-            10,
-            10.5,
-            15.33,
-            16,
-            16.8,
-            17.17,
-            18.29,
+            11,
+            18,
+            18,
+            18.5,
+            18.6,
+            19.67,
             17.86,
             17.57,
             17,
@@ -5939,21 +6037,49 @@
             10,
             9.86,
             9.29,
-            7.71
+            9,
+            7.57
           ],
-          "total": 1212,
-          "last7": 54,
-          "prev7": 71,
-          "momentum": 0.76,
+          "total": 1211,
+          "last7": 53,
+          "prev7": 73,
+          "momentum": 0.73,
           "hat": true
         }
       },
       "orgs": [
+        "SeHT",
+        "Ärztekammer BW",
+        "Mia Healthcare",
         "bvitg",
         "gematik"
       ],
-      "people": [],
+      "people": [
+        "Armin Flohr",
+        "Arne Pullwitt"
+      ],
       "heads": [
+        {
+          "t": "# Pflegeprofis aus Bayern, Baden-Württemberg, Berlin und Sachsen-Anhalt werden zum Stand der Digitalisierung in Pflegeeinrichtungen und Pflegediensten befragt. Es geht um \"Praxiser",
+          "s": "Mastodon: #ePA",
+          "d": "31.07.",
+          "u": "https://mastodon.social/@Pfleger_aus_A/117013533604579721",
+          "iso": "2026-07-31"
+        },
+        {
+          "t": "Reuters: EPA says power for data centers can sidestep pollution laws. “Power sources providing electricity only to data centers and not the public grid may not be subject to ​feder",
+          "s": "Mastodon: #ePA",
+          "d": "30.07.",
+          "u": "https://rbfirehose.com/2026/07/30/reuters-epa-says-power-for-data-centers-can-sidestep-pollution-laws/",
+          "iso": "2026-07-30"
+        },
+        {
+          "t": "# EPA says power for # datacenters can sidestep # pollution laws EPA said if they aree not supplying # electricity to grid then they would not be subject to # CleanAirAct 's Acid R",
+          "s": "Mastodon: #ePA",
+          "d": "30.07.",
+          "u": "https://hachyderm.io/@BenjaminHCCarr/117008357210991490",
+          "iso": "2026-07-30"
+        },
         {
           "t": "# EPA : # Datacenter power not subject to # acidrain restrictions https:// thehill.com/newsletters/energy -environment/5993023-epa-data-center-power-not-subject-to-acid-rain-restri",
           "s": "Mastodon: #ePA",
@@ -6046,6 +6172,13 @@
           "iso": "2026-07-15"
         },
         {
+          "t": "Gemeinsam Digitalisierung vorantreiben – und miteinander im Gespräch bleiben: Armin Flohr, Geschäftsführer der # Ärztekammer BW, sowie Arne Pullwitt, Leiter der Stabsstelle # eHeal",
+          "s": "Mastodon: #eHealth",
+          "d": "02.07.",
+          "u": "https://xn--baw-joa.social/@aerztekammerbw/116850306177857990",
+          "iso": "2026-07-02"
+        },
+        {
           "t": "Alles neu macht der … Juni?! Ja, bei uns schon.",
           "s": "bvitg",
           "d": "25.06.",
@@ -6058,6 +6191,13 @@
           "d": "23.06.",
           "u": "https://www.gematik.de/newsroom/news-detail/iop-summit-bietet-impulse-workshops-und-austausch-anmeldung-jetzt-moeglich",
           "iso": "2026-06-23"
+        },
+        {
+          "t": "LSG Bayern urteilt: Krankenkassen dürfen eGK bei Schulden nicht einziehen Das Bayerische Landessozialgericht stoppt die Praxis der Kassen. Der Entzug der Gesundheitskarte bei Beitr",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "19.06.",
+          "u": "https://social.heise.de/@telepolis/116776336138521170",
+          "iso": "2026-06-19"
         },
         {
           "t": "Aktuelle Ausgabe: bvitg-Monitor (04/2026)",
@@ -6081,6 +6221,13 @@
           "iso": "2026-06-09"
         },
         {
+          "t": "Erfahrungen aus dem deutschen Gesundheitswesen: - E‑Rezept spart Zeit, aber die Anbindung der Apotheken ist noch lückenhaft. - ePA erhöht Transparenz, wirft jedoch Fragen zum Daten",
+          "s": "Mastodon: #ERezept",
+          "d": "07.06.",
+          "u": "https://mastodon.social/@liliumf/116706861260137481",
+          "iso": "2026-06-07"
+        },
+        {
           "t": "3 Fragen an Steffi Neumann, Head of KIG",
           "s": "gematik Newsroom",
           "d": "28.05.",
@@ -6093,6 +6240,13 @@
           "d": "27.05.",
           "u": "https://www.gematik.de/newsroom/news-detail/gematik-launcht-podcast-gesund-vernetzt",
           "iso": "2026-05-27"
+        },
+        {
+          "t": "Africa: South Africa's Mia Healthcare Raises $920k for Mobile Dental Care: [Daba Finance] South African e-health startup Mia Healthcare Technologies raised ZAR15 million, or about ",
+          "s": "Mastodon: #eHealth",
+          "d": "26.05.",
+          "u": "https://journa.host/@africa/116641998847823531",
+          "iso": "2026-05-26"
         },
         {
           "t": "Wir sehen uns 2027 – Deutscher Interoperabilitätstag künftig in neuem Gewand",
@@ -6114,17 +6268,10 @@
           "d": "15.05.",
           "u": "https://www.bvitg.de/dmea-2026-politik-liegt-in-der-messeluft/",
           "iso": "2026-05-15"
-        },
-        {
-          "t": "bvitg Trendreport Gesundheits-IT 2026",
-          "s": "bvitg",
-          "d": "06.05.",
-          "u": "https://www.bvitg.de/bvitg-trendreport-gesundheits-it-2026-ki-trends-regulatorik/",
-          "iso": "2026-05-06"
         }
       ],
       "note": "",
-      "share": 0.778
+      "share": 0.9
     }
   ],
   "roadmap": [
