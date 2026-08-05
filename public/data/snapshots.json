@@ -17,31 +17,32 @@
     }
   ],
   "live": true,
-  "generated": "2026-08-04T11:50:14.512Z",
-  "today": "2026-08-04",
-  "startDate": "2026-05-07",
-  "endDate": "2026-08-04",
+  "generated": "2026-08-05T11:39:22.443Z",
+  "today": "2026-08-05",
+  "startDate": "2026-05-08",
+  "endDate": "2026-08-05",
   "days": 90,
   "stats": {
-    "beitraege": 63,
-    "quellenOk": 10,
-    "quellenFehler": 9,
-    "laufzeitSek": 37
+    "beitraege": 54,
+    "quellenOk": 9,
+    "quellenFehler": 10,
+    "laufzeitSek": 38
   },
   "sources": [
+    {
+      "name": "bvitg",
+      "url": "https://www.bvitg.de/feed/",
+      "type": "RSS",
+      "status": "fehler",
+      "items": 0,
+      "error": "Antwort enthielt keine lesbaren Eintraege"
+    },
     {
       "name": "Bitkom",
       "url": "https://www.bitkom.org/rss.xml",
       "type": "RSS",
       "status": "ok",
       "items": 0
-    },
-    {
-      "name": "bvitg",
-      "url": "https://www.bvitg.de/feed/",
-      "type": "RSS",
-      "status": "ok",
-      "items": 60
     },
     {
       "name": "Deutsches Aerzteblatt",
@@ -109,63 +110,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 670
+      "items": 668
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3477
+      "items": 3468
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1543
+      "items": 1545
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 431
+      "items": 435
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 471
+      "items": 476
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 165
+      "items": 161
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 4138
+      "items": 4126
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1172
+      "items": 1165
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1029
+      "items": 1032
     }
   ],
   "topics": [
@@ -197,7 +198,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -276,6 +276,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -289,7 +290,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -362,6 +362,7 @@
             0.29,
             0.29,
             0.29,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -381,7 +382,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 18,
             "2026-05-08": 21,
             "2026-05-09": 12,
             "2026-05-10": 11,
@@ -469,10 +469,10 @@
             "2026-07-31": 16,
             "2026-08-01": 4,
             "2026-08-02": 13,
-            "2026-08-03": 19
+            "2026-08-03": 19,
+            "2026-08-04": 20
           },
           "series": [
-            18,
             21,
             12,
             11,
@@ -561,16 +561,16 @@
             4,
             13,
             19,
+            20,
             0
           ],
           "smooth": [
-            18,
-            19.5,
-            17,
-            15.5,
-            15.2,
-            16.33,
-            16.86,
+            21,
+            16.5,
+            14.67,
+            14.5,
+            16,
+            16.67,
             16.43,
             15.71,
             15.43,
@@ -653,12 +653,13 @@
             13,
             13,
             13.57,
-            11.29
+            14.14,
+            12
           ],
-          "total": 1543,
-          "last7": 79,
-          "prev7": 93,
-          "momentum": 0.85,
+          "total": 1545,
+          "last7": 84,
+          "prev7": 98,
+          "momentum": 0.86,
           "hat": true
         }
       },
@@ -748,7 +749,7 @@
         }
       ],
       "note": "",
-      "share": 0.091
+      "share": 0.083
     },
     {
       "id": "erezept",
@@ -794,7 +795,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -822,6 +822,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -886,7 +887,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -920,6 +920,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -955,7 +956,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 3,
             "2026-05-08": 9,
             "2026-05-09": 4,
             "2026-05-10": 3,
@@ -1043,10 +1043,10 @@
             "2026-07-31": 4,
             "2026-08-01": 10,
             "2026-08-02": 3,
-            "2026-08-03": 3
+            "2026-08-03": 3,
+            "2026-08-04": 8
           },
           "series": [
-            3,
             9,
             4,
             3,
@@ -1135,16 +1135,16 @@
             10,
             3,
             3,
+            8,
             0
           ],
           "smooth": [
-            3,
-            6,
+            9,
+            6.5,
             5.33,
-            4.75,
-            4.8,
-            5,
-            4.86,
+            5.25,
+            5.4,
+            5.17,
             5.14,
             4.86,
             4.57,
@@ -1227,12 +1227,13 @@
             5.57,
             5.71,
             5.14,
-            4.29
+            5.43,
+            5
           ],
-          "total": 471,
-          "last7": 30,
+          "total": 476,
+          "last7": 35,
           "prev7": 23,
-          "momentum": 1.3,
+          "momentum": 1.52,
           "hat": true
         }
       },
@@ -1278,7 +1279,6 @@
             "2026-05-11": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1367,20 +1367,21 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
             0,
             0,
             0,
-            0,
+            0.25,
             0.2,
             0.17,
             0.14,
             0.14,
             0.14,
             0.14,
-            0.14,
+            0,
             0,
             0,
             0,
@@ -1715,7 +1716,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -1739,6 +1739,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -1807,7 +1808,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1837,6 +1837,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2204,7 +2205,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2217,6 +2217,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2296,7 +2297,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2315,6 +2315,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2580,7 +2581,6 @@
             0,
             0,
             0,
-            0,
             1,
             1,
             0,
@@ -2650,6 +2650,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -2672,7 +2673,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.29,
             0.29,
@@ -2713,6 +2713,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2752,7 +2753,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 55,
             "2026-05-08": 45,
             "2026-05-09": 16,
             "2026-05-10": 19,
@@ -2840,10 +2840,10 @@
             "2026-07-31": 25,
             "2026-08-01": 19,
             "2026-08-02": 20,
-            "2026-08-03": 30
+            "2026-08-03": 30,
+            "2026-08-04": 43
           },
           "series": [
-            55,
             45,
             16,
             19,
@@ -2932,16 +2932,16 @@
             19,
             20,
             30,
+            43,
             0
           ],
           "smooth": [
-            55,
-            50,
-            38.67,
-            33.75,
-            36.6,
-            40.33,
-            39.71,
+            45,
+            30.5,
+            26.67,
+            32,
+            37.4,
+            37.17,
             35.57,
             33.57,
             34.86,
@@ -3024,12 +3024,13 @@
             40.29,
             40.29,
             34.29,
-            25.29
+            31.43,
+            24.14
           ],
-          "total": 4138,
-          "last7": 177,
-          "prev7": 374,
-          "momentum": 0.47,
+          "total": 4126,
+          "last7": 169,
+          "prev7": 352,
+          "momentum": 0.48,
           "hat": true
         }
       },
@@ -3156,7 +3157,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3186,6 +3186,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3207,7 +3208,6 @@
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3284,6 +3284,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3584,7 +3585,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3623,6 +3623,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3676,6 +3677,28 @@
             0,
             0,
             0,
+            0.17,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0.14,
             0.14,
@@ -3691,15 +3714,6 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3708,19 +3722,6 @@
             0.14,
             0.14,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
             0,
             0,
             0,
@@ -3770,7 +3771,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 48,
             "2026-05-08": 39,
             "2026-05-09": 19,
             "2026-05-10": 23,
@@ -3858,10 +3858,10 @@
             "2026-07-31": 28,
             "2026-08-01": 28,
             "2026-08-02": 36,
-            "2026-08-03": 145
+            "2026-08-03": 145,
+            "2026-08-04": 43
           },
           "series": [
-            48,
             39,
             19,
             23,
@@ -3950,16 +3950,16 @@
             28,
             36,
             145,
+            43,
             0
           ],
           "smooth": [
-            48,
-            43.5,
-            35.33,
-            32.25,
-            38.4,
-            39.67,
-            41.71,
+            39,
+            29,
+            27,
+            36,
+            38,
+            40.67,
             40,
             38,
             39.29,
@@ -4042,12 +4042,13 @@
             34.29,
             36.14,
             51,
-            47.14
+            53.29,
+            46.86
           ],
-          "total": 3908,
-          "last7": 330,
-          "prev7": 219,
-          "momentum": 1.51,
+          "total": 3903,
+          "last7": 328,
+          "prev7": 233,
+          "momentum": 1.41,
           "hat": true
         }
       },
@@ -4157,12 +4158,12 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
             0,
             2,
+            0,
             0,
             0,
             0,
@@ -4249,18 +4250,18 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.43,
+            0.43,
+            0.43,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.43,
-            0.43,
-            0.43,
-            0.29,
-            0.29,
-            0.29,
-            0.29,
             0,
             0,
             0,
@@ -4565,7 +4566,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -4590,6 +4590,7 @@
             0,
             0,
             2,
+            0,
             0,
             0,
             0,
@@ -4657,7 +4658,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4688,6 +4688,7 @@
             0.29,
             0.29,
             0.29,
+            0,
             0,
             0,
             0,
@@ -4710,7 +4711,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 4,
             "2026-05-08": 1,
             "2026-05-09": 0,
             "2026-05-11": 3,
@@ -4795,10 +4795,10 @@
             "2026-07-31": 2,
             "2026-08-01": 0,
             "2026-08-02": 0,
-            "2026-08-03": 1
+            "2026-08-03": 1,
+            "2026-08-04": 0
           },
           "series": [
-            4,
             1,
             0,
             0,
@@ -4887,16 +4887,16 @@
             0,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
-            4,
-            2.5,
+            1,
+            0.5,
+            0.33,
+            1,
+            1.8,
             1.67,
-            1.25,
-            1.6,
-            2.17,
-            2,
             1.86,
             2.14,
             2.14,
@@ -4979,12 +4979,13 @@
             1.14,
             1,
             1,
-            0.86
+            0.86,
+            0.71
           ],
-          "total": 165,
-          "last7": 6,
-          "prev7": 7,
-          "momentum": 0.86,
+          "total": 161,
+          "last7": 5,
+          "prev7": 5,
+          "momentum": 1,
           "hat": true
         }
       },
@@ -5050,7 +5051,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5118,6 +5118,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5142,7 +5143,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5209,6 +5209,7 @@
             0,
             0,
             0,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -5223,7 +5224,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 16,
             "2026-05-08": 12,
             "2026-05-09": 10,
             "2026-05-10": 21,
@@ -5311,10 +5311,10 @@
             "2026-07-31": 19,
             "2026-08-01": 11,
             "2026-08-02": 19,
-            "2026-08-03": 13
+            "2026-08-03": 13,
+            "2026-08-04": 17
           },
           "series": [
-            16,
             12,
             10,
             21,
@@ -5403,16 +5403,16 @@
             11,
             19,
             13,
+            17,
             0
           ],
           "smooth": [
+            12,
+            11,
+            14.33,
             16,
-            14,
-            12.67,
-            14.75,
-            16,
-            16.5,
-            15.57,
+            16.6,
+            15.5,
             15.57,
             16.86,
             17.14,
@@ -5495,12 +5495,13 @@
             19.43,
             20.57,
             18.86,
-            16.29
+            18.71,
+            13.71
           ],
-          "total": 1699,
-          "last7": 114,
-          "prev7": 128,
-          "momentum": 0.89,
+          "total": 1700,
+          "last7": 96,
+          "prev7": 143,
+          "momentum": 0.67,
           "hat": true
         }
       },
@@ -5551,7 +5552,7 @@
         }
       ],
       "note": "",
-      "share": 0.091
+      "share": 0.083
     },
     {
       "id": "sonstiges",
@@ -5588,9 +5589,10 @@
             "2026-07-10": 1,
             "2026-07-30": 2,
             "2026-07-31": 2,
-            "2026-08-04": 1,
-            "2026-08-03": 1,
-            "2026-08-02": 1
+            "2026-08-02": 1,
+            "2026-06-29": 1,
+            "2026-08-04": 4,
+            "2026-08-03": 1
           },
           "series": [
             0,
@@ -5600,7 +5602,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5646,7 +5647,7 @@
             0,
             0,
             0,
-            0,
+            1,
             0,
             0,
             1,
@@ -5682,7 +5683,8 @@
             0,
             1,
             1,
-            1
+            4,
+            0
           ],
           "smooth": [
             0,
@@ -5692,7 +5694,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5738,13 +5739,13 @@
             0.29,
             0.29,
             0.29,
+            0.43,
             0.29,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
             0.14,
             0.14,
             0.14,
@@ -5774,17 +5775,17 @@
             1.43,
             1.43,
             1.43,
-            1.29
+            1.71,
+            1.43
           ],
-          "total": 35,
-          "last7": 9,
-          "prev7": 8,
-          "momentum": 1.13,
+          "total": 39,
+          "last7": 10,
+          "prev7": 9,
+          "momentum": 1.11,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-07": 19,
             "2026-05-08": 25,
             "2026-05-09": 7,
             "2026-05-10": 9,
@@ -5872,10 +5873,10 @@
             "2026-07-31": 11,
             "2026-08-01": 5,
             "2026-08-02": 10,
-            "2026-08-03": 9
+            "2026-08-03": 9,
+            "2026-08-04": 12
           },
           "series": [
-            19,
             25,
             7,
             9,
@@ -5964,16 +5965,16 @@
             5,
             10,
             9,
+            12,
             0
           ],
           "smooth": [
-            19,
-            22,
-            17,
+            25,
+            16,
+            13.67,
+            15.5,
             15,
-            16.2,
-            15.67,
-            15.29,
+            14.67,
             14.43,
             11.71,
             11.43,
@@ -6056,19 +6057,20 @@
             9,
             10.14,
             9,
-            7.43
+            9.14,
+            8
           ],
-          "total": 1172,
-          "last7": 52,
-          "prev7": 69,
-          "momentum": 0.75,
+          "total": 1165,
+          "last7": 56,
+          "prev7": 65,
+          "momentum": 0.86,
           "hat": true
         }
       },
       "orgs": [
+        "gematik",
         "EPA",
         "bvitg",
-        "gematik",
         "Ärztekammer BW",
         "Mia Healthcare",
         "SeHT"
@@ -6083,6 +6085,27 @@
           "s": "heise Newsticker",
           "d": "04.08.",
           "u": "https://www.heise.de/news/75-Jahre-Kraftfahrt-Bundesamt-KBA-will-Online-Zulassung-zentralisieren-11397115.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-08-04"
+        },
+        {
+          "t": "Divided federal appeals court says Trump administration was wrong to terminate climate funds A federal appeals court has ruled that the Trump administration improperly ended a mult",
+          "s": "Mastodon: #ePA",
+          "d": "04.08.",
+          "u": "https://mastodon.social/@top_news/117039054425347190",
+          "iso": "2026-08-04"
+        },
+        {
+          "t": "FBI & EPA warn: Hackers hit water/wastewater systems in 7+ states, disrupting operations. https:// jpmellojr.blogspot.com/2026/08 /fbi-epa-warn-of-cyberattacks-targeting.html # FBI",
+          "s": "Mastodon: #ePA",
+          "d": "04.08.",
+          "u": "https://noc.social/@jpmellojr/117037701455230717",
+          "iso": "2026-08-04"
+        },
+        {
+          "t": "The EPA spent hundreds of millions on lead remediation in Omaha, home of the nation’s largest residential Superfund site. New soil tests by The Flatwater Free Press and ProPublica ",
+          "s": "Mastodon: #ePA",
+          "d": "04.08.",
+          "u": "https://newsie.social/@ProPublica/117037480216519559",
           "iso": "2026-08-04"
         },
         {
@@ -6240,6 +6263,13 @@
           "iso": "2026-07-02"
         },
         {
+          "t": "Neues Impulspapier gibt Handlungsempfehlungen für prozessübergreifende digitale Transformation",
+          "s": "gematik Newsroom",
+          "d": "29.06.",
+          "u": "https://www.gematik.de/newsroom/news-detail/neues-impulspapier-gibt-handlungsempfehlungen-fuer-prozessuebergreifende-digitale-transformation",
+          "iso": "2026-06-29"
+        },
+        {
           "t": "Alles neu macht der … Juni?! Ja, bei uns schon.",
           "s": "bvitg",
           "d": "25.06.",
@@ -6259,38 +6289,10 @@
           "d": "19.06.",
           "u": "https://social.heise.de/@telepolis/116776336138521170",
           "iso": "2026-06-19"
-        },
-        {
-          "t": "Aktuelle Ausgabe: bvitg-Monitor (04/2026)",
-          "s": "bvitg",
-          "d": "17.06.",
-          "u": "https://www.bvitg.de/aktuelle-ausgabe-bvitg-monitor-04-2026/",
-          "iso": "2026-06-17"
-        },
-        {
-          "t": "TI-Forum 2026: Gemeinsam Vertrauen schaffen für die Weiterentwicklung der TI",
-          "s": "gematik Newsroom",
-          "d": "12.06.",
-          "u": "https://www.gematik.de/newsroom/news-detail/ti-forum-2026-gemeinsam-vertrauen-schaffen-fuer-die-weiterentwicklung-der-ti",
-          "iso": "2026-06-12"
-        },
-        {
-          "t": "有市民接獲偽冒「eHealth」或「HA Go」保險短訊 醫衞局醫管局報警 https://www. am730.com.hk/本地/1035225/有市民接獲偽 冒-ehealth-或-ha-go-保險短訊-醫衞局醫管局報警",
-          "s": "Mastodon: #eHealth",
-          "d": "09.06.",
-          "u": "https://mastodon.hongkongers.net/@am730hk_mirror/116720760510942810",
-          "iso": "2026-06-09"
-        },
-        {
-          "t": "Erfahrungen aus dem deutschen Gesundheitswesen: - E‑Rezept spart Zeit, aber die Anbindung der Apotheken ist noch lückenhaft. - ePA erhöht Transparenz, wirft jedoch Fragen zum Daten",
-          "s": "Mastodon: #ERezept",
-          "d": "07.06.",
-          "u": "https://mastodon.social/@liliumf/116706861260137481",
-          "iso": "2026-06-07"
         }
       ],
       "note": "",
-      "share": 0.818
+      "share": 0.833
     }
   ],
   "roadmap": [
