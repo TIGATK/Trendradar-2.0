@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-08-16T05:06:19.453Z",
-  "today": "2026-08-16",
-  "startDate": "2026-05-19",
-  "endDate": "2026-08-16",
+  "generated": "2026-08-17T05:53:48.629Z",
+  "today": "2026-08-17",
+  "startDate": "2026-05-20",
+  "endDate": "2026-08-17",
   "days": 90,
   "stats": {
-    "beitraege": 55,
+    "beitraege": 54,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 36
+    "laufzeitSek": 33
   },
   "sources": [
     {
@@ -109,63 +109,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 640
+      "items": 633
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3355
+      "items": 3315
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1477
+      "items": 1455
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 421
+      "items": 413
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 478
+      "items": 471
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 157
+      "items": 148
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 4010
+      "items": 3951
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1116
+      "items": 1094
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1009
+      "items": 996
     }
   ],
   "topics": [
@@ -209,7 +209,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -279,6 +278,7 @@
             0,
             1,
             1,
+            0,
             0,
             0
           ],
@@ -301,7 +301,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -370,6 +369,7 @@
             0,
             0,
             0.14,
+            0.29,
             0.29,
             0.29,
             0.29
@@ -382,7 +382,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 22,
             "2026-05-20": 185,
             "2026-05-21": 20,
             "2026-05-22": 17,
@@ -471,7 +470,6 @@
             "2026-08-13": 10
           },
           "series": [
-            22,
             185,
             20,
             17,
@@ -560,16 +558,16 @@
             10,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            22,
-            103.5,
-            75.67,
-            61,
-            50.4,
-            43.17,
-            39,
+            185,
+            102.5,
+            74,
+            57.5,
+            47.4,
+            41.83,
             38.43,
             14.29,
             13.43,
@@ -652,12 +650,13 @@
             13.86,
             11.86,
             10,
-            9
+            9,
+            5.71
           ],
-          "total": 1477,
-          "last7": 63,
-          "prev7": 90,
-          "momentum": 0.7,
+          "total": 1455,
+          "last7": 40,
+          "prev7": 94,
+          "momentum": 0.43,
           "hat": true
         }
       },
@@ -769,8 +768,8 @@
           "iso": "2026-06-07"
         }
       ],
-      "note": "Die KDL 2026 wurde als FHIR-Package auf dem zentralen Terminologieserver veröffentlicht und soll die Grundlage für strukturierten Dokumentenaustausch in der ePA bilden. Parallel dazu äußern sich mehrere Nutzer kritisch zu Datenschutzaspekten, insbesondere zur Weiterleitung von ePA-Daten in die EHDS-Datenbank.",
-      "share": 0.286
+      "note": "",
+      "share": 0.4
     },
     {
       "id": "erezept",
@@ -805,7 +804,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -868,6 +866,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -897,7 +896,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -966,6 +964,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0
@@ -978,7 +977,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 7,
             "2026-05-20": 2,
             "2026-05-21": 6,
             "2026-05-22": 9,
@@ -1067,7 +1065,6 @@
             "2026-08-13": 8
           },
           "series": [
-            7,
             2,
             6,
             9,
@@ -1156,16 +1153,16 @@
             8,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            7,
-            4.5,
-            5,
+            2,
+            4,
+            5.67,
             6,
-            6.2,
-            5.33,
-            5.86,
+            5,
+            5.67,
             5.43,
             5.57,
             7,
@@ -1248,12 +1245,13 @@
             5.86,
             4.43,
             4.14,
-            3.71
+            3.71,
+            3
           ],
-          "total": 478,
-          "last7": 26,
-          "prev7": 45,
-          "momentum": 0.58,
+          "total": 471,
+          "last7": 21,
+          "prev7": 47,
+          "momentum": 0.45,
           "hat": true
         }
       },
@@ -1293,7 +1291,7 @@
           "iso": "2026-06-07"
         }
       ],
-      "note": "KBV und Krankenkassen einigten sich auf einheitliche Regeln für Cannabisverordnungen per E-Rezept. Daneben erschienen allgemeine Erklärstücke zur Einlösung des E-Rezepts ohne App.",
+      "note": "",
       "share": 0
     },
     {
@@ -1723,7 +1721,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -1800,10 +1797,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1845,6 +1842,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2142,7 +2140,7 @@
           "iso": "2026-06-01"
         }
       ],
-      "note": "Die Gesellschafter der gematik beschlossen einen Umbau der Gesundheitsdateninfrastruktur mit erweiterten Befugnissen für die gematik zur Stabilisierung von E-Rezept und weiteren Diensten. Der Verband bvitg kritisierte diesen Zentralisierungskurs im Transformationsplan 2030 als Gefahr für TI-Stabilität und Wettbewerb.",
+      "note": "",
       "share": 0
     },
     {
@@ -2212,7 +2210,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2225,6 +2222,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2304,7 +2302,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2323,6 +2320,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2560,7 +2558,7 @@
           "iso": "2026-07-13"
         }
       ],
-      "note": "Ein neuer Leitfaden „How to KIM für Pflegeeinrichtungen“ wurde veröffentlicht. Er empfiehlt, IT-Dienstleister bereits in der Planungsphase zur Integration von KIM in bestehende Dokumentationssysteme einzubinden.",
+      "note": "",
       "share": 0
     },
     {
@@ -2582,7 +2580,6 @@
             "2026-08-06": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -2671,6 +2668,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -2681,7 +2679,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.29,
             0.29,
@@ -2760,6 +2757,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2773,7 +2771,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 59,
             "2026-05-20": 51,
             "2026-05-21": 59,
             "2026-05-22": 45,
@@ -2862,7 +2859,6 @@
             "2026-08-13": 48
           },
           "series": [
-            59,
             51,
             59,
             45,
@@ -2951,16 +2947,16 @@
             48,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            59,
+            51,
             55,
-            56.33,
-            53.5,
-            46.2,
-            40.83,
-            38.29,
+            51.67,
+            43,
+            37.2,
+            34.83,
             38.86,
             41.57,
             44.43,
@@ -3043,12 +3039,13 @@
             43.43,
             37.86,
             31,
-            26.43
+            26.43,
+            19.14
           ],
-          "total": 4010,
-          "last7": 185,
-          "prev7": 254,
-          "momentum": 0.73,
+          "total": 3951,
+          "last7": 134,
+          "prev7": 275,
+          "momentum": 0.49,
           "hat": true
         }
       },
@@ -3121,7 +3118,7 @@
           "iso": "2026-05-27"
         }
       ],
-      "note": "Die gematik rief zum TI-Summit auf, um Ideen für die digitale Gesundheitsversorgung zu sammeln, und veröffentlichte ein Impulspapier mit Handlungsempfehlungen zur digitalen Transformation. Die Gesellschafter beschlossen zudem einen Umbau der Gesundheitsdateninfrastruktur mit mehr Befugnissen für die gematik.",
+      "note": "",
       "share": 0
     },
     {
@@ -3170,7 +3167,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3200,6 +3196,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3233,7 +3230,6 @@
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3298,6 +3294,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3588,7 +3585,7 @@
           "iso": "2026-06-18"
         }
       ],
-      "note": "Das GKV-Beitragssatzstabilisierungsgesetz trat in Kraft und bringt Änderungen für Praxen mit sich. Das GeDIG-Gesetz zur Gesundheitsdatennutzung sorgte für gemischte Reaktionen zwischen Kritik von Ärzten und Forderungen der Digitalwirtschaft nach mehr Rechtssicherheit.",
+      "note": "",
       "share": 0
     },
     {
@@ -3620,7 +3617,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3636,6 +3632,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3712,7 +3709,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3734,6 +3730,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3795,7 +3792,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 48,
             "2026-05-20": 63,
             "2026-05-21": 44,
             "2026-05-22": 34,
@@ -3884,7 +3880,6 @@
             "2026-08-13": 29
           },
           "series": [
-            48,
             63,
             44,
             34,
@@ -3973,16 +3968,16 @@
             29,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            48,
-            55.5,
-            51.67,
-            47.25,
-            45.6,
-            42.67,
-            41.43,
+            63,
+            53.5,
+            47,
+            45,
+            41.6,
+            40.33,
             40.86,
             37.29,
             37,
@@ -4065,12 +4060,13 @@
             31.43,
             27.43,
             22.29,
-            20.29
+            20.29,
+            17.43
           ],
-          "total": 3774,
-          "last7": 142,
-          "prev7": 337,
-          "momentum": 0.42,
+          "total": 3726,
+          "last7": 122,
+          "prev7": 212,
+          "momentum": 0.58,
           "hat": true
         }
       },
@@ -4094,7 +4090,7 @@
           "iso": "2026-06-05"
         }
       ],
-      "note": "Das Bayerische Landessozialgericht urteilte, dass Krankenkassen die elektronische Gesundheitskarte bei Beitragsschulden nicht einziehen dürfen. Zudem wurde ein letzter Aufruf zum Austausch der Heilberufsausweise veröffentlicht.",
+      "note": "",
       "share": 0
     },
     {
@@ -4110,7 +4106,6 @@
             "2026-07-10": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4199,6 +4194,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4253,18 +4249,18 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.43,
+            0.43,
+            0.43,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.43,
-            0.43,
-            0.43,
-            0.29,
-            0.29,
-            0.29,
-            0.29,
             0,
             0,
             0,
@@ -4528,7 +4524,7 @@
           "iso": "2026-07-10"
         }
       ],
-      "note": "Die KBV äußerte Bedenken, dass eine geplante Reform des Nachrichtendienstrechts das Arzt-Patienten-Geheimnis gefährden könnte. Das BSI stellte zudem Materialien wie die „IT-Notfallkarte“ bereit, um Arztpraxen bei der Umsetzung der IT-Sicherheitsrichtlinie zu unterstützen.",
+      "note": "",
       "share": 0
     },
     {
@@ -4546,7 +4542,6 @@
             "2026-08-13": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4635,6 +4630,7 @@
             1,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4672,7 +4668,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4724,6 +4719,7 @@
             0.14,
             0.14,
             0,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -4737,7 +4733,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 9,
             "2026-05-20": 4,
             "2026-05-21": 3,
             "2026-05-22": 1,
@@ -4824,7 +4819,6 @@
             "2026-08-13": 0
           },
           "series": [
-            9,
             4,
             3,
             1,
@@ -4913,16 +4907,16 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            9,
-            6.5,
-            5.33,
-            4.25,
-            3.6,
-            3.33,
-            3,
+            4,
+            3.5,
+            2.67,
+            2.25,
+            2.2,
+            2,
             2.14,
             2.43,
             2.57,
@@ -5005,12 +4999,13 @@
             1.29,
             1.14,
             1,
-            0.86
+            0.86,
+            0.43
           ],
-          "total": 157,
-          "last7": 6,
-          "prev7": 9,
-          "momentum": 0.67,
+          "total": 148,
+          "last7": 3,
+          "prev7": 11,
+          "momentum": 0.27,
           "hat": true
         }
       },
@@ -5055,8 +5050,8 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Das GeDIG-Gesetz zur verstärkten Nutzung von Gesundheitsdaten löste kontroverse Reaktionen aus, wobei Ärzte einen Vertrauensverlust befürchten und die Digitalwirtschaft klarere Regeln fordert. In Diskussionen um die ePA wurde zudem die Weiterleitung von Patientendaten an die EHDS-Datenbank kritisch hinterfragt.",
-      "share": 0.143
+      "note": "",
+      "share": 0.2
     },
     {
       "id": "versorgung",
@@ -5080,7 +5075,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5148,6 +5142,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5172,7 +5167,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5246,6 +5240,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -5265,7 +5260,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 20,
             "2026-05-20": 15,
             "2026-05-21": 19,
             "2026-05-22": 14,
@@ -5354,7 +5348,6 @@
             "2026-08-13": 13
           },
           "series": [
-            20,
             15,
             19,
             14,
@@ -5443,16 +5436,16 @@
             13,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            20,
-            17.5,
-            18,
+            15,
             17,
-            16.6,
-            15.33,
-            15.29,
+            16,
+            15.75,
+            14.4,
+            14.5,
             16.71,
             17.29,
             16,
@@ -5535,12 +5528,13 @@
             15,
             12.57,
             10.71,
-            9
+            9,
+            6.43
           ],
-          "total": 1649,
-          "last7": 63,
-          "prev7": 103,
-          "momentum": 0.61,
+          "total": 1629,
+          "last7": 45,
+          "prev7": 108,
+          "momentum": 0.42,
           "hat": true
         }
       },
@@ -5599,7 +5593,7 @@
           "iso": "2026-05-26"
         }
       ],
-      "note": "Pflegefachkräfte aus mehreren Bundesländern wurden zum Stand der Digitalisierung in Pflegeeinrichtungen befragt. Zudem tauschten sich Vertreter der Ärztekammer Baden-Württemberg zur weiteren Digitalisierung im Gesundheitswesen aus.",
+      "note": "",
       "share": 0
     },
     {
@@ -5618,7 +5612,6 @@
             "2026-06-25": 1,
             "2026-06-17": 1,
             "2026-05-20": 1,
-            "2026-05-19": 1,
             "2026-07-28": 2,
             "2026-07-27": 1,
             "2026-07-26": 1,
@@ -5649,7 +5642,6 @@
             "2026-08-15": 1
           },
           "series": [
-            1,
             1,
             0,
             0,
@@ -5738,16 +5730,16 @@
             1,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
             1,
-            1,
-            0.67,
             0.5,
-            0.4,
             0.33,
-            0.29,
+            0.25,
+            0.2,
+            0.17,
             0.29,
             0.29,
             0.43,
@@ -5830,17 +5822,17 @@
             0.86,
             0.57,
             0.57,
-            0.57
+            0.57,
+            0.29
           ],
-          "total": 47,
-          "last7": 4,
-          "prev7": 10,
-          "momentum": 0.4,
+          "total": 46,
+          "last7": 2,
+          "prev7": 11,
+          "momentum": 0.18,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-19": 22,
             "2026-05-20": 21,
             "2026-05-21": 15,
             "2026-05-22": 13,
@@ -5929,7 +5921,6 @@
             "2026-08-13": 15
           },
           "series": [
-            22,
             21,
             15,
             13,
@@ -6018,16 +6009,16 @@
             15,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            22,
-            21.5,
-            19.33,
-            17.75,
-            14.8,
-            13.83,
-            12.86,
+            21,
+            18,
+            16.33,
+            13,
+            12.2,
+            11.33,
             13.29,
             12.29,
             13.14,
@@ -6110,12 +6101,13 @@
             10.29,
             9.14,
             8.43,
-            7.86
+            7.86,
+            6.43
           ],
-          "total": 1116,
-          "last7": 55,
-          "prev7": 54,
-          "momentum": 1.02,
+          "total": 1094,
+          "last7": 45,
+          "prev7": 55,
+          "momentum": 0.82,
           "hat": true
         }
       },
@@ -6124,8 +6116,8 @@
         "EPA",
         "bvitg",
         "FBI",
-        "Ärztekammer BW",
-        "Reuters"
+        "Reuters",
+        "Ärztekammer BW"
       ],
       "people": [
         "Armin Flohr",
@@ -6345,7 +6337,7 @@
         }
       ],
       "note": "",
-      "share": 0.571
+      "share": 0.4
     }
   ],
   "roadmap": [
