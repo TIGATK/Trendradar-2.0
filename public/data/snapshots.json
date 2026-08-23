@@ -17,32 +17,31 @@
     }
   ],
   "live": true,
-  "generated": "2026-08-22T05:04:34.276Z",
-  "today": "2026-08-22",
-  "startDate": "2026-05-25",
-  "endDate": "2026-08-22",
+  "generated": "2026-08-23T05:16:32.392Z",
+  "today": "2026-08-23",
+  "startDate": "2026-05-26",
+  "endDate": "2026-08-23",
   "days": 90,
   "stats": {
-    "beitraege": 46,
-    "quellenOk": 9,
-    "quellenFehler": 10,
-    "laufzeitSek": 34
+    "beitraege": 52,
+    "quellenOk": 10,
+    "quellenFehler": 9,
+    "laufzeitSek": 33
   },
   "sources": [
-    {
-      "name": "bvitg",
-      "url": "https://www.bvitg.de/feed/",
-      "type": "RSS",
-      "status": "fehler",
-      "items": 0,
-      "error": "HTTP 403"
-    },
     {
       "name": "Bitkom",
       "url": "https://www.bitkom.org/rss.xml",
       "type": "RSS",
       "status": "ok",
       "items": 0
+    },
+    {
+      "name": "bvitg",
+      "url": "https://www.bvitg.de/feed/",
+      "type": "RSS",
+      "status": "ok",
+      "items": 60
     },
     {
       "name": "Deutsches Aerzteblatt",
@@ -78,7 +77,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 16,
+      "items": 15,
       "roh": 40
     },
     {
@@ -110,63 +109,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 667
+      "items": 671
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3477
+      "items": 3474
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1328
+      "items": 1323
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 434
+      "items": 436
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 488
+      "items": 483
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 148
+      "items": 147
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 4032
+      "items": 4029
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1114
+      "items": 1108
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1034
+      "items": 1051
     }
   ],
   "topics": [
@@ -205,7 +204,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -278,6 +276,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -297,7 +296,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -373,6 +371,7 @@
             0.43,
             0.43,
             0.29,
+            0.14,
             0.14,
             0.14
           ],
@@ -384,7 +383,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 14,
             "2026-05-26": 18,
             "2026-05-27": 16,
             "2026-05-28": 14,
@@ -472,10 +470,10 @@
             "2026-08-18": 9,
             "2026-08-19": 33,
             "2026-08-20": 21,
-            "2026-08-21": 13
+            "2026-08-21": 13,
+            "2026-08-22": 9
           },
           "series": [
-            14,
             18,
             16,
             14,
@@ -564,16 +562,16 @@
             33,
             21,
             13,
+            9,
             0
           ],
           "smooth": [
-            14,
+            18,
+            17,
             16,
+            14.75,
             16,
-            15.5,
-            14.6,
-            15.67,
-            15.57,
+            15.83,
             16.57,
             16.43,
             16.57,
@@ -656,12 +654,13 @@
             12.29,
             13.86,
             14.29,
-            13.57
+            14.86,
+            13
           ],
-          "total": 1328,
-          "last7": 95,
-          "prev7": 85,
-          "momentum": 1.12,
+          "total": 1323,
+          "last7": 91,
+          "prev7": 91,
+          "momentum": 1,
           "hat": true
         }
       },
@@ -780,8 +779,8 @@
           "iso": "2026-06-07"
         }
       ],
-      "note": "",
-      "share": 0.25
+      "note": "Die ePA ist in Arztpraxen mittlerweile Alltag, waehrend in Krankenhaeusern weiterhin Papier dominiert. Das BfArM veroeffentlichte die klinische Dokumentenklassen-Liste 2026 als FHIR-Package auf dem zentralen Terminologieserver, um den strukturierten Dokumentenaustausch zu ermoeglichen.",
+      "share": 0.143
     },
     {
       "id": "erezept",
@@ -810,7 +809,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -873,6 +871,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -902,7 +901,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -971,6 +969,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -989,7 +988,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 9,
             "2026-05-26": 4,
             "2026-05-27": 3,
             "2026-05-28": 16,
@@ -1077,10 +1075,10 @@
             "2026-08-18": 3,
             "2026-08-19": 6,
             "2026-08-20": 6,
-            "2026-08-21": 7
+            "2026-08-21": 7,
+            "2026-08-22": 4
           },
           "series": [
-            9,
             4,
             3,
             16,
@@ -1169,16 +1167,16 @@
             6,
             6,
             7,
+            4,
             0
           ],
           "smooth": [
-            9,
-            6.5,
-            5.33,
-            8,
-            7.8,
-            7,
-            6.57,
+            4,
+            3.5,
+            7.67,
+            7.5,
+            6.6,
+            6.17,
             5.43,
             6.71,
             7.86,
@@ -1261,12 +1259,13 @@
             5.29,
             5,
             5.71,
-            5.29
+            5.86,
+            5.43
           ],
-          "total": 488,
-          "last7": 37,
+          "total": 483,
+          "last7": 38,
           "prev7": 34,
-          "momentum": 1.09,
+          "momentum": 1.12,
           "hat": true
         }
       },
@@ -1306,7 +1305,7 @@
           "iso": "2026-06-07"
         }
       ],
-      "note": "",
+      "note": "KBV und Krankenkassen einigten sich auf Regeln fuer Cannabisverordnungen per E-Rezept. Seit Januar 2024 ist das Papierrezept in deutschen Arztpraxen durch das E-Rezept ersetzt.",
       "share": 0
     },
     {
@@ -1730,7 +1729,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -1813,10 +1811,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1852,6 +1850,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2155,7 +2154,7 @@
           "iso": "2026-06-01"
         }
       ],
-      "note": "",
+      "note": "Die Gesellschafter der gematik beschlossen einen Umbau der Gesundheitsdateninfrastruktur mit erweiterten Befugnissen fuer die gematik. Der Verband bvitg warnte in einer Presseerklaerung vor diesem Zentralisierungskurs und sieht TI-Stabilitaet, Innovation und Wettbewerb gefaehrdet.",
       "share": 0
     },
     {
@@ -2219,7 +2218,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2232,6 +2230,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2311,7 +2310,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2330,6 +2328,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2573,7 +2572,7 @@
           "iso": "2026-07-13"
         }
       ],
-      "note": "",
+      "note": "Es wurde ein neuer Leitfaden mit dem Titel How to KIM fuer Pflegeeinrichtungen veroeffentlicht. Der Leitfaden empfiehlt, IT-Dienstleister bereits in der Planungsphase einzubinden, um KIM in vorhandene Dokumentationssysteme zu integrieren.",
       "share": 0
     },
     {
@@ -2595,7 +2594,6 @@
             "2026-08-06": 1
           },
           "series": [
-            0,
             0,
             1,
             1,
@@ -2684,18 +2682,18 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
             0,
-            0,
-            0.33,
+            0.5,
+            0.67,
             0.5,
             0.4,
             0.33,
             0.29,
             0.29,
-            0.29,
             0.14,
             0,
             0,
@@ -2767,6 +2765,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2786,7 +2785,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 23,
             "2026-05-26": 63,
             "2026-05-27": 70,
             "2026-05-28": 79,
@@ -2874,10 +2872,10 @@
             "2026-08-18": 52,
             "2026-08-19": 38,
             "2026-08-20": 53,
-            "2026-08-21": 33
+            "2026-08-21": 33,
+            "2026-08-22": 20
           },
           "series": [
-            23,
             63,
             70,
             79,
@@ -2966,16 +2964,16 @@
             38,
             53,
             33,
+            20,
             0
           ],
           "smooth": [
-            23,
-            43,
-            52,
-            58.75,
-            62.2,
+            63,
+            66.5,
+            70.67,
+            72,
+            61.2,
             54.83,
-            50.29,
             54.57,
             53.43,
             50.29,
@@ -3058,12 +3056,13 @@
             32.71,
             33.43,
             34.57,
-            33.57
+            36.43,
+            34.71
           ],
-          "total": 4032,
-          "last7": 235,
-          "prev7": 249,
-          "momentum": 0.94,
+          "total": 4029,
+          "last7": 243,
+          "prev7": 229,
+          "momentum": 1.06,
           "hat": true
         }
       },
@@ -3144,7 +3143,7 @@
           "iso": "2026-05-27"
         }
       ],
-      "note": "",
+      "note": "Die gematik rief zum TI-Summit auf, um Ideen fuer die digitale Gesundheitsversorgung zu sammeln. Die Gesellschafter beschlossen zudem einen Umbau der Gesundheitsdateninfrastruktur mit mehr Befugnissen fuer die gematik.",
       "share": 0
     },
     {
@@ -3188,7 +3187,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3254,10 +3252,10 @@
             0,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3345,6 +3343,7 @@
             0,
             0,
             0,
+            0.14,
             0.14,
             0.14
           ],
@@ -3548,8 +3547,8 @@
         }
       },
       "orgs": [
-        "Kassenärztliche Bundesvereinigung",
         "bvitg",
+        "Kassenärztliche Bundesvereinigung",
         "gematik",
         "KBV"
       ],
@@ -3619,8 +3618,8 @@
           "iso": "2026-06-18"
         }
       ],
-      "note": "",
-      "share": 0.25
+      "note": "Die Kassenaerztliche Bundesvereinigung bekraeftigte ihre Forderung nach Buerokratieabbau. Das GeDIG-Gesetz sorgte fuer geteilte Reaktionen: Aerzte warnten vor Vertrauensverlust, waehrend die Digitalwirtschaft weitere Rechtssicherheit forderte.",
+      "share": 0.143
     },
     {
       "id": "identitaet",
@@ -3645,7 +3644,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3661,6 +3659,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3737,7 +3736,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3759,6 +3757,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3826,7 +3825,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 34,
             "2026-05-26": 44,
             "2026-05-27": 38,
             "2026-05-28": 42,
@@ -3914,10 +3912,10 @@
             "2026-08-18": 46,
             "2026-08-19": 59,
             "2026-08-20": 52,
-            "2026-08-21": 68
+            "2026-08-21": 68,
+            "2026-08-22": 33
           },
           "series": [
-            34,
             44,
             38,
             42,
@@ -4006,16 +4004,16 @@
             59,
             52,
             68,
+            33,
             0
           ],
           "smooth": [
-            34,
-            39,
-            38.67,
-            39.5,
-            38.8,
-            37,
-            37.71,
+            44,
+            41,
+            41.33,
+            40,
+            37.6,
+            38.33,
             38,
             37.14,
             37.14,
@@ -4098,12 +4096,13 @@
             42.86,
             46.14,
             50.57,
-            46.14
+            50.86,
+            45.43
           ],
-          "total": 3909,
-          "last7": 323,
-          "prev7": 224,
-          "momentum": 1.44,
+          "total": 3908,
+          "last7": 318,
+          "prev7": 248,
+          "momentum": 1.28,
           "hat": true
         }
       },
@@ -4127,7 +4126,7 @@
           "iso": "2026-06-05"
         }
       ],
-      "note": "",
+      "note": "Das Bayerische Landessozialgericht urteilte, dass Krankenkassen die elektronische Gesundheitskarte bei Beitragsschulden nicht einziehen duerfen. Zudem wurde ein letzter Aufruf zum Tausch der Heilberufsausweise veroeffentlicht.",
       "share": 0
     },
     {
@@ -4143,7 +4142,6 @@
             "2026-07-10": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4232,6 +4230,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4280,18 +4279,18 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.43,
+            0.43,
+            0.43,
+            0.29,
+            0.29,
+            0.29,
+            0.29,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.43,
-            0.43,
-            0.43,
-            0.29,
-            0.29,
-            0.29,
-            0.29,
             0,
             0,
             0,
@@ -4561,7 +4560,7 @@
           "iso": "2026-07-10"
         }
       ],
-      "note": "",
+      "note": "Die KBV sieht durch die geplante Reform des Nachrichtendienstrechts das Arzt-Patienten-Geheimnis gefaehrdet. Das BSI veroeffentlichte eine IT-Notfallkarte und weitere Materialien, um Arztpraxen bei der Umsetzung der IT-Sicherheitsrichtlinie zu unterstuetzen.",
       "share": 0
     },
     {
@@ -4576,10 +4575,10 @@
             "2026-07-16": 2,
             "2026-06-23": 1,
             "2026-08-05": 1,
-            "2026-08-13": 1
+            "2026-08-13": 1,
+            "2026-08-22": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4668,6 +4667,7 @@
             0,
             0,
             0,
+            1,
             0
           ],
           "smooth": [
@@ -4699,7 +4699,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4760,17 +4759,17 @@
             0.14,
             0,
             0,
-            0
+            0.14,
+            0.14
           ],
-          "total": 5,
-          "last7": 0,
+          "total": 6,
+          "last7": 1,
           "prev7": 1,
-          "momentum": 0,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 1,
             "2026-05-26": 3,
             "2026-05-27": 6,
             "2026-05-28": 4,
@@ -4856,10 +4855,10 @@
             "2026-08-18": 2,
             "2026-08-19": 1,
             "2026-08-20": 1,
-            "2026-08-21": 4
+            "2026-08-21": 4,
+            "2026-08-22": 0
           },
           "series": [
-            1,
             3,
             6,
             4,
@@ -4948,16 +4947,16 @@
             1,
             1,
             4,
+            0,
             0
           ],
           "smooth": [
-            1,
-            2,
-            3.33,
-            3.5,
-            3.2,
             3,
-            2.71,
+            4.5,
+            4.33,
+            3.75,
+            3.4,
+            3,
             3.29,
             3.29,
             2.71,
@@ -5040,12 +5039,13 @@
             0.86,
             1,
             1.43,
+            1.29,
             1.29
           ],
-          "total": 148,
+          "total": 147,
           "last7": 9,
-          "prev7": 9,
-          "momentum": 1,
+          "prev7": 8,
+          "momentum": 1.13,
           "hat": true
         }
       },
@@ -5054,6 +5054,13 @@
         "Paulina Jo Pesch"
       ],
       "heads": [
+        {
+          "t": "\"Ab Oktober sollen Patientendaten aus der elektronischen Patientenakte für die Forschung zur Verfügung stehen. Was das für Patientinnen und Patienten bedeutet.\" # epa # datenschutz",
+          "s": "Mastodon: #ePA",
+          "d": "22.08.",
+          "u": "https://norden.social/@Kai_Jansson/117137829849513893",
+          "iso": "2026-08-22"
+        },
         {
           "t": "@ kuketzblog Diese Unterscheidung halte ich für sehr schwierig. in der # epa ist auch alles drin vom Patienten UND es wird weitergeleitet in die # EHDS - Datenbank. Wer weiß eigent",
           "s": "Mastodon: #ePA",
@@ -5090,8 +5097,8 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "",
-      "share": 0
+      "note": "Ab Oktober sollen Patientendaten aus der elektronischen Patientenakte fuer die Forschung zur Verfuegung stehen. Das GeDIG-Gesetz zur Nutzung von Gesundheitsdaten stiess dabei auf geteilte Reaktionen zwischen Aerzteschaft und Digitalwirtschaft.",
+      "share": 0.143
     },
     {
       "id": "versorgung",
@@ -5109,7 +5116,6 @@
             "2026-07-31": 1
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -5177,6 +5183,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5201,14 +5208,13 @@
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
             0.14,
-            0.14,
             0,
             0,
             0,
@@ -5275,6 +5281,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -5300,7 +5307,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 15,
             "2026-05-26": 30,
             "2026-05-27": 19,
             "2026-05-28": 10,
@@ -5388,10 +5394,10 @@
             "2026-08-18": 22,
             "2026-08-19": 24,
             "2026-08-20": 23,
-            "2026-08-21": 14
+            "2026-08-21": 14,
+            "2026-08-22": 36
           },
           "series": [
-            15,
             30,
             19,
             10,
@@ -5480,16 +5486,16 @@
             24,
             23,
             14,
+            36,
             0
           ],
           "smooth": [
-            15,
-            22.5,
-            21.33,
-            18.5,
+            30,
+            24.5,
+            19.67,
+            20,
             19,
-            18.33,
-            17.71,
+            18.17,
             17.43,
             15.86,
             16.14,
@@ -5572,12 +5578,13 @@
             17.14,
             18.57,
             18.71,
-            17
+            22.14,
+            19.57
           ],
-          "total": 1701,
-          "last7": 119,
-          "prev7": 100,
-          "momentum": 1.19,
+          "total": 1722,
+          "last7": 137,
+          "prev7": 106,
+          "momentum": 1.29,
           "hat": true
         }
       },
@@ -5636,7 +5643,7 @@
           "iso": "2026-05-26"
         }
       ],
-      "note": "",
+      "note": "Pflegefachkraefte aus Bayern, Baden-Wuerttemberg, Berlin und Sachsen-Anhalt wurden zum Stand der Digitalisierung in Pflegeeinrichtungen und -diensten befragt. Ein Digitalisierungsbuendnis forderte zudem eine Nachschaerfung der Pflegereform.",
       "share": 0
     },
     {
@@ -5684,10 +5691,10 @@
             "2026-08-15": 1,
             "2026-06-18": 1,
             "2026-08-17": 1,
+            "2026-08-23": 2,
             "2026-08-22": 1
           },
           "series": [
-            0,
             1,
             1,
             1,
@@ -5776,16 +5783,16 @@
             0,
             0,
             0,
-            1
+            1,
+            2
           ],
           "smooth": [
-            0,
-            0.5,
-            0.67,
+            1,
+            1,
+            1,
             0.75,
             0.6,
             0.5,
-            0.43,
             0.43,
             0.29,
             0.14,
@@ -5868,17 +5875,17 @@
             0.43,
             0.29,
             0.29,
-            0.29
+            0.29,
+            0.57
           ],
-          "total": 48,
-          "last7": 2,
+          "total": 50,
+          "last7": 4,
           "prev7": 4,
-          "momentum": 0.5,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-25": 7,
             "2026-05-26": 25,
             "2026-05-27": 14,
             "2026-05-28": 21,
@@ -5966,10 +5973,10 @@
             "2026-08-18": 7,
             "2026-08-19": 15,
             "2026-08-20": 18,
-            "2026-08-21": 13
+            "2026-08-21": 13,
+            "2026-08-22": 1
           },
           "series": [
-            7,
             25,
             14,
             21,
@@ -6058,16 +6065,16 @@
             15,
             18,
             13,
+            1,
             0
           ],
           "smooth": [
-            7,
-            16,
-            15.33,
-            16.75,
-            16.2,
-            14.33,
-            13.57,
+            25,
+            19.5,
+            20,
+            18.5,
+            15.8,
+            14.67,
             15.71,
             14.57,
             14.43,
@@ -6150,19 +6157,20 @@
             9.29,
             9.71,
             10.57,
-            10.57
+            10.71,
+            9.71
           ],
-          "total": 1114,
-          "last7": 74,
-          "prev7": 66,
-          "momentum": 1.12,
+          "total": 1108,
+          "last7": 68,
+          "prev7": 69,
+          "momentum": 0.99,
           "hat": true
         }
       },
       "orgs": [
-        "Ärztekammer BW",
-        "bvitg",
         "gematik",
+        "bvitg",
+        "Ärztekammer BW",
         "EPA",
         "FBI",
         "Mia Healthcare"
@@ -6173,6 +6181,20 @@
         "Trump"
       ],
       "heads": [
+        {
+          "t": "# EPA Releases Proposal to Rescind Obama-Era # EndangermentFinding , # Regulations that Paved the Way for # ElectricVehicle Mandates https://www. epa.gov/newsreleases/epa-relea ses",
+          "s": "Mastodon: #ePA",
+          "d": "23.08.",
+          "u": "https://c.im/@shonin/117142282447923271",
+          "iso": "2026-08-23"
+        },
+        {
+          "t": "What new EPA limits on 'forever chemicals' mean for U.S. drinking water # epa # news # health # water https:// youtu.be/UpobOQ54bWc?si=fNJ5EC tU8sWG2IqG",
+          "s": "Mastodon: #ePA",
+          "d": "23.08.",
+          "u": "https://social.vivaldi.net/@rogerc2738/117142115619180820",
+          "iso": "2026-08-23"
+        },
         {
           "t": "National Security Archive: New Documents Detail Industry Efforts to Roll Back Federal Methane Regulations But Maintain Emissions Monitoring System. “The fossil fuel industry is try",
           "s": "Mastodon: #ePA",
@@ -6368,24 +6390,10 @@
           "d": "28.07.",
           "u": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:k6icdendy255kankozfy3ezd/post/3mrpwtti3sk22",
           "iso": "2026-07-28"
-        },
-        {
-          "t": "Good to see that # SFPL is doing this. I had no idea that # radon might be a concern in San Francisco (I knew it's a major problem in some areas - Pennsylvania, for example) San Fr",
-          "s": "Mastodon: #ePA",
-          "d": "28.07.",
-          "u": "https://sfba.social/@PaulWermer/116998073335051662",
-          "iso": "2026-07-28"
-        },
-        {
-          "t": "Clientes de EPA envían $75.000 a víctimas de los terremotos https:// fed.brid.gy/r/https://www.elna cional.com/2026/07/clientes-de-epa-envian-75-000-a-victimas-de-los-terremotos/",
-          "s": "Mastodon: #ePA",
-          "d": "27.07.",
-          "u": "https://fed.brid.gy/r/https://www.elnacional.com/2026/07/clientes-de-epa-envian-75-000-a-victimas-de-los-terremotos/",
-          "iso": "2026-07-27"
         }
       ],
       "note": "",
-      "share": 0.5
+      "share": 0.571
     }
   ],
   "roadmap": [
