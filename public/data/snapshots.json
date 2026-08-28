@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-08-26T05:54:04.232Z",
-  "today": "2026-08-26",
-  "startDate": "2026-05-29",
-  "endDate": "2026-08-26",
+  "generated": "2026-08-28T21:15:13.075Z",
+  "today": "2026-08-28",
+  "startDate": "2026-05-31",
+  "endDate": "2026-08-28",
   "days": 90,
   "stats": {
-    "beitraege": 54,
+    "beitraege": 55,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 37
+    "laufzeitSek": 36
   },
   "sources": [
     {
@@ -62,7 +62,7 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 1
+      "items": 0
     },
     {
       "name": "Mastodon: #eHealth",
@@ -77,7 +77,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 21,
+      "items": 25,
       "roh": 40
     },
     {
@@ -109,21 +109,21 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 664
+      "items": 659
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3483
+      "items": 3504
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1321
+      "items": 1320
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
@@ -137,35 +137,35 @@
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 472
+      "items": 467
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 138
+      "items": 142
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3904
+      "items": 3869
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1082
+      "items": 1089
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1068
+      "items": 1064
     }
   ],
   "topics": [
@@ -200,8 +200,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -282,6 +280,8 @@
             0,
             0,
             1,
+            0,
+            0,
             0
           ],
           "smooth": [
@@ -292,8 +292,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -373,19 +371,19 @@
             0.14,
             0.14,
             0,
+            0.14,
+            0.14,
             0.14,
             0.14
           ],
           "total": 13,
           "last7": 1,
-          "prev7": 3,
-          "momentum": 0.33,
+          "prev7": 1,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 11,
-            "2026-05-30": 21,
             "2026-05-31": 15,
             "2026-06-01": 21,
             "2026-06-02": 17,
@@ -472,11 +470,11 @@
             "2026-08-22": 9,
             "2026-08-23": 11,
             "2026-08-24": 16,
-            "2026-08-25": 19
+            "2026-08-25": 19,
+            "2026-08-26": 11,
+            "2026-08-27": 20
           },
           "series": [
-            11,
-            21,
             15,
             21,
             17,
@@ -564,17 +562,17 @@
             11,
             16,
             19,
+            11,
+            20,
             0
           ],
           "smooth": [
-            11,
+            15,
+            18,
+            17.67,
+            17.5,
+            16.8,
             16,
-            15.67,
-            17,
-            17,
-            17,
-            16.57,
-            16.71,
             14.86,
             14.14,
             13.43,
@@ -656,12 +654,14 @@
             14.57,
             16,
             17.43,
-            12.71
+            14.29,
+            14.14,
+            12.29
           ],
-          "total": 1321,
-          "last7": 89,
-          "prev7": 86,
-          "momentum": 1.03,
+          "total": 1320,
+          "last7": 86,
+          "prev7": 100,
+          "momentum": 0.86,
           "hat": true
         }
       },
@@ -679,6 +679,13 @@
           "s": "Mastodon: #gematik",
           "d": "25.08.",
           "u": "https://ieji.de/@Sachensucher/117155165542933315",
+          "iso": "2026-08-25"
+        },
+        {
+          "t": "Im Faktencheck: Sind Informationen und Daten in der ePA wirklich sicher und können nicht in die Hände unberechtigter Personen gelangen?",
+          "s": "gematik Newsroom",
+          "d": "25.08.",
+          "u": "https://www.gematik.de/newsroom/news-detail/im-faktencheck-sind-informationen-und-daten-in-der-epa-wirklich-sicher-und-koennen-nicht-in-die-haende-unberechtigter-personen-gelangen",
           "iso": "2026-08-25"
         },
         {
@@ -795,7 +802,7 @@
         }
       ],
       "note": "",
-      "share": 0.067
+      "share": 0.045
     },
     {
       "id": "erezept",
@@ -819,8 +826,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -883,6 +888,8 @@
             0,
             0,
             1,
+            0,
+            0,
             0,
             0,
             0,
@@ -911,8 +918,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -981,6 +986,8 @@
             0.14,
             0.14,
             0.14,
+            0,
+            0,
             0,
             0,
             0,
@@ -1003,8 +1010,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 7,
-            "2026-05-30": 3,
             "2026-05-31": 4,
             "2026-06-01": 1,
             "2026-06-02": 13,
@@ -1091,11 +1096,11 @@
             "2026-08-22": 4,
             "2026-08-23": 1,
             "2026-08-24": 5,
-            "2026-08-25": 6
+            "2026-08-25": 6,
+            "2026-08-26": 1,
+            "2026-08-27": 4
           },
           "series": [
-            7,
-            3,
             4,
             1,
             13,
@@ -1183,17 +1188,17 @@
             1,
             5,
             6,
+            1,
+            4,
             0
           ],
           "smooth": [
-            7,
-            5,
-            4.67,
-            3.75,
-            5.6,
-            6.5,
-            6.57,
+            4,
+            2.5,
             6,
+            7.25,
+            7.2,
+            6.5,
             6,
             6.14,
             7.14,
@@ -1275,12 +1280,14 @@
             5.57,
             4.57,
             5,
-            4.14
+            4.29,
+            4,
+            3
           ],
-          "total": 472,
-          "last7": 29,
-          "prev7": 37,
-          "momentum": 0.78,
+          "total": 467,
+          "last7": 21,
+          "prev7": 40,
+          "momentum": 0.53,
           "hat": true
         }
       },
@@ -1739,8 +1746,6 @@
           },
           "series": [
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -1827,17 +1832,17 @@
             0,
             0,
             0,
+            0,
+            0,
             0
           ],
           "smooth": [
             0,
-            0,
-            0,
+            0.5,
+            0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
-            0.14,
             0.14,
             0.14,
             0,
@@ -1862,6 +1867,8 @@
             0.14,
             0.14,
             0.14,
+            0,
+            0,
             0,
             0,
             0,
@@ -2228,8 +2235,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -2242,6 +2247,8 @@
             0,
             0,
             1,
+            0,
+            0,
             0,
             0,
             0,
@@ -2320,8 +2327,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2340,6 +2345,8 @@
             0.14,
             0.14,
             0.14,
+            0,
+            0,
             0,
             0,
             0,
@@ -2619,8 +2626,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -2696,6 +2701,8 @@
             0,
             0,
             0,
+            0,
+            0,
             0
           ],
           "smooth": [
@@ -2711,8 +2718,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2775,6 +2780,8 @@
             0.14,
             0.14,
             0.14,
+            0,
+            0,
             0,
             0,
             0,
@@ -2798,8 +2805,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 76,
-            "2026-05-30": 18,
             "2026-05-31": 23,
             "2026-06-01": 53,
             "2026-06-02": 55,
@@ -2886,11 +2891,11 @@
             "2026-08-22": 20,
             "2026-08-23": 13,
             "2026-08-24": 33,
-            "2026-08-25": 41
+            "2026-08-25": 41,
+            "2026-08-26": 36,
+            "2026-08-27": 23
           },
           "series": [
-            76,
-            18,
             23,
             53,
             55,
@@ -2978,17 +2983,17 @@
             13,
             33,
             41,
+            36,
+            23,
             0
           ],
           "smooth": [
-            76,
-            47,
-            39,
-            42.5,
-            45,
-            45.5,
-            47.86,
-            42.43,
+            23,
+            38,
+            43.67,
+            44.75,
+            48.2,
+            46.5,
             42.14,
             41.71,
             40,
@@ -3070,12 +3075,14 @@
             36.57,
             34.57,
             33,
-            27.57
+            32.71,
+            28.43,
+            23.71
           ],
-          "total": 3904,
-          "last7": 193,
-          "prev7": 229,
-          "momentum": 0.84,
+          "total": 3869,
+          "last7": 166,
+          "prev7": 242,
+          "momentum": 0.69,
           "hat": true
         }
       },
@@ -3181,8 +3188,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -3248,6 +3253,8 @@
             0,
             0,
             1,
+            0,
+            0,
             0,
             0,
             0,
@@ -3255,8 +3262,6 @@
             0
           ],
           "smooth": [
-            0,
-            0,
             0,
             0,
             0,
@@ -3344,12 +3349,14 @@
             0.14,
             0.14,
             0.14,
-            0.14
+            0.14,
+            0.14,
+            0
           ],
           "total": 7,
-          "last7": 1,
-          "prev7": 0,
-          "momentum": null,
+          "last7": 0,
+          "prev7": 1,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
@@ -3618,7 +3625,7 @@
         }
       ],
       "note": "",
-      "share": 0.067
+      "share": 0
     },
     {
       "id": "identitaet",
@@ -3639,8 +3646,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -3722,6 +3727,8 @@
             0,
             0,
             1,
+            0,
+            0,
             0,
             0
           ],
@@ -3731,6 +3738,18 @@
             0,
             0,
             0,
+            0.17,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0.14,
@@ -3747,72 +3766,60 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0.14,
             0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0.14,
             0.14,
             0.14
@@ -3825,8 +3832,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 36,
-            "2026-05-30": 28,
             "2026-05-31": 42,
             "2026-06-01": 36,
             "2026-06-02": 38,
@@ -3913,11 +3918,11 @@
             "2026-08-22": 33,
             "2026-08-23": 33,
             "2026-08-24": 65,
-            "2026-08-25": 41
+            "2026-08-25": 41,
+            "2026-08-26": 42,
+            "2026-08-27": 43
           },
           "series": [
-            36,
-            28,
             42,
             36,
             38,
@@ -4005,17 +4010,17 @@
             33,
             65,
             41,
+            42,
+            43,
             0
           ],
           "smooth": [
-            36,
-            32,
-            35.33,
-            35.5,
-            36,
-            36.33,
-            35.86,
-            35,
+            42,
+            39,
+            38.67,
+            38.5,
+            37.4,
+            36.17,
             34.57,
             34.29,
             36.43,
@@ -4097,17 +4102,20 @@
             50.14,
             50.86,
             50.14,
-            41.71
+            47.71,
+            46.43,
+            36.71
           ],
-          "total": 3923,
-          "last7": 292,
-          "prev7": 300,
-          "momentum": 0.97,
+          "total": 3944,
+          "last7": 257,
+          "prev7": 354,
+          "momentum": 0.73,
           "hat": true
         }
       },
       "orgs": [
-        "gematik"
+        "gematik",
+        "Verimi"
       ],
       "people": [],
       "heads": [
@@ -4134,7 +4142,7 @@
         }
       ],
       "note": "",
-      "share": 0.067
+      "share": 0.045
     },
     {
       "id": "sicherheit",
@@ -4150,8 +4158,6 @@
             "2026-08-24": 1
           },
           "series": [
-            0,
-            0,
             0,
             0,
             0,
@@ -4239,6 +4245,8 @@
             0,
             1,
             0,
+            0,
+            0,
             0
           ],
           "smooth": [
@@ -4282,8 +4290,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4329,6 +4335,8 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
             0.14,
             0.14,
             0.14
@@ -4576,7 +4584,7 @@
         }
       ],
       "note": "",
-      "share": 0.067
+      "share": 0.045
     },
     {
       "id": "daten-ki",
@@ -4594,8 +4602,6 @@
             "2026-08-22": 1
           },
           "series": [
-            0,
-            0,
             0,
             0,
             0,
@@ -4683,6 +4689,8 @@
             0,
             0,
             0,
+            0,
+            0,
             0
           ],
           "smooth": [
@@ -4709,8 +4717,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4771,6 +4777,8 @@
             0.14,
             0,
             0,
+            0.14,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -4779,14 +4787,12 @@
           ],
           "total": 6,
           "last7": 1,
-          "prev7": 1,
-          "momentum": 1,
+          "prev7": 0,
+          "momentum": null,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 2,
-            "2026-05-30": 2,
             "2026-05-31": 1,
             "2026-06-01": 5,
             "2026-06-02": 3,
@@ -4871,11 +4877,11 @@
             "2026-08-22": 0,
             "2026-08-23": 1,
             "2026-08-24": 1,
-            "2026-08-25": 2
+            "2026-08-25": 2,
+            "2026-08-26": 5,
+            "2026-08-27": 3
           },
           "series": [
-            2,
-            2,
             1,
             5,
             3,
@@ -4963,17 +4969,17 @@
             1,
             1,
             2,
+            5,
+            3,
             0
           ],
           "smooth": [
-            2,
-            2,
-            1.67,
-            2.5,
-            2.6,
-            2.5,
-            2.71,
-            2.71,
+            1,
+            3,
+            3,
+            2.75,
+            3,
+            2.83,
             2.71,
             3.71,
             3.29,
@@ -5055,12 +5061,14 @@
             1.43,
             1.43,
             1.43,
-            1.29
+            2,
+            2.29,
+            1.71
           ],
-          "total": 138,
-          "last7": 9,
-          "prev7": 6,
-          "momentum": 1.5,
+          "total": 142,
+          "last7": 12,
+          "prev7": 10,
+          "momentum": 1.2,
           "hat": true
         }
       },
@@ -5113,7 +5121,7 @@
         }
       ],
       "note": "",
-      "share": 0.067
+      "share": 0.045
     },
     {
       "id": "versorgung",
@@ -5149,8 +5157,6 @@
             0,
             0,
             0,
-            0,
-            0,
             1,
             0,
             0,
@@ -5219,6 +5225,8 @@
             0,
             0,
             1,
+            0,
+            0,
             0,
             0
           ],
@@ -5241,8 +5249,6 @@
             0,
             0,
             0,
-            0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5310,6 +5316,8 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
             0.14,
             0.14,
             0.14
@@ -5322,8 +5330,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 21,
-            "2026-05-30": 15,
             "2026-05-31": 14,
             "2026-06-01": 13,
             "2026-06-02": 19,
@@ -5410,11 +5416,11 @@
             "2026-08-22": 36,
             "2026-08-23": 37,
             "2026-08-24": 22,
-            "2026-08-25": 10
+            "2026-08-25": 10,
+            "2026-08-26": 11,
+            "2026-08-27": 16
           },
           "series": [
-            21,
-            15,
             14,
             13,
             19,
@@ -5502,17 +5508,17 @@
             37,
             22,
             10,
+            11,
+            16,
             0
           ],
           "smooth": [
-            21,
-            18,
-            16.67,
-            15.75,
-            16.4,
-            17.17,
-            16.71,
-            15.57,
+            14,
+            13.5,
+            15.33,
+            16.75,
+            16.2,
+            15.67,
             15.57,
             15.29,
             15.14,
@@ -5594,12 +5600,14 @@
             24.86,
             25.43,
             23.71,
-            20.29
+            21.86,
+            20.86,
+            18.86
           ],
-          "total": 1732,
-          "last7": 142,
-          "prev7": 120,
-          "momentum": 1.18,
+          "total": 1723,
+          "last7": 132,
+          "prev7": 131,
+          "momentum": 1.01,
           "hat": true
         }
       },
@@ -5659,7 +5667,7 @@
         }
       ],
       "note": "",
-      "share": 0.067
+      "share": 0.045
     },
     {
       "id": "sonstiges",
@@ -5705,12 +5713,12 @@
             "2026-08-17": 1,
             "2026-08-22": 1,
             "2026-08-23": 2,
-            "2026-08-26": 1,
-            "2026-08-25": 5
+            "2026-08-25": 5,
+            "2026-08-28": 4,
+            "2026-08-27": 4,
+            "2026-08-26": 1
           },
           "series": [
-            0,
-            0,
             0,
             0,
             0,
@@ -5798,11 +5806,11 @@
             2,
             0,
             5,
-            1
+            1,
+            4,
+            4
           ],
           "smooth": [
-            0,
-            0,
             0,
             0,
             0,
@@ -5890,18 +5898,18 @@
             0.57,
             0.43,
             1.14,
-            1.29
+            1.29,
+            1.86,
+            2.43
           ],
-          "total": 53,
-          "last7": 9,
-          "prev7": 3,
-          "momentum": 3,
+          "total": 61,
+          "last7": 17,
+          "prev7": 2,
+          "momentum": 8.5,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-05-29": 14,
-            "2026-05-30": 5,
             "2026-05-31": 9,
             "2026-06-01": 22,
             "2026-06-02": 17,
@@ -5988,11 +5996,11 @@
             "2026-08-22": 1,
             "2026-08-23": 6,
             "2026-08-24": 17,
-            "2026-08-25": 11
+            "2026-08-25": 11,
+            "2026-08-26": 16,
+            "2026-08-27": 10
           },
           "series": [
-            14,
-            5,
             9,
             22,
             17,
@@ -6080,17 +6088,17 @@
             6,
             17,
             11,
+            16,
+            10,
             0
           ],
           "smooth": [
-            14,
-            9.5,
-            9.33,
-            12.5,
-            13.4,
-            13.33,
-            14,
-            13.86,
+            9,
+            15.5,
+            16,
+            15.25,
+            15.8,
+            15.33,
             14.29,
             14.29,
             14.29,
@@ -6172,12 +6180,14 @@
             10.57,
             11,
             11.57,
-            9.43
+            11.71,
+            10.57,
+            8.71
           ],
-          "total": 1082,
-          "last7": 66,
-          "prev7": 65,
-          "momentum": 1.02,
+          "total": 1089,
+          "last7": 61,
+          "prev7": 74,
+          "momentum": 0.82,
           "hat": true
         }
       },
@@ -6197,10 +6207,73 @@
       ],
       "heads": [
         {
+          "t": "L’EPA assouplit encore les règles d’installation de data-centers aux USA, voulant supprimer un droit de regard des riverains http:// dlvr.it/TVD6xM # EPA # dataCenters",
+          "s": "Mastodon: #ePA",
+          "d": "28.08.",
+          "u": "https://social.macg.co/@macgeneration/117174755579239850",
+          "iso": "2026-08-28"
+        },
+        {
+          "t": "🔌🤡 The # EPA , having discovered the magic spell \"skip pollution laws,\" is now transforming data centers into eco-havens by simply *ignoring* the mess 🌿✨. It's like putting lips",
+          "s": "Mastodon: #ePA",
+          "d": "28.08.",
+          "u": "https://mastodon.social/@ngate/117173406710557965",
+          "iso": "2026-08-28"
+        },
+        {
+          "t": "Ach was... # ePA und # dRü digitale Rentenübersicht - zwei digitale Angebote, die das Leben der Menschen verbessern sollen. Und die anscheinend kaum funktionieren. https://www. mdr",
+          "s": "Mastodon: #ePA",
+          "d": "28.08.",
+          "u": "https://machteburch.social/@Marcel/117173080960263412",
+          "iso": "2026-08-28"
+        },
+        {
+          "t": "US # EPA Region 1 notified me that my Petition for a CERCLA Preliminary Assessment in # Boston proper, South Boston, & South Bay (prior Atlantic Ocean - now filled with trash, aban",
+          "s": "Mastodon: #ePA",
+          "d": "28.08.",
+          "u": "https://mastodon.social/@ashleygjovik/117170681399172029",
+          "iso": "2026-08-28"
+        },
+        {
+          "t": "Groups sue Trump’s # EPA over fast-track approval of toxic # datacenter chemicals Exposure to two compounds approved can result in ‘sudden death’ and range of other serious health ",
+          "s": "Mastodon: #ePA",
+          "d": "27.08.",
+          "u": "https://hachyderm.io/@BenjaminHCCarr/117168486553995605",
+          "iso": "2026-08-27"
+        },
+        {
+          "t": "EPA faces lawsuit over claims it fast-tracked approval of toxic 'data center chemicals' — exposure to photoacid generators used for semiconductor manufacturing could result in ‘sud",
+          "s": "Mastodon: #ePA",
+          "d": "27.08.",
+          "u": "https://mastodon.social/@Some_Emo_Chick/117168321538952649",
+          "iso": "2026-08-27"
+        },
+        {
+          "t": "\"Datacenters are often sources of nitrogen oxide, which helps form ozone, carbon monoxide and heavy metals, among other pollutants.\" # pollution # epa https://www. theguardian.com/",
+          "s": "Mastodon: #ePA",
+          "d": "27.08.",
+          "u": "https://newsie.social/@Freedman/117167281863751300",
+          "iso": "2026-08-27"
+        },
+        {
+          "t": "PEER is insisting that EPA must issue binding numerical limits on how much PFAS sludge can contain before it is spread on farms, gardens, and lawns nationwide. # PFAS # PFOA # PFOS",
+          "s": "Mastodon: #ePA",
+          "d": "27.08.",
+          "u": "https://spore.social/@Victor/117165425705063810",
+          "iso": "2026-08-27"
+        },
+        {
           "t": "Trump, going all in on destroying the country for the betterment of a few. https://www. theguardian.com/us-news/2026/a ug/25/datacenters-air-pollution-epa # DataCenters # Trump # E",
           "s": "Mastodon: #ePA",
           "d": "26.08.",
           "u": "https://social.vivaldi.net/@cmthiede/117159192406829282",
+          "iso": "2026-08-26"
+        },
+        {
+          "t": "Don't want a # DataCenter in your neighborhood? Trump’s # EPA wants to make them harder to stop. https:// newrepublic.com/post/214700/tr ump-epa-protect-datacenters",
+          "s": "Mastodon: #ePA",
+          "d": "26.08.",
+          "u": "https://mas.to/@BruceMirken/117162800848766764",
           "iso": "2026-08-26"
         },
         {
@@ -6342,73 +6415,10 @@
           "d": "06.08.",
           "u": "https://www.gematik.de/newsroom/news-detail/ti-summit-ideen-fuer-eine-digitale-gesundheitsversorgung-gesucht",
           "iso": "2026-08-06"
-        },
-        {
-          "t": "Lead Contamination Is Still a Problem in Omaha. Why Is the City Cleaning Up Some Yards and Not Others? --- After our tests showed many yards still contain toxic lead after remediat",
-          "s": "Mastodon: #ePA",
-          "d": "05.08.",
-          "u": "https://newsie.social/@ProPublica/117043141490692959",
-          "iso": "2026-08-05"
-        },
-        {
-          "t": "75 Jahre Kraftfahrt-Bundesamt: KBA will Online-Zulassung zentralisieren",
-          "s": "heise Newsticker",
-          "d": "04.08.",
-          "u": "https://www.heise.de/news/75-Jahre-Kraftfahrt-Bundesamt-KBA-will-Online-Zulassung-zentralisieren-11397115.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
-          "iso": "2026-08-04"
-        },
-        {
-          "t": "Divided federal appeals court says Trump administration was wrong to terminate climate funds A federal appeals court has ruled that the Trump administration improperly ended a mult",
-          "s": "Mastodon: #ePA",
-          "d": "04.08.",
-          "u": "https://mastodon.social/@top_news/117039054425347190",
-          "iso": "2026-08-04"
-        },
-        {
-          "t": "FBI & EPA warn: Hackers hit water/wastewater systems in 7+ states, disrupting operations. https:// jpmellojr.blogspot.com/2026/08 /fbi-epa-warn-of-cyberattacks-targeting.html # FBI",
-          "s": "Mastodon: #ePA",
-          "d": "04.08.",
-          "u": "https://noc.social/@jpmellojr/117037701455230717",
-          "iso": "2026-08-04"
-        },
-        {
-          "t": "The EPA spent hundreds of millions on lead remediation in Omaha, home of the nation’s largest residential Superfund site. New soil tests by The Flatwater Free Press and ProPublica ",
-          "s": "Mastodon: #ePA",
-          "d": "04.08.",
-          "u": "https://newsie.social/@ProPublica/117037480216519559",
-          "iso": "2026-08-04"
-        },
-        {
-          "t": "uwat? EPA says power for data centers can sidestep pollution laws | Reuters https://www. reuters.com/legal/litigation/e pa-says-power-data-centers-can-sidestep-pollution-laws-2026-",
-          "s": "Mastodon: #ePA",
-          "d": "03.08.",
-          "u": "https://piaille.fr/@shtrom/117033813678714617",
-          "iso": "2026-08-03"
-        },
-        {
-          "t": "In the 70's we moved to Los Angeles for Mom's job. Living there for less than a year, Mom went to a doctor who told her to move or she would die. This was when LA had an orange/bro",
-          "s": "Mastodon: #ePA",
-          "d": "02.08.",
-          "u": "https://mastodon.social/@ncw413/117027961468939359",
-          "iso": "2026-08-02"
-        },
-        {
-          "t": "# Pflegeprofis aus Bayern, Baden-Württemberg, Berlin und Sachsen-Anhalt werden zum Stand der Digitalisierung in Pflegeeinrichtungen und Pflegediensten befragt. Es geht um \"Praxiser",
-          "s": "Mastodon: #ePA",
-          "d": "31.07.",
-          "u": "https://mastodon.social/@Pfleger_aus_A/117013533604579721",
-          "iso": "2026-07-31"
-        },
-        {
-          "t": "OSINT Alert! \"#FBI and # EPA Warn of # CyberAttacks on Internet-Facing Controllers in Water Systems # Security # CyberSecurity # Technology # News # HybridAttack # USA Source: http",
-          "s": "Mastodon: #ePA",
-          "d": "31.07.",
-          "u": "https://mstdn.social/@ManyRoads/117015967455352606",
-          "iso": "2026-07-31"
         }
       ],
       "note": "",
-      "share": 0.6
+      "share": 0.773
     }
   ],
   "roadmap": [
