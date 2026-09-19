@@ -17,15 +17,15 @@
     }
   ],
   "live": true,
-  "generated": "2026-09-18T08:41:05.852Z",
-  "today": "2026-09-18",
-  "startDate": "2026-06-21",
-  "endDate": "2026-09-18",
+  "generated": "2026-09-19T08:28:06.136Z",
+  "today": "2026-09-19",
+  "startDate": "2026-06-22",
+  "endDate": "2026-09-19",
   "days": 90,
   "stats": {
-    "beitraege": 56,
-    "quellenOk": 9,
-    "quellenFehler": 10,
+    "beitraege": 51,
+    "quellenOk": 8,
+    "quellenFehler": 11,
     "laufzeitSek": 32
   },
   "sources": [
@@ -41,15 +41,16 @@
       "name": "bvitg",
       "url": "https://www.bvitg.de/feed/",
       "type": "RSS",
-      "status": "ok",
-      "items": 60
+      "status": "fehler",
+      "items": 0,
+      "error": "HTTP 403"
     },
     {
       "name": "Deutsches Aerzteblatt",
       "url": "https://rss.aerzteblatt.de/rss/news.asp",
       "type": "RSS",
       "status": "ok",
-      "items": 2
+      "items": 5
     },
     {
       "name": "gematik Newsroom",
@@ -63,7 +64,7 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 2
+      "items": 3
     },
     {
       "name": "Mastodon: #eHealth",
@@ -110,35 +111,35 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 636
+      "items": 643
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3347
+      "items": 3319
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1358
+      "items": 1365
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 432
+      "items": 437
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 495
+      "items": 497
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
@@ -152,21 +153,21 @@
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3955
+      "items": 3981
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1079
+      "items": 1087
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 962
+      "items": 963
     }
   ],
   "topics": [
@@ -198,10 +199,10 @@
             "2026-09-11": 2,
             "2026-09-12": 1,
             "2026-07-13": 1,
+            "2026-09-18": 1,
             "2026-09-17": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -290,10 +291,10 @@
             0,
             0,
             1,
+            1,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -382,9 +383,10 @@
             0.43,
             0.43,
             0.57,
+            0.43,
             0.29
           ],
-          "total": 21,
+          "total": 22,
           "last7": 2,
           "prev7": 4,
           "momentum": 0.5,
@@ -392,7 +394,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 9,
             "2026-06-22": 13,
             "2026-06-23": 17,
             "2026-06-24": 11,
@@ -480,10 +481,10 @@
             "2026-09-14": 14,
             "2026-09-15": 31,
             "2026-09-16": 30,
-            "2026-09-17": 18
+            "2026-09-17": 18,
+            "2026-09-18": 16
           },
           "series": [
-            9,
             13,
             17,
             11,
@@ -572,16 +573,16 @@
             31,
             30,
             18,
+            16,
             0
           ],
           "smooth": [
-            9,
-            11,
             13,
-            12.5,
-            13,
+            15,
+            13.67,
+            14,
+            12,
             11.5,
-            11.14,
             11,
             17.71,
             16.86,
@@ -664,17 +665,20 @@
             20.71,
             20.14,
             19.43,
-            16.29
+            18.57,
+            16.57
           ],
-          "total": 1358,
-          "last7": 114,
-          "prev7": 128,
+          "total": 1365,
+          "last7": 116,
+          "prev7": 130,
           "momentum": 0.89,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
+        "MEDI GENO Deutschland",
+        "BfDI",
         "iX Magazin",
         "BfArM",
         "DocCheck"
@@ -683,6 +687,13 @@
         "Carsten Linnemann"
       ],
       "heads": [
+        {
+          "t": "Elektronische Patientenakte: MEDI zieht kritische Bilanz",
+          "s": "Deutsches Aerzteblatt",
+          "d": "18.09.",
+          "u": "https://www.aerzteblatt.de/news/elektronische-patientenakte-medi-zieht-kritische-bilanz-08e32247-0855-4da7-a648-befd6b099f2e",
+          "iso": "2026-09-18"
+        },
         {
           "t": "ePA für alle: „25 Seiten schreiben, um zu erklären, wie man Dokumente hochlädt“",
           "s": "heise Newsticker",
@@ -880,8 +891,8 @@
           "iso": "2026-07-01"
         }
       ],
-      "note": "Der BfDI mahnt vor der ab Ende Oktober startenden Ausleitung von ePA-Daten zu Forschungszwecken bessere Information der Versicherten an, eine Umfrage zeigt zudem geringe Nutzungszahlen der ePA. Zusätzlich wurden Sicherheitslücken in ePA-Clients sowie eine technische Störung Ende August bekannt.",
-      "share": 0.047
+      "note": "MEDI zieht eine kritische Bilanz zur ePA, Kritiker bemängeln komplizierte Bedienung und geringe Nutzerzahlen. Der BfDI mahnt vor der ab Oktober startenden Datenausleitung zu Forschungszwecken bessere Information der Versicherten an, zudem kam es Ende August zu einer Störung der Anwendung.",
+      "share": 0.043
     },
     {
       "id": "erezept",
@@ -899,7 +910,6 @@
           },
           "series": [
             0,
-            0,
             1,
             0,
             0,
@@ -983,6 +993,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -991,14 +1002,13 @@
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
             0.25,
             0.2,
             0.17,
             0.14,
             0.14,
-            0.14,
             0,
             0,
             0,
@@ -1074,6 +1084,7 @@
             0,
             0,
             0,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -1089,7 +1100,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 5,
             "2026-06-22": 4,
             "2026-06-23": 0,
             "2026-06-24": 9,
@@ -1177,10 +1187,10 @@
             "2026-09-14": 3,
             "2026-09-15": 9,
             "2026-09-16": 8,
-            "2026-09-17": 3
+            "2026-09-17": 3,
+            "2026-09-18": 7
           },
           "series": [
-            5,
             4,
             0,
             9,
@@ -1269,16 +1279,16 @@
             9,
             8,
             3,
+            7,
             0
           ],
           "smooth": [
-            5,
-            4.5,
-            3,
-            4.5,
-            4.6,
+            4,
+            2,
             4.33,
-            4.29,
+            4.5,
+            4.2,
+            4.17,
             4,
             8.86,
             9.43,
@@ -1361,12 +1371,13 @@
             7.43,
             7.14,
             6.57,
+            6.14,
             5.14
           ],
-          "total": 495,
+          "total": 497,
           "last7": 36,
-          "prev7": 48,
-          "momentum": 0.75,
+          "prev7": 55,
+          "momentum": 0.65,
           "hat": true
         }
       },
@@ -1406,8 +1417,8 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Die E-Rezept-App unterstützt aufgrund fehlender Google-Updates künftig kein vier Jahre altes Android 13 mehr. KBV und Krankenkassen einigten sich zudem auf Regeln für Cannabisverordnungen per E-Rezept.",
-      "share": 0.023
+      "note": "Die E-Rezept-App wird auf dem noch verbreiteten Android 13 nicht mehr unterstützt, da Google keine Updates mehr liefert. KBV und Krankenkassen haben sich zudem auf einheitliche Regeln für Cannabisverordnungen per E-Rezept geeinigt.",
+      "share": 0.022
     },
     {
       "id": "gateway",
@@ -1822,8 +1833,8 @@
           },
           "series": [
             0,
-            0,
             1,
+            0,
             0,
             0,
             0,
@@ -1914,14 +1925,14 @@
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
             0.25,
             0.2,
             0.17,
             0.14,
             0.14,
-            0.14,
+            0,
             0,
             0,
             0,
@@ -2217,7 +2228,7 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Der Branchenverband bvitg warnt vor einem Zentralisierungskurs der gematik im Rahmen des Transformationsplans 2030, der die Stabilität, Innovation und den Wettbewerb in der Gesundheits-IT gefährde.",
+      "note": "Der Branchenverband bvitg warnt vor dem Zentralisierungskurs der gematik im Rahmen des Transformationsplans 2030 und sieht Stabilität, Innovation und Wettbewerb in der Gesundheits-IT gefährdet.",
       "share": 0
     },
     {
@@ -2254,7 +2265,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2267,6 +2277,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2346,7 +2357,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2365,6 +2375,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2635,7 +2646,7 @@
           "iso": "2026-07-13"
         }
       ],
-      "note": "Ein neuer Leitfaden erklärt Pflegeeinrichtungen, wie KIM in bestehende Dokumentationssysteme integriert werden kann, mit dem Hinweis, IT-Dienstleister früh in die Planung einzubeziehen.",
+      "note": "Ein neuer Leitfaden erklärt Pflegeeinrichtungen die Einführung von KIM und empfiehlt frühzeitige Abstimmung mit dem IT-Dienstleister zur Integration in bestehende Dokumentationssysteme.",
       "share": 0
     },
     {
@@ -2653,7 +2664,6 @@
           },
           "series": [
             0,
-            0,
             1,
             0,
             0,
@@ -2699,6 +2709,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2745,12 +2756,11 @@
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
             0.14,
             0.29,
             0.14,
@@ -2833,6 +2843,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "total": 3,
@@ -2843,7 +2854,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 31,
             "2026-06-22": 49,
             "2026-06-23": 53,
             "2026-06-24": 73,
@@ -2931,10 +2941,10 @@
             "2026-09-14": 56,
             "2026-09-15": 55,
             "2026-09-16": 50,
-            "2026-09-17": 38
+            "2026-09-17": 38,
+            "2026-09-18": 57
           },
           "series": [
-            31,
             49,
             53,
             73,
@@ -3023,16 +3033,16 @@
             55,
             50,
             38,
+            57,
             0
           ],
           "smooth": [
-            31,
-            40,
-            44.33,
-            51.5,
-            47.8,
-            44.67,
-            40.29,
+            49,
+            51,
+            58.33,
+            52,
+            47.4,
+            41.83,
             37.86,
             38.57,
             46.86,
@@ -3115,12 +3125,13 @@
             45.71,
             44.29,
             40.29,
-            35.14
+            43.29,
+            40.57
           ],
-          "total": 3955,
-          "last7": 246,
-          "prev7": 348,
-          "momentum": 0.71,
+          "total": 3981,
+          "last7": 284,
+          "prev7": 349,
+          "momentum": 0.81,
           "hat": true
         }
       },
@@ -3159,7 +3170,7 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Die gematik sucht beim TI-Summit Ideen für die digitale Gesundheitsversorgung und veröffentlichte ein Impulspapier mit Handlungsempfehlungen zur digitalen Transformation. Der bvitg kritisierte parallel den Zentralisierungskurs der gematik im Transformationsplan 2030.",
+      "note": "Die gematik sucht beim TI-Summit nach Ideen für die digitale Gesundheitsversorgung und veröffentlicht ein Impulspapier mit Handlungsempfehlungen zur digitalen Transformation. Der Verband bvitg kritisiert parallel den Zentralisierungskurs der gematik im Transformationsplan 2030.",
       "share": 0
     },
     {
@@ -3180,7 +3191,6 @@
           },
           "series": [
             0,
-            0,
             1,
             0,
             0,
@@ -3241,6 +3251,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3272,12 +3283,11 @@
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
             0.25,
-            0.2,
+            0.4,
             0.33,
-            0.29,
             0.29,
             0.43,
             0.29,
@@ -3339,6 +3349,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3647,7 +3658,7 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Das GeDIG-Gesetz sorgt für gemischte Reaktionen: Ärzte warnen vor Vertrauensverlust, die Digitalwirtschaft fordert weitere Rechtssicherheit, Bundesratsausschüsse kritisieren Umsetzungsfristen und Bedarfseinschätzung. Die KBV bekräftigt zudem Forderungen nach Bürokratieabbau, während das GKV-Beitragssatzstabilisierungsgesetz in Kraft trat.",
+      "note": "Das Bundesgesundheitsministerium legt einen Indikator für die Honorarverhandlungen fest, während Bundesratsausschüsse die Umsetzungsfristen und Bedarfseinschätzung des GeDIG kritisieren. Die KBV bekräftigt zudem ihre Forderung nach Bürokratieabbau, das GKV-Beitragssatzstabilisierungsgesetz ist bereits in Kraft.",
       "share": 0
     },
     {
@@ -3725,8 +3736,8 @@
             0,
             0,
             0,
-            0,
             1,
+            0,
             0,
             0,
             0,
@@ -3817,14 +3828,14 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
             0,
             0,
             0,
@@ -3853,7 +3864,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 70,
             "2026-06-22": 62,
             "2026-06-23": 329,
             "2026-06-24": 53,
@@ -3941,10 +3951,10 @@
             "2026-09-14": 32,
             "2026-09-15": 54,
             "2026-09-16": 49,
-            "2026-09-17": 39
+            "2026-09-17": 39,
+            "2026-09-18": 47
           },
           "series": [
-            70,
             62,
             329,
             53,
@@ -4033,16 +4043,16 @@
             54,
             49,
             39,
+            47,
             0
           ],
           "smooth": [
-            70,
-            66,
-            153.67,
-            128.5,
-            110.6,
-            97.33,
-            87.43,
+            62,
+            195.5,
+            148,
+            120.75,
+            102.8,
+            90.33,
             79.86,
             77.71,
             36.29,
@@ -4125,11 +4135,12 @@
             39.43,
             38.29,
             38.14,
-            33
+            39.71,
+            34.86
           ],
-          "total": 3777,
-          "last7": 231,
-          "prev7": 265,
+          "total": 3754,
+          "last7": 244,
+          "prev7": 279,
           "momentum": 0.87,
           "hat": true
         }
@@ -4148,7 +4159,7 @@
           "iso": "2026-08-24"
         }
       ],
-      "note": "Die Insolvenz des privaten Anbieters Verimi wirft laut Berichten Fragen zur Zukunft der GesundheitsID von Millionen Versicherten auf, da die TI von privaten Dienstleistern abhängig ist.",
+      "note": "Die Insolvenz des privaten Anbieters Verimi wirft laut Berichten Fragen zur Zukunft der GesundheitsID von Millionen Versicherten auf, da die TI in diesem Bereich von privaten Unternehmen abhängig ist.",
       "share": 0
     },
     {
@@ -4169,7 +4180,6 @@
             "2026-09-14": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4258,6 +4268,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4279,7 +4290,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4350,6 +4360,7 @@
             0.57,
             0.43,
             0.29,
+            0.14,
             0.14
           ],
           "total": 8,
@@ -4633,8 +4644,8 @@
           "iso": "2026-07-10"
         }
       ],
-      "note": "Eine Störung bei D-Trust legte am 7. und 8. September bundesweit zentrale TI-Anwendungen wie E-Rezept, ePA und eAU zeitweise lahm, da eGK und HBA nicht gelesen werden konnten. Zudem wurden Sicherheitslücken in ePA-Clients bekannt und eine Umfrage zeigt mangelnde Krisenvorbereitung von Arztpraxen.",
-      "share": 0.023
+      "note": "Eine Störung bei D-Trust legte Anfang September bundesweit zentrale TI-Anwendungen wie E-Rezept, ePA und eAU zeitweise lahm, weil eGK und HBA nicht gelesen werden konnten. Zusätzlich wurden Sicherheitslücken in ePA-Clients bekannt, das BSI stellte unterdessen Materialien zur IT-Sicherheit für Arztpraxen bereit.",
+      "share": 0.022
     },
     {
       "id": "daten-ki",
@@ -4654,7 +4665,6 @@
             "2026-09-16": 1
           },
           "series": [
-            0,
             0,
             1,
             0,
@@ -4743,18 +4753,18 @@
             0,
             1,
             0,
+            0,
             0
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
             0.25,
             0.2,
             0.17,
             0.14,
             0.14,
-            0.14,
             0,
             0,
             0,
@@ -4833,6 +4843,7 @@
             0,
             0,
             0,
+            0.14,
             0.14,
             0.14,
             0.14
@@ -4845,7 +4856,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 1,
             "2026-06-22": 3,
             "2026-06-23": 1,
             "2026-06-24": 2,
@@ -4929,10 +4939,10 @@
             "2026-09-14": 3,
             "2026-09-15": 5,
             "2026-09-16": 2,
-            "2026-09-17": 3
+            "2026-09-17": 3,
+            "2026-09-18": 1
           },
           "series": [
-            1,
             3,
             1,
             2,
@@ -5021,16 +5031,16 @@
             5,
             2,
             3,
+            1,
             0
           ],
           "smooth": [
-            1,
+            3,
             2,
-            1.67,
+            2,
             1.75,
-            1.6,
+            1.4,
             1.33,
-            1.29,
             1.29,
             0.86,
             0.71,
@@ -5113,6 +5123,7 @@
             2.57,
             2.86,
             2.71,
+            2.43,
             2.29
           ],
           "total": 129,
@@ -5184,8 +5195,8 @@
           "iso": "2026-06-23"
         }
       ],
-      "note": "Ab Oktober sollen Patientendaten aus der ePA für Forschungszwecke sowie die EHDS-Datenbank verfügbar sein, was Diskussionen über Datenschutz und Kontrolle über Gesundheitsdaten auslöst. Kritiker bemängeln unklare Unterscheidungen zwischen ePA-Daten und deren Weiterleitung an EHDS.",
-      "share": 0.023
+      "note": "Ab Oktober sollen Patientendaten aus der ePA für Forschungszwecke und die EHDS-Datenbank nutzbar werden, was Datenschutzbedenken auslöst. Das GeDIG-Gesetz zur Gesundheitsdatennutzung erzeugt weiterhin gemischte Reaktionen zwischen Ärzten und Digitalwirtschaft.",
+      "share": 0.022
     },
     {
       "id": "versorgung",
@@ -5199,8 +5210,7 @@
             "2026-07-02": 1,
             "2026-06-27": 1,
             "2026-07-31": 1,
-            "2026-08-24": 1,
-            "2026-09-17": 1
+            "2026-08-24": 1
           },
           "series": [
             0,
@@ -5208,7 +5218,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5291,7 +5300,8 @@
             0,
             0,
             0,
-            1,
+            0,
+            0,
             0
           ],
           "smooth": [
@@ -5300,8 +5310,7 @@
             0,
             0,
             0,
-            0,
-            0.14,
+            0.17,
             0.14,
             0.14,
             0.14,
@@ -5383,18 +5392,18 @@
             0,
             0,
             0,
-            0.14,
-            0.14
+            0,
+            0,
+            0
           ],
-          "total": 5,
-          "last7": 1,
+          "total": 4,
+          "last7": 0,
           "prev7": 0,
-          "momentum": null,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 11,
             "2026-06-22": 10,
             "2026-06-23": 26,
             "2026-06-24": 15,
@@ -5482,10 +5491,10 @@
             "2026-09-14": 17,
             "2026-09-15": 31,
             "2026-09-16": 31,
-            "2026-09-17": 16
+            "2026-09-17": 16,
+            "2026-09-18": 19
           },
           "series": [
-            11,
             10,
             26,
             15,
@@ -5574,16 +5583,16 @@
             31,
             31,
             16,
+            19,
             0
           ],
           "smooth": [
-            11,
-            10.5,
-            15.67,
-            15.5,
-            17.2,
-            17.17,
-            17.71,
+            10,
+            18,
+            17,
+            18.75,
+            18.4,
+            18.83,
             18.43,
             19.43,
             17.57,
@@ -5666,18 +5675,19 @@
             17.43,
             19.14,
             18.29,
-            16.43
+            19.14,
+            18
           ],
-          "total": 1598,
-          "last7": 115,
-          "prev7": 111,
-          "momentum": 1.04,
+          "total": 1606,
+          "last7": 126,
+          "prev7": 104,
+          "momentum": 1.21,
           "hat": true
         }
       },
       "orgs": [
-        "bvitg",
         "heise online",
+        "bvitg",
         "Ärztekammer BW",
         "Mia Healthcare",
         "UPderecho"
@@ -5730,8 +5740,8 @@
           "iso": "2026-06-27"
         }
       ],
-      "note": "Ein Verbändebündnis fordert für die Pflege mehr als eine reine Digitalisierungsquote, während eine Befragung den Stand der Digitalisierung in Pflegeeinrichtungen mehrerer Bundesländer erhebt. Zudem wird Social Prescribing als Ansatz diskutiert, Hausarztpraxen stärker mit sozialen Angeboten zu vernetzen.",
-      "share": 0.023
+      "note": "Ein Beitrag beschreibt Social Prescribing als Ansatz, die Hausarztpraxis als Brücke ins soziale Leben zu nutzen. Ein Verbändebündnis fordert zudem mehr als eine reine Digitalisierungsquote zur Entlastung der Pflege.",
+      "share": 0
     },
     {
       "id": "sonstiges",
@@ -5787,11 +5797,11 @@
             "2026-09-13": 1,
             "2026-09-14": 10,
             "2026-09-15": 14,
-            "2026-09-17": 6,
-            "2026-09-16": 5
+            "2026-09-16": 5,
+            "2026-09-18": 7,
+            "2026-09-17": 4
           },
           "series": [
-            0,
             0,
             1,
             0,
@@ -5879,17 +5889,17 @@
             10,
             14,
             5,
-            6,
+            4,
+            7,
             0
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
-            0.25,
+            0.5,
             0.4,
             0.33,
-            0.29,
             0.29,
             0.43,
             0.29,
@@ -5971,18 +5981,18 @@
             2.29,
             4.29,
             4.86,
-            5.57,
-            5.29
+            5.29,
+            6,
+            5.86
           ],
-          "total": 106,
-          "last7": 37,
-          "prev7": 4,
-          "momentum": 9.25,
+          "total": 111,
+          "last7": 41,
+          "prev7": 5,
+          "momentum": 8.2,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-06-21": 6,
             "2026-06-22": 21,
             "2026-06-23": 18,
             "2026-06-24": 28,
@@ -6070,10 +6080,10 @@
             "2026-09-14": 16,
             "2026-09-15": 22,
             "2026-09-16": 29,
-            "2026-09-17": 20
+            "2026-09-17": 20,
+            "2026-09-18": 14
           },
           "series": [
-            6,
             21,
             18,
             28,
@@ -6162,16 +6172,16 @@
             22,
             29,
             20,
+            14,
             0
           ],
           "smooth": [
-            6,
-            13.5,
-            15,
-            18.25,
-            16.8,
-            16.33,
-            20.86,
+            21,
+            19.5,
+            22.33,
+            19.5,
+            18.4,
+            23.33,
             20.71,
             19.29,
             17.86,
@@ -6254,22 +6264,23 @@
             13.29,
             15.14,
             15.14,
-            13.43
+            15.43,
+            15
           ],
-          "total": 1079,
-          "last7": 94,
+          "total": 1087,
+          "last7": 105,
           "prev7": 89,
-          "momentum": 1.06,
+          "momentum": 1.18,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
-        "bvitg",
         "Ärztekammer BW",
-        "EPA",
-        "KBV",
-        "Environmental Protection Agency"
+        "DaphOS",
+        "Universidad de Palermo",
+        "bvitg",
+        "EPA"
       ],
       "people": [
         "Armin Flohr",
@@ -6278,6 +6289,55 @@
         "Matthew Daly"
       ],
       "heads": [
+        {
+          "t": "Polypenentfernung: Kaltschlingen ab Oktober im EBM",
+          "s": "Deutsches Aerzteblatt",
+          "d": "18.09.",
+          "u": "https://www.aerzteblatt.de/news/polypenentfernung-kaltschlingen-ab-oktober-im-ebm-ff887086-03dd-4005-a757-70a1953d7ae5",
+          "iso": "2026-09-18"
+        },
+        {
+          "t": "Beratung zur RSV-Prophylaxe nicht mehr separat abrechenbar",
+          "s": "Deutsches Aerzteblatt",
+          "d": "18.09.",
+          "u": "https://www.aerzteblatt.de/news/beratung-zur-rsv-prophylaxe-nicht-mehr-separat-abrechenbar-922acf0e-1fc1-4286-8f58-8ddc7070a384",
+          "iso": "2026-09-18"
+        },
+        {
+          "t": "Mordprozess um tote Patienten: Freispruch für Arzt",
+          "s": "Deutsches Aerzteblatt",
+          "d": "18.09.",
+          "u": "https://www.aerzteblatt.de/news/mordprozess-um-tote-patienten-freispruch-fur-arzt-c3901bc1-2820-4775-b431-f956e0697ecc",
+          "iso": "2026-09-18"
+        },
+        {
+          "t": "Selbstverwaltung könnte Ausnahmen im Primärversorgungssystem selbst definieren",
+          "s": "Deutsches Aerzteblatt",
+          "d": "18.09.",
+          "u": "https://www.aerzteblatt.de/news/selbstverwaltung-konnte-ausnahmen-im-primarversorgungssystem-selbst-definieren-cbfc6cc2-3097-4b99-af0e-c74881f7d1a6",
+          "iso": "2026-09-18"
+        },
+        {
+          "t": "Klinik-Planung: DaphOS siegt bei KH-IT-Start-up-Pitch",
+          "s": "heise Newsticker",
+          "d": "18.09.",
+          "u": "https://www.heise.de/news/Klinik-Planung-DaphOS-siegt-bei-KH-IT-Start-up-Pitch-11343644.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-09-18"
+        },
+        {
+          "t": "Tell the EPA: Phase out glyphosate, protect America’s wildlife Glyphosate has never truly been proven safe. But it’s still America’s most commonly used pesticide, sprayed on millio",
+          "s": "Mastodon: #ePA",
+          "d": "18.09.",
+          "u": "https://mastodon.social/@Karen5Lund/117293603563739935",
+          "iso": "2026-09-18"
+        },
+        {
+          "t": "# EPA immediately sued over plans to repeal # climate rules for # powerplants On Thursday, American Lung Association, American Public Health Association (APHA), Clean Air Council, ",
+          "s": "Mastodon: #ePA",
+          "d": "18.09.",
+          "u": "https://hachyderm.io/@BenjaminHCCarr/117292502994509833",
+          "iso": "2026-09-18"
+        },
         {
           "t": "The administration appealed a ruling that blocked EPA from sending California emissions waivers to Congress for repeal. The judge found the waivers aren’t regulations covered by th",
           "s": "Mastodon: #ePA",
@@ -6438,59 +6498,10 @@
           "d": "15.09.",
           "u": "https://apobangpo.space/@bich/117275666418707243",
           "iso": "2026-09-15"
-        },
-        {
-          "t": "Trump EPA moves to wipe out climate rules for power plants The EPA revoked limits on greenhouse gas emissions from power plants, rejecting decades of settled science to argue that ",
-          "s": "Mastodon: #ePA",
-          "d": "15.09.",
-          "u": "https://www.urbanmind.net/display/f7dd981d-e72cbbb7-f5cb87702ceafaa5",
-          "iso": "2026-09-15"
-        },
-        {
-          "t": "EPA steht für Environmental Protection Agency. Das ist irreführend, denn die EPA kümmert sich in erster Linie um die Zerstörung der Umwelt. # epa",
-          "s": "Mastodon: #ePA",
-          "d": "15.09.",
-          "u": "https://ruhr.social/@MichaelaWifi/117274778992628181",
-          "iso": "2026-09-15"
-        },
-        {
-          "t": "KBV-Chef Gassen: Schnellere Termine bei medizinisch dringenden Fällen möglich",
-          "s": "Deutsches Aerzteblatt",
-          "d": "14.09.",
-          "u": "https://www.aerzteblatt.de/news/kbv-chef-gassen-schnellere-termine-bei-medizinisch-dringenden-fallen-moglich-8b746047-53c3-4a21-9be9-0dba4ae97296",
-          "iso": "2026-09-14"
-        },
-        {
-          "t": "Trump administration repeals Biden era greenhouse gas requirements for power plants President Donald Trump has systemically dismantled regulations implemented by the Obama and Bide",
-          "s": "Mastodon: #ePA",
-          "d": "14.09.",
-          "u": "https://mastodon.social/@top_news/117271477861295559",
-          "iso": "2026-09-14"
-        },
-        {
-          "t": "The US # EPA published a Community Involvement Plan for the # TripleSite in # Sunnyvale , California (3 nasty toxic waste dump clean-up sites, including my old Apple office). Read ",
-          "s": "Mastodon: #ePA",
-          "d": "14.09.",
-          "u": "https://mastodon.social/@ashleygjovik/117271313696582954",
-          "iso": "2026-09-14"
-        },
-        {
-          "t": "# EPA eliminates rule that limits planet-warming greenhouse gas emissions from power plants - The Environmental Protection Agency said Monday it is repealing rules that limit plane",
-          "s": "Mastodon: #ePA",
-          "d": "14.09.",
-          "u": "https://mastodon.social/@earthclimate/117271244892040120",
-          "iso": "2026-09-14"
-        },
-        {
-          "t": "EPA to eliminate rule that limits greenhouse gas emissions from power plants The Environmental Protection Agency plans to repeal rules limiting greenhouse gas emissions from coal a",
-          "s": "Mastodon: #ePA",
-          "d": "14.09.",
-          "u": "https://mastodon.social/@top_news/117271121121244798",
-          "iso": "2026-09-14"
         }
       ],
       "note": "",
-      "share": 0.86
+      "share": 0.891
     }
   ],
   "roadmap": [
