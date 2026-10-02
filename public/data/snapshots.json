@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-10-01T10:40:25.029Z",
-  "today": "2026-10-01",
-  "startDate": "2026-07-04",
-  "endDate": "2026-10-01",
+  "generated": "2026-10-02T10:15:16.910Z",
+  "today": "2026-10-02",
+  "startDate": "2026-07-05",
+  "endDate": "2026-10-02",
   "days": 90,
   "stats": {
-    "beitraege": 50,
+    "beitraege": 52,
     "quellenOk": 9,
     "quellenFehler": 10,
-    "laufzeitSek": 30
+    "laufzeitSek": 33
   },
   "sources": [
     {
@@ -63,7 +63,7 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     {
       "name": "Mastodon: #eHealth",
@@ -78,7 +78,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 23,
+      "items": 20,
       "roh": 40
     },
     {
@@ -102,7 +102,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/Telematikinfrastruktur?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 25,
+      "items": 26,
       "roh": 40
     },
     {
@@ -110,63 +110,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 645
+      "items": 644
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 2987
+      "items": 2993
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1323
+      "items": 1337
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 425
+      "items": 423
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 485
+      "items": 488
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 141
+      "items": 140
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3903
+      "items": 3922
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1109
+      "items": 1129
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 923
+      "items": 928
     }
   ],
   "topics": [
@@ -201,8 +201,9 @@
             "2026-09-18": 1,
             "2026-09-23": 2,
             "2026-09-21": 1,
-            "2026-10-01": 3,
-            "2026-09-29": 1
+            "2026-09-29": 1,
+            "2026-10-01": 6,
+            "2026-10-02": 1
           },
           "series": [
             0,
@@ -210,7 +211,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -294,7 +294,8 @@
             0,
             1,
             0,
-            3
+            6,
+            1
           ],
           "smooth": [
             0,
@@ -302,8 +303,7 @@
             0,
             0,
             0,
-            0,
-            0.14,
+            0.17,
             0.14,
             0.14,
             0.29,
@@ -386,17 +386,17 @@
             0.29,
             0.43,
             0.14,
-            0.57
+            1,
+            1.14
           ],
-          "total": 28,
-          "last7": 4,
-          "prev7": 4,
-          "momentum": 1,
+          "total": 32,
+          "last7": 8,
+          "prev7": 3,
+          "momentum": 2.67,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 8,
             "2026-07-05": 11,
             "2026-07-06": 10,
             "2026-07-07": 43,
@@ -484,10 +484,10 @@
             "2026-09-27": 9,
             "2026-09-28": 8,
             "2026-09-29": 17,
-            "2026-09-30": 13
+            "2026-09-30": 13,
+            "2026-10-01": 22
           },
           "series": [
-            8,
             11,
             10,
             43,
@@ -576,16 +576,16 @@
             8,
             17,
             13,
+            22,
             0
           ],
           "smooth": [
-            8,
-            9.5,
-            9.67,
-            18,
-            17,
-            17.67,
-            16.86,
+            11,
+            10.5,
+            21.33,
+            19.25,
+            19.6,
+            18.33,
             19,
             19.14,
             19.86,
@@ -668,12 +668,13 @@
             12.57,
             12.57,
             12.14,
-            9
+            12.14,
+            10.71
           ],
-          "total": 1323,
-          "last7": 63,
-          "prev7": 110,
-          "momentum": 0.57,
+          "total": 1337,
+          "last7": 75,
+          "prev7": 104,
+          "momentum": 0.72,
           "hat": true
         }
       },
@@ -689,6 +690,13 @@
         "Carsten Linnemann"
       ],
       "heads": [
+        {
+          "t": "Ganz merkwürdiger Vorgang: Patient hat # ePA widersprochen, Arztbriefe wurden keine verschickt. Aber die Praxissoftware eines Psychotherapeuten \"weiß\", dass dieser eine Koronare-He",
+          "s": "Mastodon: #ePA",
+          "d": "02.10.",
+          "u": "https://social.tchncs.de/@gborn/117370677038515782",
+          "iso": "2026-10-02"
+        },
         {
           "t": "Elektronische Patientenakten füllen sich",
           "s": "Deutsches Aerzteblatt",
@@ -708,6 +716,34 @@
           "s": "Mastodon: #ePA",
           "d": "01.10.",
           "u": "https://social.tchncs.de/@kuketzblog/117364973562030862",
+          "iso": "2026-10-01"
+        },
+        {
+          "t": "Ein Jahr Befüllungspflicht für die E-Patientenakte: Ein Blick, vieles unklar",
+          "s": "heise Newsticker",
+          "d": "01.10.",
+          "u": "https://www.heise.de/news/Ein-Jahr-Befuellungspflicht-fuer-die-E-Patientenakte-Ein-Blick-vieles-unklar-11473343.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-10-01"
+        },
+        {
+          "t": "One year of mandatory electronic patient records: much remains unclear One year after the mandatory filling of the ePA, technical failures and login problems continue to cloud the ",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "01.10.",
+          "u": "https://social.heise.de/@heiseonlineenglish/117367776422630293",
+          "iso": "2026-10-01"
+        },
+        {
+          "t": "Ein Jahr nach der Befüllungspflicht für die ePA trüben weiterhin technische Ausfälle und Anmeldeprobleme das Bild. #Telematikinfrastruktur Ein Jahr Befüllungspflicht für...",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "01.10.",
+          "u": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:zv657bpskxtjkvbdd5wymjam/post/3mwtc75sswz2q",
+          "iso": "2026-10-01"
+        },
+        {
+          "t": "Ein Jahr Befüllungspflicht für die E-Patientenakte: Ein Blick, vieles unklar Ein Jahr nach der Befüllungspflicht für die ePA trüben weiterhin technische Ausfälle und Anmeldeproblem",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "01.10.",
+          "u": "https://social.heise.de/@heiseonline/117366632164829609",
           "iso": "2026-10-01"
         },
         {
@@ -863,45 +899,10 @@
           "d": "14.08.",
           "u": "https://mastodon.social/@medconweb/117092949301641568",
           "iso": "2026-08-14"
-        },
-        {
-          "t": "Die elektronische Patientenakte habe ich wegen ihrer vielen datenschutzrechtlichen Probleme bislang abgelehnt. Nun zwingt mich eine Praxis dazu, damit ich zukünftig Befunde usw. we",
-          "s": "Mastodon: #ePA",
-          "d": "13.08.",
-          "u": "https://mastodon.design/@rainerklute/117088330367804545",
-          "iso": "2026-08-13"
-        },
-        {
-          "t": "@ kuketzblog Diese Unterscheidung halte ich für sehr schwierig. in der # epa ist auch alles drin vom Patienten UND es wird weitergeleitet in die # EHDS - Datenbank. Wer weiß eigent",
-          "s": "Mastodon: #ePA",
-          "d": "13.08.",
-          "u": "https://digitalcourage.social/@FairB/117088965337122072",
-          "iso": "2026-08-13"
-        },
-        {
-          "t": "# Pflegeprofis aus Bayern, Baden-Württemberg, Berlin und Sachsen-Anhalt werden zum Stand der Digitalisierung in Pflegeeinrichtungen und Pflegediensten befragt. Es geht um \"Praxiser",
-          "s": "Mastodon: #ePA",
-          "d": "31.07.",
-          "u": "https://mastodon.social/@Pfleger_aus_A/117013533604579721",
-          "iso": "2026-07-31"
-        },
-        {
-          "t": "„Der leise Abschied vom Arztgeheimnis“ - DocCheck Mit der aktuellen Version der ePA soll endlich der Fortschritt kommen, der die Vorherrschaft des Faxgeräts beendet. Doch während d",
-          "s": "Mastodon: #ePA",
-          "d": "31.07.",
-          "u": "https://social.tchncs.de/@simsus/117014543152353579",
-          "iso": "2026-07-31"
-        },
-        {
-          "t": "Carsten # Linnemann ist nun also # Gesundheitsminister . Der Mann, der die Erstellung von # Listen über # psychischKranke anstrebt. Btw. (hint hint): Heute ist ein guter Tag, um de",
-          "s": "Mastodon: #ePA",
-          "d": "24.07.",
-          "u": "https://nrw.social/@piraten/116976042126403101",
-          "iso": "2026-07-24"
         }
       ],
       "note": "",
-      "share": 0.308
+      "share": 0.533
     },
     {
       "id": "erezept",
@@ -949,7 +950,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -988,6 +988,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -1041,7 +1042,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1086,6 +1086,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -1107,7 +1108,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 2,
             "2026-07-05": 3,
             "2026-07-06": 3,
             "2026-07-07": 7,
@@ -1195,10 +1195,10 @@
             "2026-09-27": 4,
             "2026-09-28": 4,
             "2026-09-29": 4,
-            "2026-09-30": 5
+            "2026-09-30": 5,
+            "2026-10-01": 5
           },
           "series": [
-            2,
             3,
             3,
             7,
@@ -1286,17 +1286,17 @@
             4,
             4,
             4,
+            5,
             5,
             0
           ],
           "smooth": [
-            2,
-            2.5,
-            2.67,
-            3.75,
-            4,
+            3,
+            3,
             4.33,
-            4.57,
+            4.5,
+            4.8,
+            5,
             4.86,
             5.57,
             6.29,
@@ -1379,12 +1379,13 @@
             6.57,
             5.43,
             4.86,
-            4.14
+            4.86,
+            3.57
           ],
-          "total": 485,
-          "last7": 29,
-          "prev7": 55,
-          "momentum": 0.53,
+          "total": 488,
+          "last7": 25,
+          "prev7": 57,
+          "momentum": 0.44,
           "hat": true
         }
       },
@@ -1904,7 +1905,6 @@
             0,
             0,
             0,
-            0,
             4,
             6,
             0,
@@ -1916,10 +1916,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -2008,6 +2008,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0
           ],
           "total": 11,
@@ -2332,7 +2333,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2413,6 +2413,7 @@
             0,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
@@ -2424,7 +2425,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2504,6 +2504,7 @@
             0,
             0,
             0,
+            0.14,
             0.14,
             0.14
           ],
@@ -2734,7 +2735,7 @@
         }
       ],
       "note": "",
-      "share": 0.077
+      "share": 0.067
     },
     {
       "id": "gematik",
@@ -2781,7 +2782,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2822,6 +2822,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2873,7 +2874,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2920,6 +2920,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2940,7 +2941,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 16,
             "2026-07-05": 21,
             "2026-07-06": 42,
             "2026-07-07": 56,
@@ -3028,10 +3028,10 @@
             "2026-09-27": 22,
             "2026-09-28": 43,
             "2026-09-29": 61,
-            "2026-09-30": 44
+            "2026-09-30": 44,
+            "2026-10-01": 35
           },
           "series": [
-            16,
             21,
             42,
             56,
@@ -3120,16 +3120,16 @@
             43,
             61,
             44,
+            35,
             0
           ],
           "smooth": [
-            16,
-            18.5,
-            26.33,
-            33.75,
-            34.4,
-            38.83,
-            37.57,
+            21,
+            31.5,
+            39.67,
+            39,
+            43.4,
+            41.17,
             39.14,
             38.14,
             37,
@@ -3212,12 +3212,13 @@
             35.29,
             36.86,
             37.57,
-            31.29
+            36.29,
+            30.86
           ],
-          "total": 3903,
-          "last7": 219,
-          "prev7": 315,
-          "momentum": 0.7,
+          "total": 3922,
+          "last7": 216,
+          "prev7": 296,
+          "momentum": 0.73,
           "hat": true
         }
       },
@@ -3259,13 +3260,13 @@
             "2026-07-08": 1,
             "2026-07-16": 1,
             "2026-08-21": 1,
-            "2026-09-25": 1
+            "2026-09-25": 1,
+            "2026-10-01": 1
           },
           "series": [
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3351,20 +3352,20 @@
             0,
             0,
             0,
+            1,
             0
           ],
           "smooth": [
             0,
             0,
             0,
-            0,
+            0.25,
             0.2,
             0.17,
             0.14,
             0.14,
             0.14,
             0.14,
-            0.14,
             0,
             0.14,
             0.14,
@@ -3443,12 +3444,13 @@
             0.14,
             0.14,
             0.14,
+            0.29,
             0.14
           ],
-          "total": 4,
+          "total": 5,
           "last7": 1,
-          "prev7": 0,
-          "momentum": null,
+          "prev7": 1,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
@@ -3653,6 +3655,13 @@
       "people": [],
       "heads": [
         {
+          "t": "GKM-Vorsitzender fordert schnelles Krisengesetz vom Bund",
+          "s": "Deutsches Aerzteblatt",
+          "d": "01.10.",
+          "u": "https://www.aerzteblatt.de/news/gkm-vorsitzender-fordert-schnelles-krisengesetz-vom-bund-96c38f5f-162e-40f0-a1ba-860385f5e3d0",
+          "iso": "2026-10-01"
+        },
+        {
           "t": "Digitalisierung im Gesundheitswesen: Bundesrat will mehr Geschwindigkeit",
           "s": "Deutsches Aerzteblatt",
           "d": "25.09.",
@@ -3717,7 +3726,7 @@
         }
       ],
       "note": "",
-      "share": 0.077
+      "share": 0.067
     },
     {
       "id": "identitaet",
@@ -3782,7 +3791,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3813,6 +3821,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3874,7 +3883,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3911,6 +3919,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0
@@ -3923,7 +3932,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 26,
             "2026-07-05": 22,
             "2026-07-06": 34,
             "2026-07-07": 37,
@@ -4011,10 +4019,10 @@
             "2026-09-27": 15,
             "2026-09-28": 31,
             "2026-09-29": 32,
-            "2026-09-30": 38
+            "2026-09-30": 38,
+            "2026-10-01": 30
           },
           "series": [
-            26,
             22,
             34,
             37,
@@ -4103,16 +4111,16 @@
             31,
             32,
             38,
+            30,
             0
           ],
           "smooth": [
-            26,
-            24,
-            27.33,
-            29.75,
-            32.2,
-            33.5,
-            32,
+            22,
+            28,
+            31,
+            33.75,
+            35,
+            33,
             31.71,
             33.14,
             36.14,
@@ -4195,12 +4203,13 @@
             29,
             28.14,
             27.71,
-            23
+            27.29,
+            23.57
           ],
-          "total": 3410,
-          "last7": 161,
-          "prev7": 275,
-          "momentum": 0.59,
+          "total": 3414,
+          "last7": 165,
+          "prev7": 254,
+          "momentum": 0.65,
           "hat": true
         }
       },
@@ -4258,7 +4267,6 @@
             "2026-09-29": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4347,6 +4355,7 @@
             0,
             1,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4355,8 +4364,7 @@
             0,
             0,
             0,
-            0,
-            0.14,
+            0.17,
             0.14,
             0.14,
             0.14,
@@ -4439,6 +4447,7 @@
             0.29,
             0.43,
             0.29,
+            0.14,
             0.14
           ],
           "total": 13,
@@ -4758,7 +4767,7 @@
         }
       ],
       "note": "",
-      "share": 0.077
+      "share": 0.067
     },
     {
       "id": "daten-ki",
@@ -4791,7 +4800,6 @@
             0,
             0,
             0,
-            0,
             2,
             0,
             0,
@@ -4868,6 +4876,7 @@
             0,
             0,
             1,
+            0,
             0,
             0
           ],
@@ -4883,7 +4892,6 @@
             0,
             0,
             0,
-            0,
             0.29,
             0.29,
             0.29,
@@ -4961,6 +4969,7 @@
             0.29,
             0.43,
             0.43,
+            0.14,
             0.14
           ],
           "total": 11,
@@ -4971,7 +4980,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 1,
             "2026-07-05": 0,
             "2026-07-06": 2,
             "2026-07-07": 1,
@@ -5055,10 +5063,10 @@
             "2026-09-27": 0,
             "2026-09-28": 5,
             "2026-09-29": 10,
-            "2026-09-30": 4
+            "2026-09-30": 4,
+            "2026-10-01": 0
           },
           "series": [
-            1,
             0,
             2,
             1,
@@ -5147,16 +5155,16 @@
             5,
             10,
             4,
+            0,
             0
           ],
           "smooth": [
-            1,
-            0.5,
-            1,
+            0,
             1,
             1,
-            1.17,
-            1.29,
+            1,
+            1.2,
+            1.33,
             1.43,
             1.43,
             1.71,
@@ -5239,12 +5247,13 @@
             1.57,
             2.86,
             3.14,
+            2.86,
             2.86
           ],
-          "total": 141,
+          "total": 140,
           "last7": 20,
-          "prev7": 7,
-          "momentum": 2.86,
+          "prev7": 6,
+          "momentum": 3.33,
           "hat": true
         }
       },
@@ -5258,6 +5267,13 @@
           "s": "heise Newsticker",
           "d": "29.09.",
           "u": "https://www.heise.de/news/Forschungsdaten-aus-E-Patientenakte-Kassen-informieren-erst-kurz-vor-dem-Start-11469499.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-09-29"
+        },
+        {
+          "t": "Die ePA zeigt wieder sehr schön, wie man »Freiwilligkeit« neu definiert: Ab Ende Oktober sollen pseudonymisierte Daten aus der Medikationsliste standardmäßig an das Forschungsdaten",
+          "s": "Mastodon: #ePA",
+          "d": "29.09.",
+          "u": "https://social.tchncs.de/@kuketzblog/117355866966250691",
           "iso": "2026-09-29"
         },
         {
@@ -5339,7 +5355,7 @@
         }
       ],
       "note": "",
-      "share": 0.077
+      "share": 0.067
     },
     {
       "id": "versorgung",
@@ -5381,7 +5397,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5407,6 +5422,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5473,7 +5489,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5505,6 +5520,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -5546,7 +5562,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 8,
             "2026-07-05": 10,
             "2026-07-06": 22,
             "2026-07-07": 19,
@@ -5634,10 +5649,10 @@
             "2026-09-27": 7,
             "2026-09-28": 16,
             "2026-09-29": 14,
-            "2026-09-30": 22
+            "2026-09-30": 22,
+            "2026-10-01": 12
           },
           "series": [
-            8,
             10,
             22,
             19,
@@ -5726,16 +5741,16 @@
             16,
             14,
             22,
+            12,
             0
           ],
           "smooth": [
-            8,
-            9,
-            13.33,
-            14.75,
+            10,
+            16,
             17,
-            17,
-            17.14,
+            19.25,
+            18.8,
+            18.67,
             18.29,
             20.86,
             20.71,
@@ -5818,12 +5833,13 @@
             12.57,
             12.86,
             13.43,
-            11.14
+            12.86,
+            11.43
           ],
-          "total": 1568,
-          "last7": 78,
-          "prev7": 112,
-          "momentum": 0.7,
+          "total": 1572,
+          "last7": 80,
+          "prev7": 103,
+          "momentum": 0.78,
           "hat": true
         }
       },
@@ -5939,10 +5955,10 @@
             "2026-09-24": 1,
             "2026-09-25": 3,
             "2026-09-26": 1,
-            "2026-09-28": 1
+            "2026-09-28": 1,
+            "2026-10-02": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -6031,7 +6047,8 @@
             1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "smooth": [
             0,
@@ -6039,8 +6056,7 @@
             0,
             0,
             0,
-            0,
-            0.14,
+            0.17,
             0.14,
             0.14,
             0.14,
@@ -6123,17 +6139,17 @@
             1.29,
             1,
             0.86,
-            0.71
+            0.71,
+            0.43
           ],
-          "total": 121,
-          "last7": 5,
-          "prev7": 16,
-          "momentum": 0.31,
+          "total": 122,
+          "last7": 3,
+          "prev7": 12,
+          "momentum": 0.25,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-04": 3,
             "2026-07-05": 3,
             "2026-07-06": 20,
             "2026-07-07": 18,
@@ -6221,10 +6237,10 @@
             "2026-09-27": 7,
             "2026-09-28": 30,
             "2026-09-29": 41,
-            "2026-09-30": 17
+            "2026-09-30": 17,
+            "2026-10-01": 23
           },
           "series": [
-            3,
             3,
             20,
             18,
@@ -6313,16 +6329,16 @@
             30,
             41,
             17,
+            23,
             0
           ],
           "smooth": [
             3,
-            3,
-            8.67,
-            11,
-            12.4,
+            11.5,
             13.67,
-            12.71,
+            14.75,
+            15.8,
+            14.33,
             12.71,
             13.29,
             12.71,
@@ -6405,12 +6421,13 @@
             15.57,
             19.43,
             18.86,
-            15.86
+            19.14,
+            17.43
           ],
-          "total": 1109,
-          "last7": 111,
-          "prev7": 132,
-          "momentum": 0.84,
+          "total": 1129,
+          "last7": 122,
+          "prev7": 130,
+          "momentum": 0.94,
           "hat": true
         }
       },
@@ -6429,6 +6446,13 @@
         "Michael Bishop"
       ],
       "heads": [
+        {
+          "t": "# Datacenter ’s request for diesel generators sparks criticism By Claudia Levens, USA TODAY Network via Reuters Connect//April 23, 2026 # PortWashington , # Wisconsin — Neighbors o",
+          "s": "Mastodon: #ePA",
+          "d": "02.10.",
+          "u": "https://kolektiva.social/@DoomsdaysCW/117368807362660531",
+          "iso": "2026-10-02"
+        },
         {
           "t": "Efter den senaste tidens kopparstölder tar Alunda församling hjälp av lokala epa-ungdomar. De ska hålla extra uppsikt kring kyrkan på kvällarna. # epa # polis Efter stöldvågen – nu",
           "s": "Mastodon: #ePA",
@@ -6631,17 +6655,10 @@
           "d": "17.09.",
           "u": "https://mastodon.social/@realTuckFrumper/117284455139069208",
           "iso": "2026-09-17"
-        },
-        {
-          "t": "Trump is giving # datacenters a pass to pollute The Trump administration is sacrificing Americans’ # health to build data centers, former # EPA officials warn. At the start of his ",
-          "s": "Mastodon: #ePA",
-          "d": "17.09.",
-          "u": "https://hachyderm.io/@BenjaminHCCarr/117283215224634089",
-          "iso": "2026-09-17"
         }
       ],
       "note": "",
-      "share": 0.385
+      "share": 0.2
     }
   ],
   "roadmap": [
