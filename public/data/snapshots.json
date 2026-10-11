@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-10-10T10:23:08.188Z",
-  "today": "2026-10-10",
-  "startDate": "2026-07-13",
-  "endDate": "2026-10-10",
+  "generated": "2026-10-11T10:31:02.711Z",
+  "today": "2026-10-11",
+  "startDate": "2026-07-14",
+  "endDate": "2026-10-11",
   "days": 90,
   "stats": {
-    "beitraege": 63,
+    "beitraege": 65,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 37
+    "laufzeitSek": 41
   },
   "sources": [
     {
@@ -62,14 +62,14 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 5
+      "items": 6
     },
     {
       "name": "Mastodon: #eHealth",
       "url": "https://mastodon.social/api/v1/timelines/tag/eHealth?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 9,
+      "items": 8,
       "roh": 40
     },
     {
@@ -77,7 +77,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 18,
+      "items": 20,
       "roh": 40
     },
     {
@@ -109,63 +109,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 624
+      "items": 623
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3013
+      "items": 2979
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1320
+      "items": 1311
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 437
+      "items": 432
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 496
+      "items": 489
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 145
+      "items": 143
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3896
+      "items": 3879
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1190
+      "items": 1179
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 921
+      "items": 913
     }
   ],
   "topics": [
@@ -194,7 +194,6 @@
             "2026-09-06": 1,
             "2026-09-11": 2,
             "2026-09-12": 1,
-            "2026-07-13": 1,
             "2026-09-17": 1,
             "2026-09-18": 1,
             "2026-09-23": 2,
@@ -206,11 +205,10 @@
             "2026-10-04": 1,
             "2026-10-06": 2,
             "2026-10-07": 3,
-            "2026-10-09": 2,
-            "2026-10-08": 3
+            "2026-10-08": 3,
+            "2026-10-09": 3
           },
           "series": [
-            1,
             1,
             1,
             0,
@@ -298,17 +296,17 @@
             2,
             3,
             3,
-            2,
+            3,
+            0,
             0
           ],
           "smooth": [
             1,
             1,
-            1,
-            0.75,
-            0.8,
             0.67,
-            0.71,
+            0.75,
+            0.6,
+            0.67,
             0.57,
             0.43,
             0.29,
@@ -390,18 +388,18 @@
             1.86,
             2.29,
             1.86,
-            1.86,
+            2,
+            2,
             1.86
           ],
           "total": 45,
           "last7": 13,
-          "prev7": 9,
-          "momentum": 1.44,
+          "prev7": 10,
+          "momentum": 1.3,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 15,
             "2026-07-14": 14,
             "2026-07-15": 14,
             "2026-07-16": 19,
@@ -489,10 +487,10 @@
             "2026-10-06": 20,
             "2026-10-07": 25,
             "2026-10-08": 19,
-            "2026-10-09": 14
+            "2026-10-09": 14,
+            "2026-10-10": 6
           },
           "series": [
-            15,
             14,
             14,
             19,
@@ -581,16 +579,16 @@
             25,
             19,
             14,
+            6,
             0
           ],
           "smooth": [
+            14,
+            14,
+            15.67,
             15,
-            14.5,
-            14.33,
-            15.5,
-            15,
-            13.83,
-            12.86,
+            13.6,
+            12.5,
             13.71,
             13.14,
             12.57,
@@ -673,12 +671,13 @@
             16.71,
             16.29,
             16.86,
-            15.29
+            16.14,
+            14.29
           ],
-          "total": 1320,
-          "last7": 107,
-          "prev7": 90,
-          "momentum": 1.19,
+          "total": 1311,
+          "last7": 100,
+          "prev7": 94,
+          "momentum": 1.06,
           "hat": true
         }
       },
@@ -687,8 +686,8 @@
         "AOK",
         "Techniker Krankenkasse",
         "BfDI",
-        "BMG",
-        "McKinsey"
+        "TK",
+        "BMG"
       ],
       "people": [
         "Christian Nölter",
@@ -707,6 +706,13 @@
           "s": "Mastodon: #ePA",
           "d": "09.10.",
           "u": "https://social.tchncs.de/@kuketzblog/117409659159392596",
+          "iso": "2026-10-09"
+        },
+        {
+          "t": "Habe wieder einmal mit einer meiner liebsten Digitalpublikationen gesprochen: Der Apotheken Umschau. Diesmal ein paar Einordnungen zu Thema Forschungsdaten aus der # ePA https://ww",
+          "s": "Mastodon: #ePA",
+          "d": "09.10.",
+          "u": "https://mastodon.social/@bkastl/117412205569799985",
           "iso": "2026-10-09"
         },
         {
@@ -897,17 +903,10 @@
           "d": "21.09.",
           "u": "https://ieji.de/@Sachensucher/117308298108693521",
           "iso": "2026-09-21"
-        },
-        {
-          "t": "Elektronische Patientenakte: MEDI zieht kritische Bilanz",
-          "s": "Deutsches Aerzteblatt",
-          "d": "18.09.",
-          "u": "https://www.aerzteblatt.de/news/elektronische-patientenakte-medi-zieht-kritische-bilanz-08e32247-0855-4da7-a648-befd6b099f2e",
-          "iso": "2026-09-18"
         }
       ],
       "note": "",
-      "share": 0.481
+      "share": 0.448
     },
     {
       "id": "erezept",
@@ -923,7 +922,6 @@
             "2026-10-08": 3
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1012,6 +1010,7 @@
             0,
             3,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -1039,7 +1038,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1102,6 +1100,7 @@
             0,
             0,
             0,
+            0.43,
             0.43,
             0.43,
             0.43
@@ -1114,7 +1113,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 8,
             "2026-07-14": 9,
             "2026-07-15": 11,
             "2026-07-16": 7,
@@ -1202,10 +1200,10 @@
             "2026-10-06": 3,
             "2026-10-07": 6,
             "2026-10-08": 2,
-            "2026-10-09": 6
+            "2026-10-09": 6,
+            "2026-10-10": 1
           },
           "series": [
-            8,
             9,
             11,
             7,
@@ -1294,16 +1292,16 @@
             6,
             2,
             6,
+            1,
             0
           ],
           "smooth": [
+            9,
+            10,
+            9,
             8,
-            8.5,
-            9.33,
-            8.75,
-            8,
-            7,
-            6.57,
+            6.8,
+            6.33,
             5.86,
             4.86,
             3.71,
@@ -1386,12 +1384,13 @@
             6.71,
             6.29,
             5.71,
-            5.57
+            5.71,
+            5.29
           ],
-          "total": 496,
-          "last7": 39,
-          "prev7": 33,
-          "momentum": 1.18,
+          "total": 489,
+          "last7": 37,
+          "prev7": 32,
+          "momentum": 1.16,
           "hat": true
         }
       },
@@ -1451,7 +1450,7 @@
         }
       ],
       "note": "",
-      "share": 0.111
+      "share": 0.103
     },
     {
       "id": "gateway",
@@ -1935,12 +1934,12 @@
             0,
             0,
             0,
-            0,
             4,
             6,
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2027,7 +2026,6 @@
             0,
             0,
             0,
-            0,
             0.57,
             1.43,
             1.43,
@@ -2039,6 +2037,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2359,12 +2358,10 @@
       "signals": {
         "aktivitaet": {
           "counts": {
-            "2026-07-13": 1,
             "2026-07-24": 1,
             "2026-09-30": 1
           },
           "series": [
-            1,
             0,
             0,
             0,
@@ -2444,6 +2441,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2456,75 +2454,6 @@
             0
           ],
           "smooth": [
-            1,
-            0.5,
-            0.33,
-            0.25,
-            0.2,
-            0.17,
-            0.14,
-            0,
-            0,
-            0,
-            0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2542,12 +2471,81 @@
             0.14,
             0.14,
             0.14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0,
             0,
             0,
             0,
             0
           ],
-          "total": 3,
+          "total": 2,
           "last7": 0,
           "prev7": 1,
           "momentum": 0,
@@ -2764,13 +2762,6 @@
           "d": "24.07.",
           "u": "https://mastodon.social/@Pfleger_aus_A/116973667773295201",
           "iso": "2026-07-24"
-        },
-        {
-          "t": "Neuer Leitfaden: „How to“ KIM für Pflegeeinrichtungen",
-          "s": "gematik Newsroom",
-          "d": "13.07.",
-          "u": "https://www.gematik.de/newsroom/news-detail/neuer-leitfaden-how-to-kim-fuer-pflegeeinrichtungen",
-          "iso": "2026-07-13"
         }
       ],
       "note": "",
@@ -2814,7 +2805,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2877,6 +2867,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2906,7 +2897,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2968,6 +2958,7 @@
             0,
             0,
             0,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -2982,7 +2973,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 34,
             "2026-07-14": 45,
             "2026-07-15": 58,
             "2026-07-16": 55,
@@ -3070,10 +3060,10 @@
             "2026-10-06": 47,
             "2026-10-07": 39,
             "2026-10-08": 40,
-            "2026-10-09": 44
+            "2026-10-09": 44,
+            "2026-10-10": 17
           },
           "series": [
-            34,
             45,
             58,
             55,
@@ -3162,16 +3152,16 @@
             39,
             40,
             44,
+            17,
             0
           ],
           "smooth": [
-            34,
-            39.5,
-            45.67,
-            48,
-            51.8,
-            70.17,
-            86.57,
+            45,
+            51.5,
+            52.67,
+            56.25,
+            77.4,
+            95.33,
             97.29,
             101,
             103.14,
@@ -3254,12 +3244,13 @@
             30.43,
             31.14,
             31.29,
-            29.86
+            32.29,
+            30.43
           ],
-          "total": 3896,
-          "last7": 209,
-          "prev7": 258,
-          "momentum": 0.81,
+          "total": 3879,
+          "last7": 213,
+          "prev7": 249,
+          "momentum": 0.86,
           "hat": true
         }
       },
@@ -3301,7 +3292,7 @@
         }
       ],
       "note": "",
-      "share": 0.037
+      "share": 0.034
     },
     {
       "id": "regulatorik",
@@ -3315,13 +3306,13 @@
             "2026-07-16": 1,
             "2026-08-21": 1,
             "2026-09-25": 1,
+            "2026-10-08": 1,
             "2026-10-09": 1,
-            "2026-10-08": 1
+            "2026-10-10": 1
           },
           "series": [
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3406,6 +3397,7 @@
             0,
             0,
             0,
+            1,
             1,
             1,
             0
@@ -3413,11 +3405,10 @@
           "smooth": [
             0,
             0,
-            0,
+            0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
             0.14,
             0.14,
             0.14,
@@ -3500,10 +3491,11 @@
             0,
             0.14,
             0.29,
-            0.29
+            0.43,
+            0.43
           ],
-          "total": 5,
-          "last7": 2,
+          "total": 6,
+          "last7": 3,
           "prev7": 0,
           "momentum": null,
           "hat": true
@@ -3712,6 +3704,13 @@
       ],
       "heads": [
         {
+          "t": "„Kliniken schließen, doch Gesundheitsdatenmarkt entsteht“: Abrechnung mit # GeDIG | heise online https://www. heise.de/news/Kliniken-schlies sen-doch-Gesundheitsdatenmarkt-entsteht",
+          "s": "Mastodon: #ePA",
+          "d": "10.10.",
+          "u": "https://social.tchncs.de/@simsus/117416888207082429",
+          "iso": "2026-10-10"
+        },
+        {
           "t": "Kippels: Verstärkte Datennutzung soll Gesundheitsversorgung verbessern",
           "s": "Deutsches Aerzteblatt",
           "d": "09.10.",
@@ -3790,7 +3789,7 @@
         }
       ],
       "note": "",
-      "share": 0.074
+      "share": 0.103
     },
     {
       "id": "identitaet",
@@ -3802,7 +3801,8 @@
         "aktivitaet": {
           "counts": {
             "2026-08-24": 1,
-            "2026-09-22": 1
+            "2026-09-22": 1,
+            "2026-10-10": 1
           },
           "series": [
             0,
@@ -3846,7 +3846,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3894,6 +3893,7 @@
             0,
             0,
             0,
+            1,
             0
           ],
           "smooth": [
@@ -3938,7 +3938,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3986,17 +3985,17 @@
             0,
             0,
             0,
-            0
+            0.14,
+            0.14
           ],
-          "total": 2,
-          "last7": 0,
+          "total": 3,
+          "last7": 1,
           "prev7": 0,
-          "momentum": 0,
+          "momentum": null,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 55,
             "2026-07-14": 45,
             "2026-07-15": 30,
             "2026-07-16": 37,
@@ -4084,10 +4083,10 @@
             "2026-10-06": 30,
             "2026-10-07": 39,
             "2026-10-08": 38,
-            "2026-10-09": 37
+            "2026-10-09": 37,
+            "2026-10-10": 16
           },
           "series": [
-            55,
             45,
             30,
             37,
@@ -4176,16 +4175,16 @@
             39,
             38,
             37,
+            16,
             0
           ],
           "smooth": [
-            55,
-            50,
-            43.33,
-            41.75,
-            39.4,
-            38,
-            40.29,
+            45,
+            37.5,
+            37.33,
+            35.5,
+            34.6,
+            37.83,
             39.43,
             37,
             37.14,
@@ -4268,12 +4267,13 @@
             34.71,
             35.86,
             36.43,
-            32.43
+            34.71,
+            31.57
           ],
-          "total": 3448,
-          "last7": 227,
-          "prev7": 207,
-          "momentum": 1.1,
+          "total": 3409,
+          "last7": 221,
+          "prev7": 214,
+          "momentum": 1.03,
           "hat": true
         }
       },
@@ -4283,6 +4283,13 @@
       ],
       "people": [],
       "heads": [
+        {
+          "t": "EUDI-Wallet: Gesundheitswesen plant mit, doch zentrale Fragen sind offen",
+          "s": "heise Newsticker",
+          "d": "10.10.",
+          "u": "https://www.heise.de/news/EUDI-Wallet-Gesundheitswesen-plant-mit-doch-zentrale-Fragen-sind-offen-11482406.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-10-10"
+        },
         {
           "t": "EUDI-Wallet-App „d-you“: Verbraucherschützer fordern besseren Datenschutz",
           "s": "heise Newsticker",
@@ -4306,7 +4313,7 @@
         }
       ],
       "note": "",
-      "share": 0
+      "share": 0.034
     },
     {
       "id": "sicherheit",
@@ -4330,7 +4337,6 @@
             "2026-09-29": 1
           },
           "series": [
-            0,
             2,
             0,
             0,
@@ -4419,17 +4425,17 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
+            2,
             1,
             0.67,
             0.5,
             0.4,
             0.33,
             0.29,
-            0.29,
             0,
             0,
             0,
@@ -4507,6 +4513,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -4845,12 +4852,11 @@
             "2026-09-29": 1,
             "2026-10-04": 1,
             "2026-10-07": 1,
-            "2026-10-09": 1
+            "2026-10-10": 1
           },
           "series": [
             0,
             0,
-            0,
             2,
             0,
             0,
@@ -4935,6 +4941,7 @@
             0,
             0,
             1,
+            0,
             0,
             1,
             0
@@ -4942,14 +4949,13 @@
           "smooth": [
             0,
             0,
-            0,
+            0.67,
             0.5,
             0.4,
             0.33,
             0.29,
             0.29,
             0.29,
-            0.29,
             0,
             0,
             0,
@@ -5028,18 +5034,18 @@
             0.14,
             0.29,
             0.29,
+            0.29,
             0.43,
-            0.43
+            0.29
           ],
           "total": 14,
-          "last7": 3,
-          "prev7": 1,
-          "momentum": 3,
+          "last7": 2,
+          "prev7": 2,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 4,
             "2026-07-14": 0,
             "2026-07-15": 2,
             "2026-07-16": 2,
@@ -5123,10 +5129,10 @@
             "2026-10-06": 2,
             "2026-10-07": 6,
             "2026-10-08": 2,
-            "2026-10-09": 2
+            "2026-10-09": 2,
+            "2026-10-10": 2
           },
           "series": [
-            4,
             0,
             2,
             2,
@@ -5215,16 +5221,16 @@
             6,
             2,
             2,
+            2,
             0
           ],
           "smooth": [
-            4,
-            2,
-            2,
-            2,
-            1.8,
-            1.5,
-            1.57,
+            0,
+            1,
+            1.33,
+            1.25,
+            1,
+            1.17,
             1,
             1,
             1.14,
@@ -5307,12 +5313,13 @@
             1.57,
             1.86,
             2.14,
-            1.86
+            2.14,
+            2.14
           ],
-          "total": 145,
-          "last7": 13,
+          "total": 143,
+          "last7": 15,
           "prev7": 21,
-          "momentum": 0.62,
+          "momentum": 0.71,
           "hat": true
         }
       },
@@ -5323,6 +5330,13 @@
         "Paulina Jo Pesch"
       ],
       "heads": [
+        {
+          "t": "McKinsey sieht größtes ungenutztes Potenzial bei elektronischer Patientenakte | heise online heise.de/news/… #Digitalisierung #digitalization #DigitalHealth #ArtificialIntelligence",
+          "s": "Mastodon: #ePA",
+          "d": "10.10.",
+          "u": "https://vutuv.de/sinemus/posts/01a125b7-5041-7970-ac6b-be3d16f48189",
+          "iso": "2026-10-10"
+        },
         {
           "t": "Habe wieder einmal mit einer meiner liebsten Digitalpublikationen gesprochen: Der Apotheken Umschau. Diesmal ein paar Einordnungen zu Thema Forschungsdaten aus der # ePA https://ww",
           "s": "Mastodon: #ePA",
@@ -5437,7 +5451,7 @@
         }
       ],
       "note": "",
-      "share": 0.111
+      "share": 0.069
     },
     {
       "id": "versorgung",
@@ -5452,7 +5466,7 @@
             "2026-08-24": 1,
             "2026-08-08": 1,
             "2026-09-24": 1,
-            "2026-10-09": 2
+            "2026-10-09": 1
           },
           "series": [
             0,
@@ -5472,7 +5486,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5543,7 +5556,8 @@
             0,
             0,
             0,
-            2,
+            1,
+            0,
             0
           ],
           "smooth": [
@@ -5564,7 +5578,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5635,18 +5648,18 @@
             0,
             0,
             0,
-            0.29,
-            0.29
+            0.14,
+            0.14,
+            0.14
           ],
-          "total": 6,
-          "last7": 2,
+          "total": 5,
+          "last7": 1,
           "prev7": 0,
           "momentum": null,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 21,
             "2026-07-14": 17,
             "2026-07-15": 15,
             "2026-07-16": 21,
@@ -5734,10 +5747,10 @@
             "2026-10-06": 24,
             "2026-10-07": 20,
             "2026-10-08": 18,
-            "2026-10-09": 12
+            "2026-10-09": 12,
+            "2026-10-10": 12
           },
           "series": [
-            21,
             17,
             15,
             21,
@@ -5826,16 +5839,16 @@
             20,
             18,
             12,
+            12,
             0
           ],
           "smooth": [
-            21,
-            19,
+            17,
+            16,
             17.67,
             18.5,
-            19,
-            19.17,
-            18,
+            18.8,
+            17.5,
             18.29,
             18.57,
             19.29,
@@ -5918,12 +5931,13 @@
             15.86,
             16.71,
             17,
-            16
+            17.71,
+            14.71
           ],
-          "total": 1545,
-          "last7": 112,
-          "prev7": 88,
-          "momentum": 1.27,
+          "total": 1536,
+          "last7": 103,
+          "prev7": 102,
+          "momentum": 1.01,
           "hat": true
         }
       },
@@ -5998,7 +6012,7 @@
         }
       ],
       "note": "",
-      "share": 0.074
+      "share": 0.034
     },
     {
       "id": "sonstiges",
@@ -6061,12 +6075,11 @@
             "2026-09-26": 1,
             "2026-09-28": 1,
             "2026-10-02": 2,
-            "2026-10-10": 1,
-            "2026-10-09": 1,
-            "2026-10-08": 1
+            "2026-10-08": 1,
+            "2026-10-09": 2,
+            "2026-10-10": 2
           },
           "series": [
-            0,
             0,
             1,
             0,
@@ -6154,17 +6167,17 @@
             0,
             0,
             1,
-            1,
-            1
+            2,
+            2,
+            0
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
-            0.25,
+            0.75,
             0.6,
             0.5,
-            0.43,
             0.43,
             0.43,
             0.43,
@@ -6246,18 +6259,18 @@
             0.29,
             0.29,
             0.43,
-            0.29,
-            0.43
+            0.43,
+            0.71,
+            0.71
           ],
-          "total": 125,
-          "last7": 3,
+          "total": 127,
+          "last7": 5,
           "prev7": 3,
-          "momentum": 1,
+          "momentum": 1.67,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-13": 16,
             "2026-07-14": 9,
             "2026-07-15": 17,
             "2026-07-16": 20,
@@ -6345,10 +6358,10 @@
             "2026-10-06": 16,
             "2026-10-07": 30,
             "2026-10-08": 25,
-            "2026-10-09": 15
+            "2026-10-09": 15,
+            "2026-10-10": 5
           },
           "series": [
-            16,
             9,
             17,
             20,
@@ -6437,16 +6450,16 @@
             30,
             25,
             15,
+            5,
             0
           ],
           "smooth": [
-            16,
-            12.5,
-            14,
-            15.5,
-            14,
-            12.83,
-            12,
+            9,
+            13,
+            15.33,
+            13.5,
+            12.2,
+            11.33,
             11.71,
             12.14,
             11.43,
@@ -6529,12 +6542,13 @@
             20,
             20.29,
             18.86,
-            17.86
+            18.57,
+            16.71
           ],
-          "total": 1190,
-          "last7": 125,
-          "prev7": 150,
-          "momentum": 0.83,
+          "total": 1179,
+          "last7": 117,
+          "prev7": 156,
+          "momentum": 0.75,
           "hat": true
         }
       },
@@ -6561,10 +6575,24 @@
           "iso": "2026-10-10"
         },
         {
+          "t": "Update. \"21 States Sue # EPA to Reinstate Climate Pollution Rules for Power Plants.\" https:// insideclimatenews.org/news/021 02026/states-sue-epa-over-power-plant-pollution-rules/ ",
+          "s": "Mastodon: #ePA",
+          "d": "10.10.",
+          "u": "https://fediscience.org/@petersuber/117417641065342995",
+          "iso": "2026-10-10"
+        },
+        {
           "t": "The EPA air chief who helped oversee major Trump regulatory rollbacks has left the agency. EPA praised his role in what it calls the largest deregulatory action in U.S. history. Ev",
           "s": "Mastodon: #ePA",
           "d": "09.10.",
           "u": "https://mastodon.social/@realTuckFrumper/117407734650584578",
+          "iso": "2026-10-09"
+        },
+        {
+          "t": "Ambulanter Sektor braucht mehr Koordination und Information für eine bessere Krisenresilienz",
+          "s": "Deutsches Aerzteblatt",
+          "d": "09.10.",
+          "u": "https://www.aerzteblatt.de/news/ambulanter-sektor-braucht-mehr-koordination-und-information-fur-eine-bessere-krisenresilienz-cd480122-3dc2-4542-a0ff-9cb30b6caf87",
           "iso": "2026-10-09"
         },
         {
@@ -6748,24 +6776,10 @@
           "d": "18.09.",
           "u": "https://www.aerzteblatt.de/news/polypenentfernung-kaltschlingen-ab-oktober-im-ebm-ff887086-03dd-4005-a757-70a1953d7ae5",
           "iso": "2026-09-18"
-        },
-        {
-          "t": "Beratung zur RSV-Prophylaxe nicht mehr separat abrechenbar",
-          "s": "Deutsches Aerzteblatt",
-          "d": "18.09.",
-          "u": "https://www.aerzteblatt.de/news/beratung-zur-rsv-prophylaxe-nicht-mehr-separat-abrechenbar-922acf0e-1fc1-4286-8f58-8ddc7070a384",
-          "iso": "2026-09-18"
-        },
-        {
-          "t": "Mordprozess um tote Patienten: Freispruch für Arzt",
-          "s": "Deutsches Aerzteblatt",
-          "d": "18.09.",
-          "u": "https://www.aerzteblatt.de/news/mordprozess-um-tote-patienten-freispruch-fur-arzt-c3901bc1-2820-4775-b431-f956e0697ecc",
-          "iso": "2026-09-18"
         }
       ],
       "note": "",
-      "share": 0.111
+      "share": 0.172
     }
   ],
   "roadmap": [
