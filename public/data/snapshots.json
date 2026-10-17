@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-10-16T08:41:46.823Z",
-  "today": "2026-10-16",
-  "startDate": "2026-07-19",
-  "endDate": "2026-10-16",
+  "generated": "2026-10-17T08:12:45.305Z",
+  "today": "2026-10-17",
+  "startDate": "2026-07-20",
+  "endDate": "2026-10-17",
   "days": 90,
   "stats": {
     "beitraege": 59,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 39
+    "laufzeitSek": 41
   },
   "sources": [
     {
@@ -48,7 +48,7 @@
       "url": "https://rss.aerzteblatt.de/rss/news.asp",
       "type": "RSS",
       "status": "ok",
-      "items": 1
+      "items": 0
     },
     {
       "name": "gematik Newsroom",
@@ -62,14 +62,14 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 3
+      "items": 2
     },
     {
       "name": "Mastodon: #eHealth",
       "url": "https://mastodon.social/api/v1/timelines/tag/eHealth?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 9,
+      "items": 10,
       "roh": 40
     },
     {
@@ -77,7 +77,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 17,
+      "items": 18,
       "roh": 40
     },
     {
@@ -109,63 +109,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 627
+      "items": 621
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 2992
+      "items": 2944
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1315
+      "items": 1308
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 447
+      "items": 441
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 475
+      "items": 471
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 147
+      "items": 145
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3674
+      "items": 3489
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1214
+      "items": 1207
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 901
+      "items": 896
     }
   ],
   "topics": [
@@ -179,7 +179,6 @@
         "aktivitaet": {
           "counts": {
             "2026-07-24": 1,
-            "2026-07-19": 1,
             "2026-07-31": 1,
             "2026-08-13": 1,
             "2026-08-14": 1,
@@ -208,7 +207,6 @@
             "2026-10-12": 1
           },
           "series": [
-            1,
             0,
             0,
             0,
@@ -297,16 +295,16 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            1,
-            0.5,
-            0.33,
-            0.25,
+            0,
+            0,
+            0,
+            0,
             0.2,
-            0.33,
-            0.29,
+            0.17,
             0.14,
             0.14,
             0.14,
@@ -389,17 +387,17 @@
             1.57,
             1.14,
             0.71,
-            0.29
+            0.29,
+            0.14
           ],
-          "total": 44,
-          "last7": 2,
-          "prev7": 14,
-          "momentum": 0.14,
+          "total": 43,
+          "last7": 1,
+          "prev7": 15,
+          "momentum": 0.07,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 7,
             "2026-07-20": 21,
             "2026-07-21": 10,
             "2026-07-22": 10,
@@ -490,7 +488,6 @@
             "2026-10-15": 16
           },
           "series": [
-            7,
             21,
             10,
             10,
@@ -579,16 +576,16 @@
             11,
             19,
             16,
+            0,
             0
           ],
           "smooth": [
-            7,
-            14,
-            12.67,
-            12,
-            12.4,
-            12.67,
-            12.43,
+            21,
+            15.5,
+            13.67,
+            13.75,
+            13.8,
+            13.33,
             13.29,
             12.43,
             13.29,
@@ -671,19 +668,20 @@
             14.43,
             13.57,
             13.14,
-            11.14
+            11.14,
+            10.29
           ],
-          "total": 1315,
-          "last7": 78,
-          "prev7": 118,
-          "momentum": 0.66,
+          "total": 1308,
+          "last7": 72,
+          "prev7": 113,
+          "momentum": 0.64,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
-        "Techniker Krankenkasse",
         "McKinsey",
+        "Techniker Krankenkasse",
         "heise online",
         "AOK",
         "BfDI"
@@ -905,7 +903,7 @@
         }
       ],
       "note": "",
-      "share": 0.077
+      "share": 0.042
     },
     {
       "id": "erezept",
@@ -922,7 +920,6 @@
             "2026-10-15": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1011,6 +1008,7 @@
             0,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
@@ -1032,7 +1030,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1102,6 +1099,7 @@
             0.43,
             0.43,
             0.43,
+            0.14,
             0.14,
             0.14
           ],
@@ -1113,7 +1111,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 4,
             "2026-07-20": 3,
             "2026-07-21": 2,
             "2026-07-22": 3,
@@ -1204,7 +1201,6 @@
             "2026-10-15": 2
           },
           "series": [
-            4,
             3,
             2,
             3,
@@ -1293,16 +1289,16 @@
             5,
             7,
             2,
+            0,
             0
           ],
           "smooth": [
-            4,
-            3.5,
             3,
-            3,
-            2.4,
-            2.33,
-            2.43,
+            2.5,
+            2.67,
+            2,
+            2,
+            2.17,
             2.14,
             2.71,
             3.29,
@@ -1385,19 +1381,20 @@
             3.71,
             3.86,
             3.86,
-            3
+            3,
+            2.86
           ],
-          "total": 475,
-          "last7": 21,
+          "total": 471,
+          "last7": 20,
           "prev7": 40,
-          "momentum": 0.53,
+          "momentum": 0.5,
           "hat": true
         }
       },
       "orgs": [
         "ABDA",
-        "BR24",
         "Google",
+        "BR24",
         "gematik",
         "KBV",
         "GKV-Spitzenverband"
@@ -1458,7 +1455,7 @@
         }
       ],
       "note": "",
-      "share": 0.038
+      "share": 0.042
     },
     {
       "id": "gateway",
@@ -1470,10 +1467,10 @@
         "aktivitaet": {
           "counts": {
             "2026-10-13": 3,
-            "2026-09-11": 1
+            "2026-09-11": 1,
+            "2026-10-14": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1560,6 +1557,7 @@
             0,
             0,
             3,
+            2,
             0,
             0,
             0
@@ -1618,7 +1616,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1652,12 +1649,13 @@
             0,
             0,
             0.43,
-            0.43,
-            0.43,
-            0.43
+            0.71,
+            0.71,
+            0.71,
+            0.71
           ],
-          "total": 4,
-          "last7": 3,
+          "total": 6,
+          "last7": 5,
           "prev7": 0,
           "momentum": null,
           "hat": true
@@ -1871,6 +1869,13 @@
           "iso": "2026-10-14"
         },
         {
+          "t": "Relevanztest # Telematikinfrastruktur (TI) und # elektronischePatientenakte (ePA) Zum 2. Mal ist die Telematikinfrastruktur für sehr viele Arztpraxen & # Apotheken unerreichbar. Be",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "14.10.",
+          "u": "https://mastodon.social/@digitalgesund/117440494841972294",
+          "iso": "2026-10-14"
+        },
+        {
           "t": "DNSSEC-Schlüsseltausch: Updates für Secunet- und RISE-Konnektoren verfügbar",
           "s": "heise Newsticker",
           "d": "13.10.",
@@ -1900,7 +1905,7 @@
         }
       ],
       "note": "",
-      "share": 0.115
+      "share": 0.208
     },
     {
       "id": "ti20",
@@ -1917,7 +1922,6 @@
             "2026-10-07": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -2006,10 +2010,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -2096,6 +2100,7 @@
             0.29,
             0.29,
             0.29,
+            0,
             0,
             0,
             0
@@ -2432,7 +2437,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2502,6 +2506,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2524,14 +2529,13 @@
             0,
             0,
             0,
-            0,
+            0.2,
             0.17,
             0.14,
             0.14,
             0.14,
             0.14,
             0.14,
-            0.14,
             0,
             0,
             0,
@@ -2600,6 +2604,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2866,7 +2871,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2938,10 +2942,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3030,6 +3034,7 @@
             0.29,
             0,
             0,
+            0,
             0
           ],
           "total": 6,
@@ -3040,7 +3045,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 185,
             "2026-07-20": 109,
             "2026-07-21": 71,
             "2026-07-22": 73,
@@ -3131,7 +3135,6 @@
             "2026-10-15": 41
           },
           "series": [
-            185,
             109,
             71,
             73,
@@ -3220,16 +3223,16 @@
             36,
             45,
             41,
+            0,
             0
           ],
           "smooth": [
-            185,
-            147,
-            121.67,
-            109.5,
-            100,
-            91.83,
-            83.43,
+            109,
+            90,
+            84.33,
+            78.75,
+            73.2,
+            66.5,
             59.86,
             54.57,
             53.43,
@@ -3312,12 +3315,13 @@
             33.71,
             34.57,
             34.71,
-            28.43
+            28.43,
+            26
           ],
-          "total": 3674,
-          "last7": 199,
-          "prev7": 219,
-          "momentum": 0.91,
+          "total": 3489,
+          "last7": 182,
+          "prev7": 226,
+          "momentum": 0.81,
           "hat": true
         }
       },
@@ -3389,7 +3393,7 @@
             "2026-10-08": 1,
             "2026-10-09": 1,
             "2026-10-10": 1,
-            "2026-10-15": 2
+            "2026-10-15": 1
           },
           "series": [
             0,
@@ -3424,7 +3428,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3480,11 +3483,11 @@
             0,
             0,
             0,
-            2,
+            1,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3572,13 +3575,14 @@
             0.43,
             0.43,
             0.43,
-            0.57,
-            0.43
+            0.43,
+            0.29,
+            0.14
           ],
-          "total": 7,
-          "last7": 3,
-          "prev7": 2,
-          "momentum": 1.5,
+          "total": 6,
+          "last7": 1,
+          "prev7": 3,
+          "momentum": 0.33,
           "hat": true
         },
         "interesse": {
@@ -3872,7 +3876,7 @@
         }
       ],
       "note": "",
-      "share": 0.115
+      "share": 0.042
     },
     {
       "id": "identitaet",
@@ -3923,7 +3927,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3972,6 +3975,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -4015,7 +4019,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4069,17 +4072,17 @@
             0.14,
             0.14,
             0.14,
-            0.14
+            0.14,
+            0
           ],
           "total": 3,
-          "last7": 1,
-          "prev7": 0,
-          "momentum": null,
+          "last7": 0,
+          "prev7": 1,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 54,
             "2026-07-20": 49,
             "2026-07-21": 28,
             "2026-07-22": 31,
@@ -4170,7 +4173,6 @@
             "2026-10-15": 44
           },
           "series": [
-            54,
             49,
             28,
             31,
@@ -4259,16 +4261,16 @@
             39,
             36,
             44,
+            0,
             0
           ],
           "smooth": [
-            54,
-            51.5,
-            43.67,
-            40.5,
-            40,
+            49,
             38.5,
-            37,
+            36,
+            36.5,
+            35.4,
+            34.17,
             32.57,
             31.43,
             31.29,
@@ -4351,12 +4353,13 @@
             35.86,
             35.43,
             36.29,
-            31
+            31,
+            28.71
           ],
-          "total": 3437,
-          "last7": 217,
-          "prev7": 255,
-          "momentum": 0.85,
+          "total": 3383,
+          "last7": 201,
+          "prev7": 243,
+          "momentum": 0.83,
           "hat": true
         }
       },
@@ -4396,7 +4399,7 @@
         }
       ],
       "note": "",
-      "share": 0.038
+      "share": 0
     },
     {
       "id": "sicherheit",
@@ -4417,7 +4420,8 @@
             "2026-09-24": 1,
             "2026-08-25": 1,
             "2026-09-29": 1,
-            "2026-10-14": 2
+            "2026-10-14": 2,
+            "2026-10-09": 1
           },
           "series": [
             0,
@@ -4455,7 +4459,6 @@
             0,
             0,
             0,
-            0,
             1,
             1,
             0,
@@ -4502,12 +4505,13 @@
             0,
             0,
             0,
-            0,
+            1,
             0,
             0,
             0,
             0,
             2,
+            0,
             0,
             0
           ],
@@ -4547,7 +4551,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.29,
             0.29,
@@ -4594,19 +4597,20 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0.29,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.43,
+            0.43,
             0.29,
             0.29
           ],
-          "total": 12,
+          "total": 13,
           "last7": 2,
-          "prev7": 0,
-          "momentum": null,
+          "prev7": 1,
+          "momentum": 2,
           "hat": true
         },
         "interesse": {
@@ -4804,12 +4808,14 @@
       },
       "orgs": [
         "gematik",
+        "Techniker Krankenkasse",
         "D-Trust",
         "BSI",
         "KBV"
       ],
       "people": [
         "Sebastian Labinski",
+        "Christian Nölter",
         "Simon Weber"
       ],
       "heads": [
@@ -4826,6 +4832,13 @@
           "d": "14.10.",
           "u": "https://mastodon.social/@digitalgesund/117440494841972294",
           "iso": "2026-10-14"
+        },
+        {
+          "t": "Christian Nölter von der Techniker Krankenkasse spricht von einem »Datenschutz-Fetisch«. Was für eine unfassbare Arroganz! Ausgerechnet ein Vertreter einer Krankenkasse diskreditie",
+          "s": "Mastodon: #ePA",
+          "d": "09.10.",
+          "u": "https://social.tchncs.de/@kuketzblog/117409659159392596",
+          "iso": "2026-10-09"
         },
         {
           "t": "heise-Angebot: iX-Workshop IT-Grundschutz-Praktiker mit Zertifikat",
@@ -4913,7 +4926,7 @@
         }
       ],
       "note": "",
-      "share": 0.077
+      "share": 0.083
     },
     {
       "id": "daten-ki",
@@ -4936,6 +4949,7 @@
             "2026-10-07": 1,
             "2026-10-09": 1,
             "2026-10-14": 2,
+            "2026-10-17": 1,
             "2026-10-16": 1
           },
           "series": [
@@ -4955,7 +4969,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5028,6 +5041,7 @@
             0,
             2,
             0,
+            1,
             1
           ],
           "smooth": [
@@ -5047,7 +5061,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5120,17 +5133,17 @@
             0.29,
             0.43,
             0.43,
-            0.43
+            0.43,
+            0.57
           ],
-          "total": 15,
-          "last7": 3,
+          "total": 16,
+          "last7": 4,
           "prev7": 3,
-          "momentum": 1,
+          "momentum": 1.33,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 2,
             "2026-07-20": 0,
             "2026-07-21": 0,
             "2026-07-22": 3,
@@ -5217,7 +5230,6 @@
             "2026-10-15": 5
           },
           "series": [
-            2,
             0,
             0,
             3,
@@ -5306,16 +5318,16 @@
             1,
             0,
             5,
+            0,
             0
           ],
           "smooth": [
-            2,
+            0,
+            0,
             1,
+            0.75,
+            0.6,
             0.67,
-            1.25,
-            1,
-            0.83,
-            0.86,
             0.71,
             0.86,
             1,
@@ -5398,24 +5410,33 @@
             2.29,
             1.43,
             1.86,
-            1.57
+            1.57,
+            1.29
           ],
-          "total": 147,
-          "last7": 11,
+          "total": 145,
+          "last7": 9,
           "prev7": 15,
-          "momentum": 0.73,
+          "momentum": 0.6,
           "hat": true
         }
       },
       "orgs": [
-        "heise online",
         "Apotheken Umschau",
+        "heise online",
         "McKinsey"
       ],
       "people": [
+        "Linnemann",
         "Paulina Jo Pesch"
       ],
       "heads": [
+        {
+          "t": "Ein Jahr Forschungsdatenzentrum Gesundheit: Zwischen Bilanz und KI-Durchbruch | heise online https://www. heise.de/news/Ein-Jahr-Forschu ngsdatenzentrum-Gesundheit-Zwischen-Bilanz-",
+          "s": "Mastodon: #ePA",
+          "d": "17.10.",
+          "u": "https://social.tchncs.de/@simsus/117454685868335505",
+          "iso": "2026-10-17"
+        },
         {
           "t": "Forschungsdatenzentrum soll mit # ePA -Daten und KI zum Riesen werden | heise online https://www. heise.de/news/FDZ-Gesundheit-P harma-Vertreter-nennt-Zugang-fuer-Industrie-Ochsent",
           "s": "Mastodon: #ePA",
@@ -5435,6 +5456,13 @@
           "s": "heise Newsticker",
           "d": "14.10.",
           "u": "https://www.heise.de/news/FDZ-Gesundheit-Pharma-Vertreter-nennt-Zugang-fuer-Industrie-Ochsentour-11488523.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-10-14"
+        },
+        {
+          "t": "Es handelt sich um einen Artikel von heise: Digitalisierung in der Kardiologie: Zwischen Fortschritt und Frust KI revolutioniert die Kardiologie, doch die Digitalisierung hinkt. Vi",
+          "s": "Mastodon: #ePA",
+          "d": "14.10.",
+          "u": "https://digitalcourage.social/@FairB/117441047538331772",
           "iso": "2026-10-14"
         },
         {
@@ -5544,7 +5572,7 @@
         }
       ],
       "note": "",
-      "share": 0.115
+      "share": 0.167
     },
     {
       "id": "versorgung",
@@ -5559,7 +5587,9 @@
             "2026-08-24": 1,
             "2026-08-08": 1,
             "2026-09-24": 1,
-            "2026-10-09": 1
+            "2026-10-09": 1,
+            "2026-10-17": 1,
+            "2026-10-15": 1
           },
           "series": [
             0,
@@ -5573,7 +5603,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5650,8 +5679,9 @@
             0,
             0,
             0,
+            1,
             0,
-            0
+            1
           ],
           "smooth": [
             0,
@@ -5665,7 +5695,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5742,18 +5771,18 @@
             0.14,
             0.14,
             0.14,
+            0.29,
             0.14,
-            0
+            0.29
           ],
-          "total": 5,
-          "last7": 0,
+          "total": 7,
+          "last7": 2,
           "prev7": 1,
-          "momentum": 0,
+          "momentum": 2,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 11,
             "2026-07-20": 23,
             "2026-07-21": 19,
             "2026-07-22": 20,
@@ -5844,7 +5873,6 @@
             "2026-10-15": 19
           },
           "series": [
-            11,
             23,
             19,
             20,
@@ -5933,16 +5961,16 @@
             19,
             23,
             19,
+            0,
             0
           ],
           "smooth": [
-            11,
-            17,
-            17.67,
-            18.25,
-            19.4,
-            19,
-            18.14,
+            23,
+            21,
+            20.67,
+            21.5,
+            20.6,
+            19.33,
             18.14,
             18.43,
             18.29,
@@ -6025,12 +6053,13 @@
             15.14,
             15.57,
             15.71,
-            14
+            14,
+            12.29
           ],
-          "total": 1528,
-          "last7": 98,
-          "prev7": 119,
-          "momentum": 0.82,
+          "total": 1517,
+          "last7": 86,
+          "prev7": 124,
+          "momentum": 0.69,
           "hat": true
         }
       },
@@ -6047,6 +6076,20 @@
         "Arne Pullwitt"
       ],
       "heads": [
+        {
+          "t": "\"The impact of eHealth on relationships and trust in primary care: a review of reviews\" finds eHealth can strengthen or weaken trust. Communication, design, training and equity mat",
+          "s": "Mastodon: #eHealth",
+          "d": "17.10.",
+          "u": "https://mas.to/@fritzlabsX/117454936514388290",
+          "iso": "2026-10-17"
+        },
+        {
+          "t": "\"The Tyranny of Numbers\" shows how e-health record transparency can fuel anxiety, misinterpretation and mistrust. Both normal and abnormal test results can deepen uncertainty. # eH",
+          "s": "Mastodon: #eHealth",
+          "d": "15.10.",
+          "u": "https://mas.to/@fritzlabsX/117444363078001380",
+          "iso": "2026-10-15"
+        },
         {
           "t": "Es handelt sich um einen Artikel von heise: Digitalisierung in der Kardiologie: Zwischen Fortschritt und Frust KI revolutioniert die Kardiologie, doch die Digitalisierung hinkt. Vi",
           "s": "Mastodon: #ePA",
@@ -6112,7 +6155,7 @@
         }
       ],
       "note": "",
-      "share": 0
+      "share": 0.083
     },
     {
       "id": "sonstiges",
@@ -6180,11 +6223,10 @@
             "2026-10-11": 1,
             "2026-10-12": 3,
             "2026-10-13": 2,
-            "2026-10-15": 2,
-            "2026-10-14": 1
+            "2026-10-14": 1,
+            "2026-10-15": 1
           },
           "series": [
-            0,
             0,
             0,
             1,
@@ -6272,17 +6314,17 @@
             3,
             2,
             1,
-            2,
+            1,
+            0,
             0
           ],
           "smooth": [
             0,
             0,
-            0,
-            0.25,
-            0.6,
+            0.33,
+            0.75,
+            0.8,
             0.67,
-            0.57,
             0.71,
             0.86,
             1.14,
@@ -6364,18 +6406,18 @@
             1.57,
             1.86,
             1.71,
-            1.86,
-            1.57
+            1.71,
+            1.43,
+            1.14
           ],
-          "total": 135,
-          "last7": 11,
-          "prev7": 5,
-          "momentum": 2.2,
+          "total": 134,
+          "last7": 8,
+          "prev7": 7,
+          "momentum": 1.14,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-19": 7,
             "2026-07-20": 14,
             "2026-07-21": 12,
             "2026-07-22": 12,
@@ -6466,7 +6508,6 @@
             "2026-10-15": 16
           },
           "series": [
-            7,
             14,
             12,
             12,
@@ -6555,16 +6596,16 @@
             24,
             29,
             16,
+            0,
             0
           ],
           "smooth": [
-            7,
-            10.5,
-            11,
-            11.25,
-            11.2,
-            11,
-            10.29,
+            14,
+            13,
+            12.67,
+            12.25,
+            11.8,
+            10.83,
             9.57,
             10,
             9.86,
@@ -6647,21 +6688,22 @@
             18,
             17.86,
             16.57,
-            14.43
+            14.43,
+            13.71
           ],
-          "total": 1214,
-          "last7": 101,
-          "prev7": 132,
-          "momentum": 0.77,
+          "total": 1207,
+          "last7": 96,
+          "prev7": 130,
+          "momentum": 0.74,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
+        "Charité",
         "bvitg",
         "heise",
         "EPA",
-        "Charité",
         "Bitkom"
       ],
       "people": [
@@ -6883,7 +6925,7 @@
         }
       ],
       "note": "",
-      "share": 0.423
+      "share": 0.333
     }
   ],
   "roadmap": [
