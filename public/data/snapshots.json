@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-10-20T09:04:10.142Z",
-  "today": "2026-10-20",
-  "startDate": "2026-07-23",
-  "endDate": "2026-10-20",
+  "generated": "2026-10-21T09:03:54.799Z",
+  "today": "2026-10-21",
+  "startDate": "2026-07-24",
+  "endDate": "2026-10-21",
   "days": 90,
   "stats": {
-    "beitraege": 61,
+    "beitraege": 64,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 37
+    "laufzeitSek": 38
   },
   "sources": [
     {
@@ -62,7 +62,7 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 0
+      "items": 1
     },
     {
       "name": "Mastodon: #eHealth",
@@ -109,7 +109,7 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 622
+      "items": 618
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
@@ -123,21 +123,21 @@
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1308
+      "items": 1311
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 455
+      "items": 452
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 481
+      "items": 485
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
@@ -151,21 +151,21 @@
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3341
+      "items": 3307
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1211
+      "items": 1214
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 897
+      "items": 887
     }
   ],
   "topics": [
@@ -209,7 +209,6 @@
             "2026-10-19": 2
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -298,16 +297,16 @@
             0,
             0,
             2,
+            0,
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
             0.14,
             0.14,
             0.14,
@@ -390,17 +389,17 @@
             0.29,
             0.29,
             0.43,
+            0.43,
             0.43
           ],
           "total": 46,
           "last7": 3,
-          "prev7": 11,
-          "momentum": 0.27,
+          "prev7": 8,
+          "momentum": 0.38,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-23": 14,
             "2026-07-24": 14,
             "2026-07-25": 11,
             "2026-07-26": 13,
@@ -488,10 +487,10 @@
             "2026-10-16": 11,
             "2026-10-17": 8,
             "2026-10-18": 11,
-            "2026-10-19": 11
+            "2026-10-19": 11,
+            "2026-10-20": 17
           },
           "series": [
-            14,
             14,
             11,
             13,
@@ -580,15 +579,15 @@
             8,
             11,
             11,
+            17,
             0
           ],
           "smooth": [
             14,
-            14,
-            13,
-            13,
-            13.4,
-            13.83,
+            12.5,
+            12.67,
+            13.25,
+            13.8,
             14,
             13.71,
             14,
@@ -672,22 +671,23 @@
             13,
             12.71,
             12.43,
-            10.86
+            13.29,
+            10.57
           ],
-          "total": 1308,
-          "last7": 76,
-          "prev7": 101,
-          "momentum": 0.75,
+          "total": 1311,
+          "last7": 74,
+          "prev7": 95,
+          "momentum": 0.78,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
         "McKinsey",
+        "BfDI",
         "heise online",
         "Techniker Krankenkasse",
-        "AOK",
-        "Bundesärztekammer"
+        "AOK"
       ],
       "people": [
         "Christian Nölter",
@@ -906,7 +906,7 @@
         }
       ],
       "note": "",
-      "share": 0.12
+      "share": 0.136
     },
     {
       "id": "erezept",
@@ -923,7 +923,6 @@
             "2026-10-15": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1012,6 +1011,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -1029,7 +1029,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1099,6 +1098,7 @@
             0.43,
             0.43,
             0.43,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -1114,7 +1114,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-23": 0,
             "2026-07-24": 2,
             "2026-07-25": 3,
             "2026-07-26": 2,
@@ -1202,10 +1201,10 @@
             "2026-10-16": 8,
             "2026-10-17": 5,
             "2026-10-18": 2,
-            "2026-10-19": 3
+            "2026-10-19": 3,
+            "2026-10-20": 4
           },
           "series": [
-            0,
             2,
             3,
             2,
@@ -1294,16 +1293,16 @@
             5,
             2,
             3,
+            4,
             0
           ],
           "smooth": [
-            0,
-            1,
-            1.67,
-            1.75,
-            2.8,
-            3.33,
-            3.29,
+            2,
+            2.5,
+            2.33,
+            3.5,
+            4,
+            3.83,
             4.29,
             4.57,
             5.57,
@@ -1386,12 +1385,13 @@
             4.71,
             4.71,
             4.57,
-            3.86
+            4.43,
+            3.43
           ],
-          "total": 481,
-          "last7": 27,
-          "prev7": 26,
-          "momentum": 1.04,
+          "total": 485,
+          "last7": 24,
+          "prev7": 27,
+          "momentum": 0.89,
           "hat": true
         }
       },
@@ -1459,7 +1459,7 @@
         }
       ],
       "note": "",
-      "share": 0.04
+      "share": 0.045
     },
     {
       "id": "gateway",
@@ -1475,7 +1475,6 @@
             "2026-10-14": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1564,10 +1563,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1656,12 +1655,13 @@
             0.71,
             0.71,
             0.71,
-            0.29
+            0.29,
+            0
           ],
           "total": 6,
-          "last7": 2,
-          "prev7": 3,
-          "momentum": 0.67,
+          "last7": 0,
+          "prev7": 5,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
@@ -1909,7 +1909,7 @@
         }
       ],
       "note": "",
-      "share": 0.08
+      "share": 0
     },
     {
       "id": "ti20",
@@ -1923,10 +1923,10 @@
             "2026-09-20": 4,
             "2026-09-21": 6,
             "2026-09-24": 1,
-            "2026-10-07": 2
+            "2026-10-07": 2,
+            "2026-10-08": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -2003,6 +2003,7 @@
             0,
             0,
             2,
+            2,
             0,
             0,
             0,
@@ -2018,7 +2019,6 @@
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -2095,11 +2095,12 @@
             0,
             0,
             0.29,
-            0.29,
-            0.29,
-            0.29,
-            0.29,
-            0.29,
+            0.57,
+            0.57,
+            0.57,
+            0.57,
+            0.57,
+            0.57,
             0.29,
             0,
             0,
@@ -2109,7 +2110,7 @@
             0,
             0
           ],
-          "total": 13,
+          "total": 15,
           "last7": 0,
           "prev7": 2,
           "momentum": 0,
@@ -2310,11 +2311,28 @@
       },
       "orgs": [
         "gematik",
+        "ABDA",
         "bvitg",
         "BMG"
       ],
-      "people": [],
+      "people": [
+        "Claudia Korf"
+      ],
       "heads": [
+        {
+          "t": "“TI has arrived in everyday care, for better or worse” The Deputy CEO of ABDA, Claudia Korf, is calling for more stability with the e-prescription and a smooth transition to TI 2.0",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "08.10.",
+          "u": "https://social.heise.de/@heiseonlineenglish/117404172491787008",
+          "iso": "2026-10-08"
+        },
+        {
+          "t": "Apothekenvertreterin: „TI im Guten wie im Bösen im Versorgungsalltag angekommen“ Die Vize-Hauptgeschäftsführerin der ABDA, Claudia Korf, fordert vor allem mehr Stabilität beim E-Re",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "08.10.",
+          "u": "https://social.heise.de/@heiseonline/117404152837175383",
+          "iso": "2026-10-08"
+        },
         {
           "t": "Orchestra of health digitalization: “Who is actually conducting whom here?” At the TI Summit, the BMG outlines the future: more functions for the ePA, data use for research, and mo",
           "s": "Mastodon: #Telematikinfrastruktur",
@@ -2437,7 +2455,6 @@
             "2026-09-30": 1
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -2507,6 +2524,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2529,14 +2547,13 @@
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
             0.14,
-            0.14,
             0,
             0,
             0,
@@ -2605,6 +2622,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2871,7 +2889,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2947,10 +2964,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3039,17 +3056,17 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "total": 6,
           "last7": 0,
-          "prev7": 2,
+          "prev7": 0,
           "momentum": 0,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-23": 62,
             "2026-07-24": 51,
             "2026-07-25": 33,
             "2026-07-26": 20,
@@ -3137,10 +3154,10 @@
             "2026-10-16": 41,
             "2026-10-17": 10,
             "2026-10-18": 24,
-            "2026-10-19": 30
+            "2026-10-19": 30,
+            "2026-10-20": 28
           },
           "series": [
-            62,
             51,
             33,
             20,
@@ -3229,16 +3246,16 @@
             10,
             24,
             30,
+            28,
             0
           ],
           "smooth": [
-            62,
-            56.5,
-            48.67,
-            41.5,
-            47.6,
-            50.17,
-            50.29,
+            51,
+            42,
+            34.67,
+            44,
+            47.8,
+            48.33,
             46,
             42.29,
             40.29,
@@ -3321,12 +3338,13 @@
             33.29,
             34.14,
             32.43,
-            27.29
+            31.29,
+            24.86
           ],
-          "total": 3341,
-          "last7": 191,
-          "prev7": 236,
-          "momentum": 0.81,
+          "total": 3307,
+          "last7": 174,
+          "prev7": 242,
+          "momentum": 0.72,
           "hat": true
         }
       },
@@ -3398,7 +3416,8 @@
             "2026-10-08": 1,
             "2026-10-09": 1,
             "2026-10-10": 1,
-            "2026-10-15": 1
+            "2026-10-15": 1,
+            "2026-10-18": 1
           },
           "series": [
             0,
@@ -3429,7 +3448,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3488,6 +3506,7 @@
             1,
             0,
             0,
+            1,
             0,
             0,
             0
@@ -3521,7 +3540,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3580,14 +3598,15 @@
             0.43,
             0.29,
             0.14,
-            0.14,
-            0.14,
-            0.14
+            0.29,
+            0.29,
+            0.29,
+            0.29
           ],
-          "total": 6,
-          "last7": 1,
+          "total": 7,
+          "last7": 2,
           "prev7": 3,
-          "momentum": 0.33,
+          "momentum": 0.67,
           "hat": true
         },
         "interesse": {
@@ -3797,6 +3816,13 @@
       ],
       "heads": [
         {
+          "t": "# EPA und digitale Rentenübersicht (#drü) sollen uns allen helfen und vieles einfacher ist. Dazu müsste es aber jemand nutzen. „Zum bisherigen Stand kommen diese noch recht jungen ",
+          "s": "Mastodon: #ePA",
+          "d": "18.10.",
+          "u": "https://social.tchncs.de/@Okuna/117462876377257338",
+          "iso": "2026-10-18"
+        },
+        {
           "t": "Digitale Versorgung: Ärzteschaft warnt vor Terminhoheit in Händen der Kassen",
           "s": "Deutsches Aerzteblatt",
           "d": "15.10.",
@@ -3889,7 +3915,7 @@
         }
       ],
       "note": "",
-      "share": 0.04
+      "share": 0.091
     },
     {
       "id": "identitaet",
@@ -3937,7 +3963,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3995,6 +4020,7 @@
             0,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
@@ -4029,7 +4055,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4086,6 +4111,7 @@
             0.14,
             0,
             0,
+            0.14,
             0.14,
             0.14
           ],
@@ -4097,7 +4123,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-23": 38,
             "2026-07-24": 31,
             "2026-07-25": 28,
             "2026-07-26": 23,
@@ -4185,10 +4210,10 @@
             "2026-10-16": 40,
             "2026-10-17": 8,
             "2026-10-18": 25,
-            "2026-10-19": 50
+            "2026-10-19": 50,
+            "2026-10-20": 35
           },
           "series": [
-            38,
             31,
             28,
             23,
@@ -4277,16 +4302,16 @@
             8,
             25,
             50,
+            35,
             0
           ],
           "smooth": [
-            38,
-            34.5,
-            32.33,
+            31,
+            29.5,
+            27.33,
+            30.75,
             30,
-            32.2,
-            31.33,
-            33.29,
+            32.5,
             34.71,
             34.29,
             34.29,
@@ -4369,11 +4394,12 @@
             35.57,
             33.57,
             34.57,
-            29
+            34,
+            28.86
           ],
-          "total": 3398,
-          "last7": 203,
-          "prev7": 251,
+          "total": 3395,
+          "last7": 202,
+          "prev7": 248,
           "momentum": 0.81,
           "hat": true
         }
@@ -4422,7 +4448,7 @@
         }
       ],
       "note": "",
-      "share": 0.04
+      "share": 0.045
     },
     {
       "id": "sicherheit",
@@ -4445,10 +4471,10 @@
             "2026-09-29": 1,
             "2026-10-14": 2,
             "2026-10-09": 1,
-            "2026-10-12": 1
+            "2026-10-12": 1,
+            "2026-10-20": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4537,6 +4563,7 @@
             0,
             0,
             0,
+            1,
             0
           ],
           "smooth": [
@@ -4571,7 +4598,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.29,
             0.29,
@@ -4629,12 +4655,13 @@
             0.43,
             0.43,
             0.29,
-            0.29
+            0.43,
+            0.14
           ],
-          "total": 14,
-          "last7": 2,
-          "prev7": 2,
-          "momentum": 1,
+          "total": 15,
+          "last7": 1,
+          "prev7": 4,
+          "momentum": 0.25,
           "hat": true
         },
         "interesse": {
@@ -4833,8 +4860,9 @@
       "orgs": [
         "gematik",
         "D-Trust",
-        "Techniker Krankenkasse",
         "BSI",
+        "heise",
+        "Techniker Krankenkasse",
         "KBV"
       ],
       "people": [
@@ -4843,6 +4871,13 @@
         "Simon Weber"
       ],
       "heads": [
+        {
+          "t": "heise-Angebot: iX-Workshop IT-Grundschutz-Praktiker mit Zertifikat",
+          "s": "heise Newsticker",
+          "d": "20.10.",
+          "u": "https://www.heise.de/news/iX-Workshop-IT-Grundschutz-Praktiker-mit-Zertifikat-11476215.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-10-20"
+        },
         {
           "t": "Aktuelles | Beeinträchtigungen bei der Verbindung zur Telematikinfrastruktur (TI)",
           "s": "gematik Newsroom",
@@ -4964,7 +4999,7 @@
         }
       ],
       "note": "",
-      "share": 0.08
+      "share": 0.045
     },
     {
       "id": "daten-ki",
@@ -5004,7 +5039,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5081,7 +5115,8 @@
             1,
             0,
             0,
-            1
+            1,
+            0
           ],
           "smooth": [
             0,
@@ -5096,7 +5131,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5173,12 +5207,13 @@
             0.57,
             0.57,
             0.57,
-            0.71
+            0.71,
+            0.43
           ],
           "total": 17,
-          "last7": 5,
-          "prev7": 2,
-          "momentum": 2.5,
+          "last7": 3,
+          "prev7": 3,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
@@ -5267,10 +5302,10 @@
             "2026-10-16": 7,
             "2026-10-17": 0,
             "2026-10-18": 1,
-            "2026-10-19": 3
+            "2026-10-19": 3,
+            "2026-10-20": 0
           },
           "series": [
-            0,
             0,
             1,
             1,
@@ -5359,16 +5394,16 @@
             0,
             1,
             3,
+            0,
             0
           ],
           "smooth": [
             0,
-            0,
-            0.33,
             0.5,
-            0.6,
             0.67,
-            0.71,
+            0.75,
+            0.8,
+            0.83,
             1,
             1.29,
             1.14,
@@ -5451,16 +5486,18 @@
             2.29,
             2.43,
             2.43,
+            2.29,
             2.29
           ],
           "total": 153,
           "last7": 16,
-          "prev7": 16,
-          "momentum": 1,
+          "prev7": 10,
+          "momentum": 1.6,
           "hat": true
         }
       },
       "orgs": [
+        "BMG",
         "heise online",
         "gematik",
         "Apotheken Umschau",
@@ -5532,6 +5569,20 @@
           "s": "heise Newsticker",
           "d": "07.10.",
           "u": "https://www.heise.de/news/Digital-Health-McKinsey-sieht-80-Milliarden-Euro-ungenutztes-Potenzial-pro-Jahr-11478052.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-10-07"
+        },
+        {
+          "t": "Orchestra of health digitalization: “Who is actually conducting whom here?” At the TI Summit, the BMG outlines the future: more functions for the ePA, data use for research, and mo",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "07.10.",
+          "u": "https://social.heise.de/@heiseonlineenglish/117401738482932571",
+          "iso": "2026-10-07"
+        },
+        {
+          "t": "Orchester der Gesundheitsdigitalisierung: „Wer dirigiert hier eigentlich wen?“ Auf dem TI-Summit skizziert das BMG die Zukunft: mehr Funktionen für die ePA, Datennutzung für Forsch",
+          "s": "Mastodon: #Telematikinfrastruktur",
+          "d": "07.10.",
+          "u": "https://social.heise.de/@heiseonline/117401431776933006",
           "iso": "2026-10-07"
         },
         {
@@ -5620,7 +5671,7 @@
         }
       ],
       "note": "",
-      "share": 0.2
+      "share": 0.136
     },
     {
       "id": "versorgung",
@@ -5638,7 +5689,9 @@
             "2026-10-09": 1,
             "2026-10-15": 1,
             "2026-10-14": 1,
-            "2026-10-17": 1
+            "2026-10-17": 1,
+            "2026-10-20": 2,
+            "2026-10-18": 1
           },
           "series": [
             0,
@@ -5648,7 +5701,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5728,8 +5780,9 @@
             1,
             0,
             1,
+            1,
             0,
-            0,
+            2,
             0
           ],
           "smooth": [
@@ -5740,7 +5793,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -5820,19 +5872,19 @@
             0.43,
             0.29,
             0.43,
-            0.43,
-            0.43,
-            0.43
+            0.57,
+            0.57,
+            0.86,
+            0.71
           ],
-          "total": 8,
-          "last7": 3,
-          "prev7": 1,
-          "momentum": 3,
+          "total": 11,
+          "last7": 5,
+          "prev7": 2,
+          "momentum": 2.5,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-23": 24,
             "2026-07-24": 17,
             "2026-07-25": 13,
             "2026-07-26": 11,
@@ -5920,10 +5972,10 @@
             "2026-10-16": 17,
             "2026-10-17": 15,
             "2026-10-18": 9,
-            "2026-10-19": 23
+            "2026-10-19": 23,
+            "2026-10-20": 10
           },
           "series": [
-            24,
             17,
             13,
             11,
@@ -6012,16 +6064,16 @@
             15,
             9,
             23,
+            10,
             0
           ],
           "smooth": [
-            24,
-            20.5,
-            18,
-            16.25,
-            18,
-            18,
-            20.43,
+            17,
+            15,
+            13.67,
+            16.5,
+            16.8,
+            19.83,
             19.43,
             19.71,
             19.43,
@@ -6104,28 +6156,43 @@
             16.86,
             16.57,
             17.86,
-            15.14
+            16.57,
+            13.29
           ],
-          "total": 1519,
-          "last7": 106,
-          "prev7": 106,
-          "momentum": 1,
+          "total": 1505,
+          "last7": 93,
+          "prev7": 109,
+          "momentum": 0.85,
           "hat": true
         }
       },
       "orgs": [
         "bvitg",
+        "gematik",
         "UP Derecho",
         "Ärztekammer Baden-Württemberg",
         "heise online",
-        "Ärztekammer BW",
-        "Mia Healthcare"
+        "Ärztekammer BW"
       ],
       "people": [
         "Armin Flohr",
         "Arne Pullwitt"
       ],
       "heads": [
+        {
+          "t": "gematik auf dem Deutschen Pflegetag 2026",
+          "s": "gematik Newsroom",
+          "d": "20.10.",
+          "u": "https://www.gematik.de/newsroom/news-detail/gematik-auf-dem-deutschen-pflegetag-2026",
+          "iso": "2026-10-20"
+        },
+        {
+          "t": "🧐 𝗗𝗼 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗵𝗲𝗮𝗹𝘁𝗵 𝗶𝗻𝘁𝗲𝗿𝘃𝗲𝗻𝘁𝗶𝗼𝗻𝘀 𝗿𝗲𝗮𝗹𝗹𝘆 𝗶𝗺𝗽𝗿𝗼𝘃𝗲 𝗵𝗲𝗮𝗹𝘁𝗵 𝗹𝗶𝘁𝗲𝗿𝗮𝗰𝘆? 𝗢𝘂𝗿 𝗻𝗲𝘄 𝘀𝘆𝘀𝘁𝗲𝗺𝗮𝘁𝗶𝗰 𝗿𝗲𝘃𝗶𝗲𝘄 𝘀𝗮𝘆𝘀: ",
+          "s": "Mastodon: #eHealth",
+          "d": "20.10.",
+          "u": "https://fediscience.org/@ste/117473167208800818",
+          "iso": "2026-10-20"
+        },
         {
           "t": "《„Je nach Dringlichkeit werden dann die Patienten in eine Arztpraxis, in eine Notdienstpraxis oder in die Notaufnahme einer Klinik vermittelt. Je nach Schwere, mit oder ohne Rettun",
           "s": "Mastodon: #ePA",
@@ -6212,7 +6279,7 @@
         }
       ],
       "note": "",
-      "share": 0.12
+      "share": 0.227
     },
     {
       "id": "sonstiges",
@@ -6227,7 +6294,6 @@
             "2026-07-27": 1,
             "2026-07-26": 1,
             "2026-07-24": 1,
-            "2026-07-23": 2,
             "2026-07-29": 2,
             "2026-07-30": 2,
             "2026-07-31": 2,
@@ -6281,12 +6347,11 @@
             "2026-10-13": 2,
             "2026-10-14": 1,
             "2026-10-15": 1,
-            "2026-10-19": 2,
             "2026-10-06": 1,
-            "2026-10-18": 3
+            "2026-10-18": 3,
+            "2026-10-19": 2
           },
           "series": [
-            2,
             1,
             0,
             1,
@@ -6375,16 +6440,16 @@
             0,
             3,
             2,
+            0,
             0
           ],
           "smooth": [
-            2,
-            1.5,
             1,
-            1,
+            0.5,
+            0.67,
+            0.75,
             1,
             1.17,
-            1.29,
             1.29,
             1.43,
             1.43,
@@ -6467,17 +6532,17 @@
             1.14,
             1.43,
             1.29,
-            1
+            1,
+            0.86
           ],
-          "total": 139,
-          "last7": 7,
-          "prev7": 13,
-          "momentum": 0.54,
+          "total": 137,
+          "last7": 6,
+          "prev7": 12,
+          "momentum": 0.5,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-23": 11,
             "2026-07-24": 10,
             "2026-07-25": 6,
             "2026-07-26": 2,
@@ -6565,10 +6630,10 @@
             "2026-10-16": 20,
             "2026-10-17": 5,
             "2026-10-18": 4,
-            "2026-10-19": 13
+            "2026-10-19": 13,
+            "2026-10-20": 14
           },
           "series": [
-            11,
             10,
             6,
             2,
@@ -6657,16 +6722,16 @@
             5,
             4,
             13,
+            14,
             0
           ],
           "smooth": [
-            11,
-            10.5,
-            9,
-            7.25,
+            10,
+            8,
+            6,
+            8.75,
             9.2,
-            9.5,
-            9.29,
+            9,
             9,
             9.14,
             9,
@@ -6749,22 +6814,23 @@
             17.29,
             16.29,
             15.86,
-            12.43
+            14.43,
+            10.29
           ],
-          "total": 1211,
-          "last7": 87,
-          "prev7": 126,
-          "momentum": 0.69,
+          "total": 1214,
+          "last7": 72,
+          "prev7": 125,
+          "momentum": 0.58,
           "hat": true
         }
       },
       "orgs": [
-        "gematik",
         "EPA",
+        "gematik",
         "Charité",
+        "bvitg",
         "ABDA",
-        "BMG",
-        "bvitg"
+        "BMG"
       ],
       "people": [
         "Claudia Korf",
@@ -6985,7 +7051,7 @@
         }
       ],
       "note": "",
-      "share": 0.28
+      "share": 0.273
     }
   ],
   "roadmap": [
