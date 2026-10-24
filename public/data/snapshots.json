@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-10-23T09:00:48.711Z",
-  "today": "2026-10-23",
-  "startDate": "2026-07-26",
-  "endDate": "2026-10-23",
+  "generated": "2026-10-24T08:34:49.527Z",
+  "today": "2026-10-24",
+  "startDate": "2026-07-27",
+  "endDate": "2026-10-24",
   "days": 90,
   "stats": {
     "beitraege": 66,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 41
+    "laufzeitSek": 40
   },
   "sources": [
     {
@@ -62,7 +62,7 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 1
+      "items": 0
     },
     {
       "name": "Mastodon: #eHealth",
@@ -93,7 +93,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/gematik?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 26,
+      "items": 27,
       "roh": 40
     },
     {
@@ -109,7 +109,7 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 615
+      "items": 616
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
@@ -123,7 +123,7 @@
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1323
+      "items": 1318
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
@@ -137,7 +137,7 @@
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 493
+      "items": 495
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
@@ -151,21 +151,21 @@
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3319
+      "items": 3335
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1230
+      "items": 1242
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 914
+      "items": 922
     }
   ],
   "topics": [
@@ -207,10 +207,9 @@
             "2026-10-15": 1,
             "2026-10-19": 2,
             "2026-10-18": 1,
-            "2026-10-23": 1
+            "2026-10-23": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -299,16 +298,16 @@
             0,
             0,
             0,
-            1
+            2,
+            0
           ],
           "smooth": [
             0,
             0,
             0,
             0,
-            0,
+            0.2,
             0.17,
-            0.14,
             0.14,
             0.14,
             0.14,
@@ -391,17 +390,17 @@
             0.57,
             0.57,
             0.43,
-            0.57
+            0.71,
+            0.71
           ],
-          "total": 47,
-          "last7": 4,
-          "prev7": 3,
-          "momentum": 1.33,
+          "total": 48,
+          "last7": 5,
+          "prev7": 2,
+          "momentum": 2.5,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 13,
             "2026-07-27": 15,
             "2026-07-28": 16,
             "2026-07-29": 15,
@@ -489,10 +488,10 @@
             "2026-10-19": 11,
             "2026-10-20": 17,
             "2026-10-21": 16,
-            "2026-10-22": 21
+            "2026-10-22": 21,
+            "2026-10-23": 8
           },
           "series": [
-            13,
             15,
             16,
             15,
@@ -581,15 +580,15 @@
             17,
             16,
             21,
+            8,
             0
           ],
           "smooth": [
-            13,
-            14,
-            14.67,
-            14.75,
-            14.2,
+            15,
+            15.5,
+            15.33,
             14.5,
+            14.8,
             13,
             13,
             13.57,
@@ -673,12 +672,13 @@
             13.29,
             12.86,
             13.57,
+            13.14,
             12
           ],
-          "total": 1323,
+          "total": 1318,
           "last7": 84,
-          "prev7": 89,
-          "momentum": 0.94,
+          "prev7": 91,
+          "momentum": 0.92,
           "hat": true
         }
       },
@@ -700,6 +700,13 @@
           "s": "Mastodon: #ePA",
           "d": "23.10.",
           "u": "https://norden.social/@jonu/117488657342182932",
+          "iso": "2026-10-23"
+        },
+        {
+          "t": "Arbeitet in unserem Gesundheitssystem eigentlich noch irgendjemand miteinander? Hausärzte warnen vor einem erweiterten Zugriff der Krankenkassen auf die elektronische Patientenakte",
+          "s": "Mastodon: #ePA",
+          "d": "23.10.",
+          "u": "https://mastodon.social/@NichtGenesen/117489761873862049",
           "iso": "2026-10-23"
         },
         {
@@ -897,17 +904,10 @@
           "d": "01.10.",
           "u": "https://social.tchncs.de/@kuketzblog/117364973562030862",
           "iso": "2026-10-01"
-        },
-        {
-          "t": "Ein Jahr Befüllungspflicht für die E-Patientenakte: Ein Blick, vieles unklar",
-          "s": "heise Newsticker",
-          "d": "01.10.",
-          "u": "https://www.heise.de/news/Ein-Jahr-Befuellungspflicht-fuer-die-E-Patientenakte-Ein-Blick-vieles-unklar-11473343.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
-          "iso": "2026-10-01"
         }
       ],
-      "note": "Diskutiert werden Widerspruchsregeln zur ePA und zur Abrechnungsdatenauswertung nach Paragraf 25b SGB V sowie ein Streit zwischen Bundesaerztekammer und AOK ueber die Nutzung von ePA-Daten durch Kassen (GeDIG). Zudem gab es erneut eine TI-Stoerung, die ePA und Praxen bundesweit betraf, sowie eine McKinsey-Studie zu ungenutztem Potenzial der ePA.",
-      "share": 0.19
+      "note": "",
+      "share": 0.238
     },
     {
       "id": "erezept",
@@ -922,11 +922,10 @@
             "2026-09-13": 1,
             "2026-10-08": 3,
             "2026-10-15": 1,
-            "2026-10-23": 1,
-            "2026-10-21": 1
+            "2026-10-21": 1,
+            "2026-10-23": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1015,10 +1014,10 @@
             0,
             1,
             0,
-            1
+            1,
+            0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1107,6 +1106,7 @@
             0.14,
             0.29,
             0.14,
+            0.29,
             0.29
           ],
           "total": 8,
@@ -1117,7 +1117,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 2,
             "2026-07-27": 7,
             "2026-07-28": 6,
             "2026-07-29": 3,
@@ -1205,10 +1204,10 @@
             "2026-10-19": 3,
             "2026-10-20": 4,
             "2026-10-21": 7,
-            "2026-10-22": 6
+            "2026-10-22": 6,
+            "2026-10-23": 4
           },
           "series": [
-            2,
             7,
             6,
             3,
@@ -1297,16 +1296,16 @@
             4,
             7,
             6,
+            4,
             0
           ],
           "smooth": [
-            2,
-            4.5,
-            5,
-            4.5,
-            5,
-            4.83,
-            5.57,
+            7,
+            6.5,
+            5.33,
+            5.75,
+            5.4,
+            6.17,
             5.71,
             5.14,
             5.43,
@@ -1389,19 +1388,20 @@
             4.43,
             4.43,
             5,
-            3.86
+            4.43,
+            3.71
           ],
-          "total": 493,
-          "last7": 27,
-          "prev7": 29,
-          "momentum": 0.93,
+          "total": 495,
+          "last7": 26,
+          "prev7": 33,
+          "momentum": 0.79,
           "hat": true
         }
       },
       "orgs": [
-        "ABDA",
         "BR24",
         "gematik",
+        "ABDA",
         "Google",
         "KBV",
         "GKV-Spitzenverband"
@@ -1475,7 +1475,7 @@
           "iso": "2026-08-07"
         }
       ],
-      "note": "Die E-Rezept-App erhaelt Push-Benachrichtigungen, waehrend Nutzer weiterhin von TI-Ausfaellen und Einloeseproblemen berichten. Die ABDA fordert mehr Stabilitaet beim E-Rezept und einen reibungslosen Uebergang zur TI 2.0.",
+      "note": "",
       "share": 0.095
     },
     {
@@ -1492,7 +1492,6 @@
             "2026-10-14": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1581,10 +1580,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1671,6 +1670,7 @@
             0.71,
             0.71,
             0.29,
+            0,
             0,
             0,
             0
@@ -1925,7 +1925,7 @@
           "iso": "2026-09-11"
         }
       ],
-      "note": "Ein DNSSEC-Schluesselwechsel fuehrte dazu, dass Secunet- und RISE-Konnektoren die TI-Verbindung verloren, wovon viele Praxen betroffen waren. Updates fuer die betroffenen Konnektoren wurden bereitgestellt.",
+      "note": "",
       "share": 0
     },
     {
@@ -1944,7 +1944,6 @@
             "2026-10-08": 2
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -2033,10 +2032,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -2117,6 +2116,7 @@
             0.57,
             0.57,
             0.29,
+            0,
             0,
             0,
             0,
@@ -2328,9 +2328,9 @@
       },
       "orgs": [
         "gematik",
-        "BMG",
+        "ABDA",
         "bvitg",
-        "ABDA"
+        "BMG"
       ],
       "people": [
         "Claudia Korf"
@@ -2456,7 +2456,7 @@
           "iso": "2026-09-20"
         }
       ],
-      "note": "Die gematik baut die TI im Rahmen von TI 2.0 zu einer gemeinsamen Cloud-Plattform um, die E-Rezept und weitere Fachdienste auf Open-Source-Basis ohne Spezialhardware nutzen sollen. Auf dem TI-Summit stellte das BMG Plaene fuer mehr ePA-Funktionen und Datennutzung fuer Forschung vor, waehrend eine rechtlich-strategische Bewertung des Transformationsplans 2030 veroeffentlicht wurde.",
+      "note": "",
       "share": 0
     },
     {
@@ -2536,8 +2536,8 @@
             0,
             0,
             0,
-            0,
             1,
+            0,
             0,
             0,
             0,
@@ -2628,14 +2628,14 @@
             0,
             0,
             0,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
             0,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
-            0.14,
             0,
             0,
             0,
@@ -2866,7 +2866,7 @@
           "iso": "2026-09-30"
         }
       ],
-      "note": "Der TI-Messenger kann kuenftig auch ueber Softwaresysteme von Gesundheitseinrichtungen genutzt werden.",
+      "note": "",
       "share": 0
     },
     {
@@ -2886,7 +2886,6 @@
             "2026-10-22": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -2975,10 +2974,10 @@
             0,
             0,
             1,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3067,6 +3066,7 @@
             0,
             0,
             0.14,
+            0.14,
             0.14
           ],
           "total": 7,
@@ -3077,7 +3077,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 20,
             "2026-07-27": 72,
             "2026-07-28": 63,
             "2026-07-29": 51,
@@ -3165,10 +3164,10 @@
             "2026-10-19": 30,
             "2026-10-20": 28,
             "2026-10-21": 42,
-            "2026-10-22": 54
+            "2026-10-22": 54,
+            "2026-10-23": 36
           },
           "series": [
-            20,
             72,
             63,
             51,
@@ -3257,16 +3256,16 @@
             28,
             42,
             54,
+            36,
             0
           ],
           "smooth": [
-            20,
-            46,
-            51.67,
-            51.5,
-            47.6,
-            43.83,
-            40.29,
+            72,
+            67.5,
+            62,
+            54.5,
+            48.6,
+            43.67,
             40.29,
             34.29,
             31.43,
@@ -3349,12 +3348,13 @@
             31.29,
             30.86,
             32.71,
-            26.86
+            32,
+            30.57
           ],
-          "total": 3319,
-          "last7": 188,
-          "prev7": 240,
-          "momentum": 0.78,
+          "total": 3335,
+          "last7": 214,
+          "prev7": 233,
+          "momentum": 0.92,
           "hat": true
         }
       },
@@ -3416,7 +3416,7 @@
           "iso": "2026-08-06"
         }
       ],
-      "note": "Die gematik veroeffentlichte Material zum TI-Readiness-Stand von OEGD-Fachverfahren sowie Aufzeichnungen und Ergebnisse des IOP-Summits. Auf dem TI-Summit skizzierte das BMG zudem die weitere Entwicklung der Gesundheitsdigitalisierung.",
+      "note": "",
       "share": 0.048
     },
     {
@@ -3462,7 +3462,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3522,6 +3521,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3554,7 +3554,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3617,13 +3616,14 @@
             0.29,
             0.29,
             0.29,
+            0.14,
             0.14,
             0.14
           ],
           "total": 7,
           "last7": 1,
-          "prev7": 2,
-          "momentum": 0.5,
+          "prev7": 1,
+          "momentum": 1,
           "hat": true
         },
         "interesse": {
@@ -3931,7 +3931,7 @@
           "iso": "2026-07-30"
         }
       ],
-      "note": "Das GeDIG sorgt fuer Streit: Aerzteschaft und Bundesaerztekammer warnen vor Terminhoheit der Kassen und eigenstaendiger Risikobewertung durch Kassen, waehrend ein Gesundheitsdatenmarkt im Zuge von Klinikschliessungen entsteht. Der Bundesrat fordert mehr Tempo bei der Digitalisierung, der GKM verlangt ein schnelles Krisengesetz vom Bund.",
+      "note": "",
       "share": 0.048
     },
     {
@@ -3977,7 +3977,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -4035,6 +4034,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -4069,7 +4069,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4126,6 +4125,7 @@
             0.14,
             0,
             0,
+            0.14,
             0.14,
             0.14,
             0.14,
@@ -4134,13 +4134,12 @@
           ],
           "total": 4,
           "last7": 1,
-          "prev7": 1,
-          "momentum": 1,
+          "prev7": 0,
+          "momentum": null,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 23,
             "2026-07-27": 41,
             "2026-07-28": 27,
             "2026-07-29": 45,
@@ -4228,10 +4227,10 @@
             "2026-10-19": 50,
             "2026-10-20": 35,
             "2026-10-21": 38,
-            "2026-10-22": 30
+            "2026-10-22": 30,
+            "2026-10-23": 23
           },
           "series": [
-            23,
             41,
             27,
             45,
@@ -4320,16 +4319,16 @@
             35,
             38,
             30,
+            23,
             0
           ],
           "smooth": [
-            23,
-            32,
-            30.33,
+            41,
             34,
-            36.8,
-            35.33,
-            34.29,
+            37.67,
+            40.25,
+            37.8,
+            36.17,
             36.14,
             51,
             53.29,
@@ -4412,12 +4411,13 @@
             34,
             34.29,
             32.29,
-            26.57
+            29.86,
+            28.71
           ],
           "total": 3404,
-          "last7": 186,
-          "prev7": 257,
-          "momentum": 0.72,
+          "last7": 201,
+          "prev7": 249,
+          "momentum": 0.81,
           "hat": true
         }
       },
@@ -4464,7 +4464,7 @@
           "iso": "2026-08-24"
         }
       ],
-      "note": "Bei der GesundheitsID gibt es Kritik an der behaupteten Freiwilligkeit, da sie faktisch fuer ePA und E-Rezept erforderlich ist. Zudem bestehen offene Fragen zur Einbindung der EUDI-Wallet ins Gesundheitswesen und zur Abhaengigkeit der GesundheitsID von privaten Anbietern wie Verimi.",
+      "note": "",
       "share": 0.048
     },
     {
@@ -4492,7 +4492,6 @@
             "2026-10-20": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -4581,6 +4580,7 @@
             1,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4612,7 +4612,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.29,
             0.29,
@@ -4671,6 +4670,7 @@
             0.43,
             0.29,
             0.43,
+            0.14,
             0.14,
             0.14,
             0.14
@@ -5015,7 +5015,7 @@
           "iso": "2026-08-10"
         }
       ],
-      "note": "Mehrfache TI-Stoerungen beeintraechtigten ePA, E-Rezept und eAU bundesweit, unter anderem durch eine D-Trust-Stoerung. Kritisiert wurde zudem eine Aeusserung eines TK-Vertreters zum Datenschutz sowie ein gemeldeter Einbruch eines KI-Agenten in einen deutschen Server mit Gesundheitsdaten.",
+      "note": "",
       "share": 0.048
     },
     {
@@ -5053,7 +5053,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5131,12 +5130,12 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -5225,17 +5224,17 @@
             0.71,
             0.43,
             0.43,
-            0.29
+            0.29,
+            0.14
           ],
           "total": 17,
-          "last7": 2,
-          "prev7": 3,
-          "momentum": 0.67,
+          "last7": 1,
+          "prev7": 4,
+          "momentum": 0.25,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 1,
             "2026-07-27": 1,
             "2026-07-28": 1,
             "2026-07-29": 1,
@@ -5321,10 +5320,10 @@
             "2026-10-19": 3,
             "2026-10-20": 0,
             "2026-10-21": 4,
-            "2026-10-22": 0
+            "2026-10-22": 0,
+            "2026-10-23": 1
           },
           "series": [
-            1,
             1,
             1,
             1,
@@ -5413,16 +5412,16 @@
             0,
             4,
             0,
+            1,
             0
           ],
           "smooth": [
             1,
             1,
             1,
-            1,
-            1.2,
-            1.33,
-            1.14,
+            1.25,
+            1.4,
+            1.17,
             1,
             1,
             0.86,
@@ -5505,12 +5504,13 @@
             2.29,
             2.86,
             2.14,
-            1.14
+            1.29,
+            1.29
           ],
           "total": 156,
-          "last7": 8,
-          "prev7": 18,
-          "momentum": 0.44,
+          "last7": 9,
+          "prev7": 16,
+          "momentum": 0.56,
           "hat": true
         }
       },
@@ -5688,8 +5688,8 @@
           "iso": "2026-08-05"
         }
       ],
-      "note": "Das Forschungsdatenzentrum Gesundheit zieht nach einem Jahr Bilanz und soll mit ePA-Daten und KI weiter ausgebaut werden, wobei ein Pharma-Vertreter Kritik am Industriezugang aeusserte. Gleichzeitig wird bemaengelt, dass Versicherte zu wenig ueber die Forschungsdatenausleitung aus der ePA aufgeklaert werden.",
-      "share": 0.095
+      "note": "",
+      "share": 0.048
     },
     {
       "id": "versorgung",
@@ -5716,7 +5716,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5799,6 +5798,7 @@
             1,
             0,
             1,
+            0,
             0,
             0,
             0
@@ -5808,9 +5808,8 @@
             0,
             0,
             0,
-            0,
+            0.2,
             0.17,
-            0.14,
             0.14,
             0.14,
             0.14,
@@ -5893,17 +5892,17 @@
             0.71,
             0.57,
             0.43,
-            0.43
+            0.43,
+            0.29
           ],
           "total": 10,
-          "last7": 3,
-          "prev7": 2,
-          "momentum": 1.5,
+          "last7": 2,
+          "prev7": 3,
+          "momentum": 0.67,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 11,
             "2026-07-27": 25,
             "2026-07-28": 18,
             "2026-07-29": 35,
@@ -5991,10 +5990,10 @@
             "2026-10-19": 23,
             "2026-10-20": 10,
             "2026-10-21": 23,
-            "2026-10-22": 31
+            "2026-10-22": 31,
+            "2026-10-23": 20
           },
           "series": [
-            11,
             25,
             18,
             35,
@@ -6083,16 +6082,16 @@
             10,
             23,
             31,
+            20,
             0
           ],
           "smooth": [
-            11,
-            18,
-            18,
-            22.25,
-            21.2,
+            25,
+            21.5,
+            26,
+            23.75,
+            22.8,
             20.83,
-            19.43,
             20.57,
             18.86,
             18.71,
@@ -6175,12 +6174,13 @@
             16.57,
             16.57,
             18.29,
-            15.86
+            18.71,
+            16.57
           ],
-          "total": 1529,
-          "last7": 111,
-          "prev7": 115,
-          "momentum": 0.97,
+          "total": 1538,
+          "last7": 116,
+          "prev7": 118,
+          "momentum": 0.98,
           "hat": true
         }
       },
@@ -6296,8 +6296,8 @@
           "iso": "2026-07-31"
         }
       ],
-      "note": "Die gematik ist beim Deutschen Pflegetag 2026 vertreten, und Studien thematisieren Wirkung und Vertrauen von eHealth-Anwendungen in der Primaerversorgung. Berichtet wird zudem ueber unzureichende Versorgungssteuerung bei psychisch Kranken und Fortschritte sowie Fruststellen bei der Digitalisierung in der Kardiologie.",
-      "share": 0.143
+      "note": "",
+      "share": 0.095
     },
     {
       "id": "sonstiges",
@@ -6310,7 +6310,6 @@
           "counts": {
             "2026-07-28": 2,
             "2026-07-27": 1,
-            "2026-07-26": 1,
             "2026-07-29": 2,
             "2026-07-30": 2,
             "2026-07-31": 2,
@@ -6367,10 +6366,10 @@
             "2026-10-06": 1,
             "2026-10-18": 3,
             "2026-10-19": 2,
-            "2026-10-20": 1
+            "2026-10-20": 1,
+            "2026-10-24": 1
           },
           "series": [
-            1,
             1,
             2,
             2,
@@ -6459,16 +6458,16 @@
             1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "smooth": [
             1,
-            1,
-            1.33,
             1.5,
-            1.6,
             1.67,
-            1.43,
+            1.75,
+            1.8,
+            1.5,
             1.43,
             1.43,
             1.71,
@@ -6551,17 +6550,17 @@
             1.14,
             1,
             0.86,
-            0.86
+            0.86,
+            1
           ],
           "total": 137,
-          "last7": 6,
-          "prev7": 10,
-          "momentum": 0.6,
+          "last7": 7,
+          "prev7": 8,
+          "momentum": 0.88,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-26": 2,
             "2026-07-27": 17,
             "2026-07-28": 11,
             "2026-07-29": 8,
@@ -6649,10 +6648,10 @@
             "2026-10-19": 13,
             "2026-10-20": 14,
             "2026-10-21": 16,
-            "2026-10-22": 16
+            "2026-10-22": 16,
+            "2026-10-23": 14
           },
           "series": [
-            2,
             17,
             11,
             8,
@@ -6741,16 +6740,16 @@
             14,
             16,
             16,
+            14,
             0
           ],
           "smooth": [
-            2,
-            9.5,
-            10,
-            9.5,
-            9.4,
-            9.67,
-            9,
+            17,
+            14,
+            12,
+            11.25,
+            11.2,
+            10.17,
             10.14,
             9,
             9.14,
@@ -6833,20 +6832,21 @@
             14.43,
             12.57,
             12.57,
-            9.71
+            11.71,
+            11
           ],
-          "total": 1230,
-          "last7": 68,
+          "total": 1242,
+          "last7": 77,
           "prev7": 121,
-          "momentum": 0.56,
+          "momentum": 0.64,
           "hat": true
         }
       },
       "orgs": [
-        "Charité",
         "gematik",
-        "Gematik",
+        "Charité",
         "bvitg",
+        "Gematik",
         "EPA",
         "ABDA"
       ],
@@ -6857,6 +6857,13 @@
         "Trump"
       ],
       "heads": [
+        {
+          "t": "Da # gematik der Meinng ist für # eRezept und Patientenakte brauch ich jetzt mind. # Android 14 war es dann mal an der Zeit ein neues Telefon einzurichten. Es ist ein # Samsung Gal",
+          "s": "Mastodon: #gematik",
+          "d": "24.10.",
+          "u": "https://social.tchncs.de/@herrTravolta/117494138792744797",
+          "iso": "2026-10-24"
+        },
         {
           "t": "Digitalisierung im Gesundheitswesen unter Nachhaltigkeitsgesichtspunkten vorantreiben",
           "s": "Deutsches Aerzteblatt",
@@ -7059,17 +7066,10 @@
           "d": "06.10.",
           "u": "https://www.gematik.de/newsroom/news-detail/iop-summit-aufzeichnung-und-workshop-ergebnisse-sind-online",
           "iso": "2026-10-06"
-        },
-        {
-          "t": "# Datacenter ’s request for diesel generators sparks criticism By Claudia Levens, USA TODAY Network via Reuters Connect//April 23, 2026 # PortWashington , # Wisconsin — Neighbors o",
-          "s": "Mastodon: #ePA",
-          "d": "02.10.",
-          "u": "https://kolektiva.social/@DoomsdaysCW/117368807362660531",
-          "iso": "2026-10-02"
         }
       ],
       "note": "",
-      "share": 0.286
+      "share": 0.333
     }
   ],
   "roadmap": [
