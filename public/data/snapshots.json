@@ -17,13 +17,13 @@
     }
   ],
   "live": true,
-  "generated": "2026-10-27T09:32:22.428Z",
-  "today": "2026-10-27",
-  "startDate": "2026-07-30",
-  "endDate": "2026-10-27",
+  "generated": "2026-10-28T10:16:33.331Z",
+  "today": "2026-10-28",
+  "startDate": "2026-07-31",
+  "endDate": "2026-10-28",
   "days": 90,
   "stats": {
-    "beitraege": 71,
+    "beitraege": 72,
     "quellenOk": 10,
     "quellenFehler": 9,
     "laufzeitSek": 41
@@ -48,7 +48,7 @@
       "url": "https://rss.aerzteblatt.de/rss/news.asp",
       "type": "RSS",
       "status": "ok",
-      "items": 1
+      "items": 0
     },
     {
       "name": "gematik Newsroom",
@@ -77,7 +77,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 30,
+      "items": 32,
       "roh": 40
     },
     {
@@ -93,7 +93,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/gematik?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 27,
+      "items": 28,
       "roh": 40
     },
     {
@@ -109,14 +109,14 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 606
+      "items": 603
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 2943
+      "items": 2919
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
@@ -130,14 +130,14 @@
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 460
+      "items": 463
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 504
+      "items": 502
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
@@ -151,21 +151,21 @@
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 3225
+      "items": 3226
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1222
+      "items": 1228
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 931
+      "items": 935
     }
   ],
   "topics": [
@@ -210,7 +210,6 @@
             "2026-10-23": 2
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -299,16 +298,16 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
             0.14,
             0,
             0,
@@ -391,6 +390,7 @@
             0.71,
             0.57,
             0.29,
+            0.29,
             0.29
           ],
           "total": 48,
@@ -401,7 +401,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 12,
             "2026-07-31": 16,
             "2026-08-01": 4,
             "2026-08-02": 13,
@@ -489,10 +488,10 @@
             "2026-10-23": 8,
             "2026-10-24": 12,
             "2026-10-25": 20,
-            "2026-10-26": 18
+            "2026-10-26": 18,
+            "2026-10-27": 12
           },
           "series": [
-            12,
             16,
             4,
             13,
@@ -581,16 +580,16 @@
             12,
             20,
             18,
+            12,
             0
           ],
           "smooth": [
-            12,
-            14,
-            10.67,
-            11.25,
-            12.8,
-            14,
-            13.14,
+            16,
+            10,
+            11,
+            13,
+            14.4,
+            13.33,
             12.71,
             12.43,
             13.71,
@@ -673,22 +672,23 @@
             13.71,
             15,
             16,
-            13.57
+            15.29,
+            13
           ],
           "total": 1322,
-          "last7": 95,
-          "prev7": 93,
-          "momentum": 1.02,
+          "last7": 91,
+          "prev7": 90,
+          "momentum": 1.01,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
+        "Bundesärztekammer",
+        "AOK",
         "BfDI",
         "BMG",
-        "McKinsey",
-        "Barmer",
-        "heise online"
+        "McKinsey"
       ],
       "people": [
         "Christian Nölter",
@@ -935,7 +935,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -1017,6 +1016,7 @@
             1,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -1027,7 +1027,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1109,17 +1108,17 @@
             0.57,
             0.57,
             0.43,
-            0.43
+            0.43,
+            0.29
           ],
           "total": 10,
-          "last7": 3,
-          "prev7": 2,
-          "momentum": 1.5,
+          "last7": 2,
+          "prev7": 3,
+          "momentum": 0.67,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 7,
             "2026-07-31": 4,
             "2026-08-01": 10,
             "2026-08-02": 3,
@@ -1207,10 +1206,10 @@
             "2026-10-23": 4,
             "2026-10-24": 8,
             "2026-10-25": 10,
-            "2026-10-26": 7
+            "2026-10-26": 7,
+            "2026-10-27": 5
           },
           "series": [
-            7,
             4,
             10,
             3,
@@ -1299,16 +1298,16 @@
             8,
             10,
             7,
+            5,
             0
           ],
           "smooth": [
+            4,
             7,
-            5.5,
-            7,
-            6,
-            5.4,
-            5.83,
-            6.57,
+            5.67,
+            5,
+            5.6,
+            6.5,
             6.71,
             7.57,
             6.43,
@@ -1391,20 +1390,21 @@
             4.86,
             6,
             6.57,
-            6
+            6.71,
+            5.71
           ],
-          "total": 504,
-          "last7": 42,
+          "total": 502,
+          "last7": 40,
           "prev7": 31,
-          "momentum": 1.35,
+          "momentum": 1.29,
           "hat": true
         }
       },
       "orgs": [
         "gematik",
+        "ABDA",
         "BR24",
         "Barmer",
-        "ABDA",
         "Google",
         "KBV"
       ],
@@ -1492,7 +1492,7 @@
         }
       ],
       "note": "",
-      "share": 0.176
+      "share": 0.118
     },
     {
       "id": "gateway",
@@ -1509,7 +1509,6 @@
             "2026-10-22": 1
           },
           "series": [
-            0,
             0,
             0,
             0,
@@ -1598,10 +1597,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1690,12 +1689,13 @@
             0.14,
             0.14,
             0.14,
+            0.14,
             0.14
           ],
           "total": 7,
           "last7": 1,
-          "prev7": 2,
-          "momentum": 0.5,
+          "prev7": 0,
+          "momentum": null,
           "hat": true
         },
         "interesse": {
@@ -2019,7 +2019,6 @@
             0,
             0,
             0,
-            0,
             4,
             6,
             0,
@@ -2039,6 +2038,7 @@
             0,
             2,
             2,
+            0,
             0,
             0,
             0,
@@ -2111,7 +2111,6 @@
             0,
             0,
             0,
-            0,
             0.57,
             1.43,
             1.43,
@@ -2137,6 +2136,7 @@
             0.57,
             0.57,
             0.29,
+            0,
             0,
             0,
             0,
@@ -2352,9 +2352,9 @@
       },
       "orgs": [
         "gematik",
+        "bvitg",
         "ABDA",
-        "BMG",
-        "bvitg"
+        "BMG"
       ],
       "people": [
         "Claudia Korf"
@@ -2557,7 +2557,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2578,6 +2577,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2649,7 +2649,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2676,6 +2675,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0
           ],
@@ -2924,7 +2924,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3007,10 +3006,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3099,6 +3098,7 @@
             0.14,
             0.14,
             0.14,
+            0.14,
             0.14
           ],
           "total": 7,
@@ -3109,7 +3109,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 32,
             "2026-07-31": 25,
             "2026-08-01": 19,
             "2026-08-02": 20,
@@ -3197,10 +3196,10 @@
             "2026-10-23": 36,
             "2026-10-24": 24,
             "2026-10-25": 23,
-            "2026-10-26": 29
+            "2026-10-26": 29,
+            "2026-10-27": 33
           },
           "series": [
-            32,
             25,
             19,
             20,
@@ -3289,16 +3288,16 @@
             24,
             23,
             29,
+            33,
             0
           ],
           "smooth": [
-            32,
-            28.5,
-            25.33,
-            24,
-            25.2,
-            28.17,
-            29.29,
+            25,
+            22,
+            21.33,
+            23.5,
+            27.4,
+            28.83,
             28.43,
             30.43,
             34.57,
@@ -3381,12 +3380,13 @@
             34,
             33.86,
             33.71,
-            29.71
+            34.43,
+            28.43
           ],
-          "total": 3225,
-          "last7": 208,
-          "prev7": 219,
-          "momentum": 0.95,
+          "total": 3226,
+          "last7": 199,
+          "prev7": 216,
+          "momentum": 0.92,
           "hat": true
         }
       },
@@ -3490,7 +3490,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3550,6 +3549,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -3582,7 +3582,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3648,6 +3647,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0
@@ -3954,13 +3954,6 @@
           "d": "21.08.",
           "u": "https://www.aerzteblatt.de/news/kassenarztliche-bundesvereinigung-bekraftigt-forderungen-nach-burokratieabbau-6bb32aa8-0741-4e21-99a0-4b329d363322",
           "iso": "2026-08-21"
-        },
-        {
-          "t": "GKV-Beitragssatzstabilisierungsgesetz in Kraft: Was sich für Praxen ändert",
-          "s": "Deutsches Aerzteblatt",
-          "d": "30.07.",
-          "u": "https://www.aerzteblatt.de/news/gkv-beitragssatzstabilisierungsgesetz-in-kraft-was-sich-fur-praxen-andert-27c81fe4-7d8b-411c-888a-0ee5aa0269ef",
-          "iso": "2026-07-30"
         }
       ],
       "note": "",
@@ -4005,7 +3998,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -4063,6 +4055,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -4097,7 +4090,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -4161,6 +4153,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0
           ],
@@ -4172,7 +4165,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 48,
             "2026-07-31": 28,
             "2026-08-01": 28,
             "2026-08-02": 36,
@@ -4260,10 +4252,10 @@
             "2026-10-23": 23,
             "2026-10-24": 29,
             "2026-10-25": 30,
-            "2026-10-26": 36
+            "2026-10-26": 36,
+            "2026-10-27": 27
           },
           "series": [
-            48,
             28,
             28,
             36,
@@ -4352,16 +4344,16 @@
             29,
             30,
             36,
+            27,
             0
           ],
           "smooth": [
-            48,
-            38,
-            34.67,
-            35,
-            57,
-            54.67,
-            52.43,
+            28,
+            28,
+            30.67,
+            59.25,
+            56,
+            53.17,
             50.14,
             50.14,
             51.29,
@@ -4444,12 +4436,13 @@
             32.86,
             33.57,
             31.57,
-            26.57
+            30.43,
+            25
           ],
-          "total": 3386,
-          "last7": 186,
-          "prev7": 238,
-          "momentum": 0.78,
+          "total": 3365,
+          "last7": 175,
+          "prev7": 240,
+          "momentum": 0.73,
           "hat": true
         }
       },
@@ -4548,7 +4541,6 @@
             0,
             0,
             0,
-            0,
             1,
             1,
             0,
@@ -4613,6 +4605,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -4640,7 +4633,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.29,
             0.29,
@@ -4705,11 +4697,12 @@
             0.14,
             0.14,
             0.14,
+            0,
             0
           ],
           "total": 15,
           "last7": 0,
-          "prev7": 3,
+          "prev7": 1,
           "momentum": 0,
           "hat": true
         },
@@ -5073,8 +5066,7 @@
             "2026-10-14": 2,
             "2026-10-16": 1,
             "2026-10-17": 1,
-            "2026-10-20": 1,
-            "2026-10-26": 1
+            "2026-10-20": 1
           },
           "series": [
             0,
@@ -5082,7 +5074,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5165,7 +5156,8 @@
             0,
             0,
             0,
-            1,
+            0,
+            0,
             0
           ],
           "smooth": [
@@ -5174,8 +5166,7 @@
             0,
             0,
             0,
-            0,
-            0.14,
+            0.17,
             0.14,
             0.14,
             0.14,
@@ -5257,18 +5248,18 @@
             0.29,
             0.14,
             0.14,
-            0.29,
-            0.14
+            0.14,
+            0,
+            0
           ],
-          "total": 18,
-          "last7": 1,
-          "prev7": 5,
-          "momentum": 0.2,
+          "total": 17,
+          "last7": 0,
+          "prev7": 3,
+          "momentum": 0,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 2,
             "2026-07-31": 2,
             "2026-08-01": 0,
             "2026-08-02": 0,
@@ -5354,10 +5345,10 @@
             "2026-10-23": 1,
             "2026-10-24": 1,
             "2026-10-25": 0,
-            "2026-10-26": 1
+            "2026-10-26": 1,
+            "2026-10-27": 2
           },
           "series": [
-            2,
             2,
             0,
             0,
@@ -5446,16 +5437,16 @@
             1,
             0,
             1,
+            2,
             0
           ],
           "smooth": [
             2,
-            2,
-            1.33,
             1,
-            1,
-            0.83,
-            1.29,
+            0.67,
+            0.75,
+            0.6,
+            1.17,
             1.14,
             1,
             1.14,
@@ -5538,12 +5529,13 @@
             1.43,
             1.29,
             1,
-            1
+            1.29,
+            0.71
           ],
           "total": 155,
-          "last7": 7,
-          "prev7": 16,
-          "momentum": 0.44,
+          "last7": 5,
+          "prev7": 20,
+          "momentum": 0.25,
           "hat": true
         }
       },
@@ -5568,7 +5560,7 @@
           "iso": "2026-10-26"
         },
         {
-          "t": "Gesundheitsdaten gehen an Forschungsdatenzentrum Der Gesundheitsdaten-Staubsauger Mehr dazu bei https:// widerspruch-epa.de/?p=1211 a-fsa.de/d/3Su Link zu dieser Seite: https://www",
+          "t": "Gesundheitsdaten gehen an Forschungsdatenzentrum Der Gesundheitsdaten-Staubsauger Mehr dazu bei https:// widerspruch-epa.de/?p=1211 https:// a-fsa.de/d/3Su Link zu dieser Seite: ht",
           "s": "Mastodon: #gematik",
           "d": "20.10.",
           "u": "https://mastodon.social/@aktionfsa/117471949481108560",
@@ -5730,7 +5722,7 @@
         }
       ],
       "note": "",
-      "share": 0.059
+      "share": 0
     },
     {
       "id": "versorgung",
@@ -5753,7 +5745,6 @@
             "2026-10-20": 1
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -5836,6 +5827,7 @@
             1,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5845,13 +5837,12 @@
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
             0.14,
             0,
             0.14,
@@ -5934,17 +5925,17 @@
             0.29,
             0.14,
             0.14,
+            0,
             0
           ],
           "total": 10,
           "last7": 0,
-          "prev7": 5,
+          "prev7": 4,
           "momentum": 0,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 17,
             "2026-07-31": 19,
             "2026-08-01": 11,
             "2026-08-02": 19,
@@ -6032,10 +6023,10 @@
             "2026-10-23": 20,
             "2026-10-24": 28,
             "2026-10-25": 28,
-            "2026-10-26": 21
+            "2026-10-26": 21,
+            "2026-10-27": 18
           },
           "series": [
-            17,
             19,
             11,
             19,
@@ -6124,16 +6115,16 @@
             28,
             28,
             21,
+            18,
             0
           ],
           "smooth": [
-            17,
-            18,
-            15.67,
-            16.5,
+            19,
+            15,
+            16.33,
+            15.5,
             15.8,
             16,
-            16.14,
             15.71,
             15.43,
             15.71,
@@ -6216,12 +6207,13 @@
             20.57,
             23.29,
             23,
-            21.57
+            24.14,
+            20.86
           ],
-          "total": 1537,
-          "last7": 151,
+          "total": 1538,
+          "last7": 146,
           "prev7": 116,
-          "momentum": 1.3,
+          "momentum": 1.26,
           "hat": true
         }
       },
@@ -6349,7 +6341,6 @@
       "signals": {
         "aktivitaet": {
           "counts": {
-            "2026-07-30": 2,
             "2026-07-31": 2,
             "2026-08-02": 1,
             "2026-08-03": 1,
@@ -6406,12 +6397,11 @@
             "2026-10-19": 2,
             "2026-10-20": 1,
             "2026-10-24": 4,
-            "2026-10-27": 2,
-            "2026-10-26": 2,
-            "2026-10-25": 1
+            "2026-10-25": 1,
+            "2026-10-27": 4,
+            "2026-10-26": 2
           },
           "series": [
-            2,
             2,
             0,
             1,
@@ -6500,16 +6490,16 @@
             4,
             1,
             2,
-            2
+            4,
+            0
           ],
           "smooth": [
             2,
-            2,
-            1.33,
-            1.25,
-            1.2,
-            1.67,
-            1.57,
+            1,
+            1,
+            1,
+            1.6,
+            1.5,
             1.43,
             1.43,
             1.57,
@@ -6592,17 +6582,17 @@
             1.43,
             1.14,
             1.14,
-            1.29
+            1.57,
+            1.57
           ],
           "total": 140,
-          "last7": 9,
-          "prev7": 8,
-          "momentum": 1.13,
+          "last7": 11,
+          "prev7": 7,
+          "momentum": 1.57,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-07-30": 9,
             "2026-07-31": 11,
             "2026-08-01": 5,
             "2026-08-02": 10,
@@ -6690,10 +6680,10 @@
             "2026-10-23": 14,
             "2026-10-24": 3,
             "2026-10-25": 5,
-            "2026-10-26": 8
+            "2026-10-26": 8,
+            "2026-10-27": 15
           },
           "series": [
-            9,
             11,
             5,
             10,
@@ -6782,16 +6772,16 @@
             3,
             5,
             8,
+            15,
             0
           ],
           "smooth": [
-            9,
-            10,
-            8.33,
+            11,
+            8,
+            8.67,
             8.75,
-            8.8,
-            9.33,
-            9.43,
+            9.4,
+            9.5,
             9,
             8.57,
             8.57,
@@ -6874,12 +6864,13 @@
             11.43,
             11.57,
             10.86,
-            8.86
+            11,
+            8.71
           ],
-          "total": 1222,
-          "last7": 62,
-          "prev7": 101,
-          "momentum": 0.61,
+          "total": 1228,
+          "last7": 61,
+          "prev7": 88,
+          "momentum": 0.69,
           "hat": true
         }
       },
@@ -6910,6 +6901,20 @@
           "s": "Mastodon: #ePA",
           "d": "27.10.",
           "u": "https://rbfirehose.com/2026/10/26/mother-jones-the-epa-is-quietly-killing-its-web-archive/",
+          "iso": "2026-10-27"
+        },
+        {
+          "t": "# Trump to Loosen Rules for # OilFirms on # Methane , a Potent Warming Gas The Biden administration had sought to crack down on # MethaneLeaks , a big driver of # ClimateChange . T",
+          "s": "Mastodon: #ePA",
+          "d": "27.10.",
+          "u": "https://kolektiva.social/@DoomsdaysCW/117515224472047440",
+          "iso": "2026-10-27"
+        },
+        {
+          "t": "España tiene más trabajadores que nunca, pero el paro sube en 95.900 personas. La EPA deja un verano de récords y señales de desaceleración. # Empleo # Paro # EPA # MercadoLaboral ",
+          "s": "Mastodon: #ePA",
+          "d": "27.10.",
+          "u": "https://mastodon.social/@elfolio/117512200369654717",
           "iso": "2026-10-27"
         },
         {
@@ -7093,24 +7098,10 @@
           "d": "12.10.",
           "u": "https://mastodon.social/@bureaucracy/117429712854198972",
           "iso": "2026-10-12"
-        },
-        {
-          "t": "The #EPA wants #Wisconsin to take over oversight of #CoalAshLandfills . Wisconsin requested the change, but environmental advocates warn losing dual oversight could weaken safeguar",
-          "s": "Mastodon: #ePA",
-          "d": "12.10.",
-          "u": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:butbzsrnfrh7isiyaxpggat5/post/3mxoo6fhwdh23",
-          "iso": "2026-10-12"
-        },
-        {
-          "t": "Why is Trump buying 36 Million barrels (4.8M tons) of Russian diesel? 1. The US is a net EXPORTER of diesel; the US EXPORTS excess US made diesel. We import a fractional amount of ",
-          "s": "Mastodon: #ePA",
-          "d": "11.10.",
-          "u": "https://beige.party/@pattykimura/117422092069805114",
-          "iso": "2026-10-11"
         }
       ],
       "note": "",
-      "share": 0.529
+      "share": 0.647
     }
   ],
   "roadmap": [
