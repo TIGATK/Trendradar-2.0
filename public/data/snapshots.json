@@ -17,16 +17,16 @@
     }
   ],
   "live": true,
-  "generated": "2026-11-20T12:25:27.731Z",
-  "today": "2026-11-20",
-  "startDate": "2026-08-23",
-  "endDate": "2026-11-20",
+  "generated": "2026-11-21T11:59:13.887Z",
+  "today": "2026-11-21",
+  "startDate": "2026-08-24",
+  "endDate": "2026-11-21",
   "days": 90,
   "stats": {
-    "beitraege": 79,
+    "beitraege": 80,
     "quellenOk": 10,
     "quellenFehler": 9,
-    "laufzeitSek": 6
+    "laufzeitSek": 7
   },
   "sources": [
     {
@@ -62,7 +62,7 @@
       "url": "https://www.heise.de/rss/heise-atom.xml",
       "type": "RSS",
       "status": "ok",
-      "items": 0
+      "items": 1
     },
     {
       "name": "Mastodon: #eHealth",
@@ -77,7 +77,7 @@
       "url": "https://mastodon.social/api/v1/timelines/tag/ePA?limit=40",
       "type": "Social",
       "status": "ok",
-      "items": 16,
+      "items": 17,
       "roh": 40
     },
     {
@@ -109,63 +109,63 @@
       "url": "https://de.wikipedia.org/wiki/Digitale_Gesundheitsanwendung",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 566
+      "items": 571
     },
     {
       "name": "Wikipedia: Elektronische Gesundheitskarte",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Gesundheitskarte",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 2289
+      "items": 2285
     },
     {
       "name": "Wikipedia: Elektronische Patientenakte (Deutschland)",
       "url": "https://de.wikipedia.org/wiki/Elektronische_Patientenakte_(Deutschland)",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1326
+      "items": 1342
     },
     {
       "name": "Wikipedia: Elektronischer Heilberufsausweis",
       "url": "https://de.wikipedia.org/wiki/Elektronischer_Heilberufsausweis",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 314
+      "items": 313
     },
     {
       "name": "Wikipedia: Elektronisches Rezept",
       "url": "https://de.wikipedia.org/wiki/Elektronisches_Rezept",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 440
+      "items": 444
     },
     {
       "name": "Wikipedia: Europäischer Gesundheitsdatenraum",
       "url": "https://de.wikipedia.org/wiki/Europäischer_Gesundheitsdatenraum",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 127
+      "items": 130
     },
     {
       "name": "Wikipedia: Gematik",
       "url": "https://de.wikipedia.org/wiki/Gematik",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 2980
+      "items": 3002
     },
     {
       "name": "Wikipedia: Telematikinfrastruktur",
       "url": "https://de.wikipedia.org/wiki/Telematikinfrastruktur",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 1166
+      "items": 1165
     },
     {
       "name": "Wikipedia: Telemedizin",
       "url": "https://de.wikipedia.org/wiki/Telemedizin",
       "type": "Nachfrage",
       "status": "ok",
-      "items": 735
+      "items": 727
     }
   ],
   "topics": [
@@ -214,7 +214,6 @@
             "2026-10-14": 1
           },
           "series": [
-            0,
             0,
             1,
             0,
@@ -303,16 +302,16 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
             0,
-            0,
+            0.5,
             0.33,
             0.25,
-            0.2,
+            0.4,
             0.33,
-            0.29,
             0.29,
             0.29,
             0.14,
@@ -395,6 +394,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "total": 57,
@@ -405,7 +405,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 11,
             "2026-08-24": 16,
             "2026-08-25": 19,
             "2026-08-26": 11,
@@ -493,10 +492,10 @@
             "2026-11-16": 12,
             "2026-11-17": 18,
             "2026-11-18": 22,
-            "2026-11-19": 23
+            "2026-11-19": 23,
+            "2026-11-20": 21
           },
           "series": [
-            11,
             16,
             19,
             11,
@@ -585,16 +584,16 @@
             18,
             22,
             23,
+            21,
             0
           ],
           "smooth": [
-            11,
-            13.5,
+            16,
+            17.5,
             15.33,
-            14.25,
-            15.4,
-            15.67,
-            14.57,
+            16.5,
+            16.6,
+            15.17,
             17,
             16.86,
             16.71,
@@ -677,12 +676,13 @@
             14.71,
             15.57,
             15.71,
-            13.86
+            16.86,
+            15.14
           ],
-          "total": 1405,
-          "last7": 97,
-          "prev7": 133,
-          "momentum": 0.73,
+          "total": 1415,
+          "last7": 106,
+          "prev7": 131,
+          "momentum": 0.81,
           "hat": true
         }
       },
@@ -953,7 +953,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -1022,6 +1021,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -1045,7 +1045,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -1106,6 +1105,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -1124,7 +1124,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 1,
             "2026-08-24": 5,
             "2026-08-25": 6,
             "2026-08-26": 1,
@@ -1212,10 +1211,10 @@
             "2026-11-16": 11,
             "2026-11-17": 6,
             "2026-11-18": 4,
-            "2026-11-19": 10
+            "2026-11-19": 10,
+            "2026-11-20": 5
           },
           "series": [
-            1,
             5,
             6,
             1,
@@ -1304,16 +1303,16 @@
             6,
             4,
             10,
+            5,
             0
           ],
           "smooth": [
-            1,
-            3,
+            5,
+            5.5,
             4,
-            3.25,
-            3.4,
-            3.67,
-            3.71,
+            4,
+            4.2,
+            4.17,
             4.14,
             3.71,
             3.29,
@@ -1396,12 +1395,13 @@
             5.86,
             4.71,
             5.29,
-            5
+            5.71,
+            5.43
           ],
-          "total": 488,
-          "last7": 35,
+          "total": 492,
+          "last7": 38,
           "prev7": 37,
-          "momentum": 0.95,
+          "momentum": 1.03,
           "hat": true
         }
       },
@@ -1547,7 +1547,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -1618,10 +1617,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -1688,6 +1687,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2022,7 +2022,6 @@
             0,
             0,
             0,
-            0,
             4,
             6,
             0,
@@ -2042,6 +2041,7 @@
             0,
             2,
             2,
+            0,
             0,
             0,
             0,
@@ -2114,7 +2114,6 @@
             0,
             0,
             0,
-            0,
             0.57,
             1.43,
             1.43,
@@ -2140,6 +2139,7 @@
             0.57,
             0.57,
             0.29,
+            0,
             0,
             0,
             0,
@@ -2560,7 +2560,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -2581,6 +2580,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -2652,7 +2652,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -2679,6 +2678,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -2974,7 +2974,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -3042,6 +3041,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
@@ -3066,7 +3066,6 @@
             0,
             0,
             0,
-            0,
             0.14,
             0.14,
             0.14,
@@ -3112,6 +3111,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -3144,7 +3144,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 13,
             "2026-08-24": 33,
             "2026-08-25": 41,
             "2026-08-26": 36,
@@ -3232,10 +3231,10 @@
             "2026-11-16": 27,
             "2026-11-17": 41,
             "2026-11-18": 27,
-            "2026-11-19": 20
+            "2026-11-19": 20,
+            "2026-11-20": 32
           },
           "series": [
-            13,
             33,
             41,
             36,
@@ -3324,16 +3323,16 @@
             41,
             27,
             20,
+            32,
             0
           ],
           "smooth": [
-            13,
-            23,
-            29,
-            30.75,
-            29.2,
-            32,
-            31,
+            33,
+            37,
+            36.67,
+            33.25,
+            35.8,
+            34,
             32.57,
             34,
             33.57,
@@ -3416,12 +3415,13 @@
             29.43,
             30.14,
             28,
-            20.86
+            25.43,
+            22.43
           ],
-          "total": 3098,
-          "last7": 146,
-          "prev7": 198,
-          "momentum": 0.74,
+          "total": 3117,
+          "last7": 157,
+          "prev7": 210,
+          "momentum": 0.75,
           "hat": true
         }
       },
@@ -3538,7 +3538,6 @@
             0,
             0,
             0,
-            0,
             1,
             1,
             1,
@@ -3597,10 +3596,10 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -3673,6 +3672,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -4048,7 +4048,6 @@
             "2026-10-19": 1
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -4106,6 +4105,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -4140,14 +4140,13 @@
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
             0.14,
-            0.14,
             0,
             0,
             0,
@@ -4204,6 +4203,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -4239,7 +4239,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 33,
             "2026-08-24": 65,
             "2026-08-25": 41,
             "2026-08-26": 42,
@@ -4327,10 +4326,10 @@
             "2026-11-16": 37,
             "2026-11-17": 39,
             "2026-11-18": 28,
-            "2026-11-19": 31
+            "2026-11-19": 31,
+            "2026-11-20": 20
           },
           "series": [
-            33,
             65,
             41,
             42,
@@ -4419,16 +4418,16 @@
             39,
             28,
             31,
+            20,
             0
           ],
           "smooth": [
-            33,
-            49,
-            46.33,
-            45.25,
+            65,
+            53,
+            49.33,
+            47.75,
             44.8,
-            42.83,
-            40.57,
+            41.83,
             39.43,
             38,
             37.71,
@@ -4511,12 +4510,13 @@
             25.86,
             26.57,
             27.71,
-            23.71
+            26.57,
+            24.57
           ],
-          "total": 2991,
-          "last7": 166,
-          "prev7": 182,
-          "momentum": 0.91,
+          "total": 2978,
+          "last7": 172,
+          "prev7": 176,
+          "momentum": 0.98,
           "hat": true
         }
       },
@@ -4592,7 +4592,6 @@
             "2026-11-05": 1
           },
           "series": [
-            0,
             1,
             1,
             0,
@@ -4681,17 +4680,17 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
-            0.5,
+            1,
+            1,
             0.67,
             0.5,
             0.4,
             0.33,
             0.29,
-            0.29,
             0.14,
             0,
             0,
@@ -4765,6 +4764,7 @@
             0.14,
             0.14,
             0.14,
+            0,
             0,
             0,
             0,
@@ -5154,7 +5154,6 @@
             0,
             0,
             0,
-            0,
             1,
             0,
             0,
@@ -5221,6 +5220,7 @@
             0,
             0,
             1,
+            0,
             0,
             0,
             0,
@@ -5235,7 +5235,6 @@
             0
           ],
           "smooth": [
-            0,
             0,
             0,
             0,
@@ -5324,6 +5323,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "total": 16,
@@ -5334,7 +5334,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 1,
             "2026-08-24": 1,
             "2026-08-25": 2,
             "2026-08-26": 5,
@@ -5419,10 +5418,10 @@
             "2026-11-16": 0,
             "2026-11-17": 0,
             "2026-11-18": 1,
-            "2026-11-19": 0
+            "2026-11-19": 0,
+            "2026-11-20": 4
           },
           "series": [
-            1,
             1,
             2,
             5,
@@ -5511,16 +5510,16 @@
             0,
             1,
             0,
+            4,
             0
           ],
           "smooth": [
             1,
-            1,
-            1.33,
-            2.25,
-            2.4,
+            1.5,
+            2.67,
+            2.75,
+            2.2,
             2,
-            1.86,
             2,
             2.43,
             2.14,
@@ -5603,12 +5602,13 @@
             0.57,
             0.71,
             0.57,
-            0.57
+            1.14,
+            1
           ],
-          "total": 160,
-          "last7": 4,
-          "prev7": 10,
-          "momentum": 0.4,
+          "total": 163,
+          "last7": 7,
+          "prev7": 11,
+          "momentum": 0.64,
           "hat": true
         }
       },
@@ -5811,7 +5811,6 @@
             "2026-11-09": 2
           },
           "series": [
-            0,
             1,
             0,
             0,
@@ -5900,16 +5899,16 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "smooth": [
-            0,
+            1,
             0.5,
             0.33,
             0.25,
             0.2,
             0.17,
-            0.14,
             0.14,
             0,
             0,
@@ -5992,6 +5991,7 @@
             0,
             0,
             0,
+            0,
             0
           ],
           "total": 11,
@@ -6002,7 +6002,6 @@
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 37,
             "2026-08-24": 22,
             "2026-08-25": 10,
             "2026-08-26": 11,
@@ -6090,10 +6089,10 @@
             "2026-11-16": 24,
             "2026-11-17": 14,
             "2026-11-18": 7,
-            "2026-11-19": 15
+            "2026-11-19": 15,
+            "2026-11-20": 25
           },
           "series": [
-            37,
             22,
             10,
             11,
@@ -6182,16 +6181,16 @@
             14,
             7,
             15,
+            25,
             0
           ],
           "smooth": [
-            37,
-            29.5,
-            23,
-            20,
-            19.2,
-            20,
-            19.71,
+            22,
+            16,
+            14.33,
+            14.75,
+            16.6,
+            16.83,
             16,
             15.71,
             17.43,
@@ -6274,12 +6273,13 @@
             15.86,
             14.43,
             13.86,
-            12
+            15.57,
+            14.43
           ],
-          "total": 1519,
-          "last7": 84,
-          "prev7": 104,
-          "momentum": 0.81,
+          "total": 1507,
+          "last7": 101,
+          "prev7": 98,
+          "momentum": 1.03,
           "hat": true
         }
       },
@@ -6407,7 +6407,6 @@
       "signals": {
         "aktivitaet": {
           "counts": {
-            "2026-08-23": 2,
             "2026-08-25": 5,
             "2026-08-26": 1,
             "2026-08-27": 4,
@@ -6481,10 +6480,11 @@
             "2026-11-16": 2,
             "2026-11-17": 3,
             "2026-11-18": 3,
+            "2026-11-20": 1,
+            "2026-11-21": 1,
             "2026-11-19": 4
           },
           "series": [
-            2,
             1,
             5,
             1,
@@ -6573,16 +6573,16 @@
             3,
             3,
             4,
-            0
+            1,
+            1
           ],
           "smooth": [
-            2,
-            1.5,
-            2.67,
-            2.25,
-            2.6,
-            2.67,
-            2.43,
+            1,
+            3,
+            2.33,
+            2.75,
+            2.8,
+            2.5,
             2.29,
             2.14,
             1.43,
@@ -6665,17 +6665,17 @@
             1.71,
             1.71,
             2.14,
-            2
+            2.14,
+            2.14
           ],
           "total": 175,
-          "last7": 14,
-          "prev7": 13,
-          "momentum": 1.08,
+          "last7": 15,
+          "prev7": 14,
+          "momentum": 1.07,
           "hat": true
         },
         "interesse": {
           "counts": {
-            "2026-08-23": 6,
             "2026-08-24": 17,
             "2026-08-25": 11,
             "2026-08-26": 16,
@@ -6763,10 +6763,10 @@
             "2026-11-16": 9,
             "2026-11-17": 8,
             "2026-11-18": 11,
-            "2026-11-19": 8
+            "2026-11-19": 8,
+            "2026-11-20": 3
           },
           "series": [
-            6,
             17,
             11,
             16,
@@ -6855,16 +6855,16 @@
             8,
             11,
             8,
+            3,
             0
           ],
           "smooth": [
-            6,
-            11.5,
-            11.33,
-            12.5,
-            12,
-            11.83,
-            10.86,
+            17,
+            14,
+            14.67,
+            13.5,
+            13,
+            11.67,
             11,
             11.29,
             12.29,
@@ -6947,12 +6947,13 @@
             7.86,
             8.14,
             8,
-            6.86
+            7.29,
+            6.14
           ],
-          "total": 1256,
-          "last7": 48,
-          "prev7": 65,
-          "momentum": 0.74,
+          "total": 1253,
+          "last7": 43,
+          "prev7": 69,
+          "momentum": 0.62,
           "hat": true
         }
       },
@@ -6971,6 +6972,20 @@
         "Arne Pullwitt"
       ],
       "heads": [
+        {
+          "t": "JUST IN: Governor Kim Reynolds activated Iowa’s State EMERGENCY Operations Center as the Army plans to blow up 68 DRUMS of toxic lead azide Monday. Officials say the chemicals are ",
+          "s": "Mastodon: #ePA",
+          "d": "21.11.",
+          "u": "https://mastodon.social/@cbarbermd/117652331404892585",
+          "iso": "2026-11-21"
+        },
+        {
+          "t": "Neuer „Notfallwegweiser“ für Patienten in dringenden Fällen",
+          "s": "heise Newsticker",
+          "d": "20.11.",
+          "u": "https://www.heise.de/news/Neuer-Notfallwegweiser-fuer-Patienten-in-dringenden-Faellen-11532992.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+          "iso": "2026-11-20"
+        },
         {
           "t": "Wenn das @ bsi erklärt, „die Gefährdungslage im Cyberraum sei so hoch wie nie“ und „Staatlich unterstützte Gruppen greifen verstärkt auf KI-Werkzeuge zurück“, lässt sich dann noch ",
           "s": "Mastodon: #ePA",
@@ -7165,20 +7180,6 @@
           "s": "Mastodon: #ePA",
           "d": "09.11.",
           "u": "https://www.truthdig.com/articles/epa-pulls-the-plug-on-regulating-air-pollution-from-giant-livestock-and-poultry-operations/?utm_source=rss&utm_medium=rss&utm_campaign=epa-pulls-the-plug-on-regulating-air-pollution-from-giant-livestock-and-poultry-operations",
-          "iso": "2026-11-09"
-        },
-        {
-          "t": "Rs' MT losses:⚡much of that pain could've been avoided -or at least pre-empted🚨-had the Trump admin allowed a $B solar panel development project go ahead. # EPA under Trump appt L",
-          "s": "Mastodon: #ePA",
-          "d": "09.11.",
-          "u": "https://toad.social/@KimPerales/117587333180784190",
-          "iso": "2026-11-09"
-        },
-        {
-          "t": "Aktuelle Pressemitteilung: Pflegedigitalisierungs-Bündnis begrüßt GKV-Vorstoß und fordert praxistaugliche Umsetzung",
-          "s": "bvitg",
-          "d": "09.11.",
-          "u": "https://www.bvitg.de/aktuelle-pressemitteilung-pflegedigitalisierungs-buendnis-begruesst-gkv-vorstoss-und-fordert-praxistaugliche-umsetzung/",
           "iso": "2026-11-09"
         }
       ],
